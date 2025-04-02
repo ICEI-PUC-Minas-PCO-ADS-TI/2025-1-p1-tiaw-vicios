@@ -57,3 +57,4 @@ Descrição para a tela XPTO
 **✳️✳️✳️ COLOQUE AQUI UM IFRAME COM SEU PROTÓTIPO INTERATIVO ✳️✳️✳️**
 
 ✅ [Protótipo interativo](https://marvelapp.com/prototype/4hd6091?emb=1&iosapp=false&frameless=false)  ⚠️ EXEMPLO ⚠️
+https://www.figma.com/design/A0UV3BOsD0LZ2aEz6RI1tx/Untitled?node-id=7-42&t=818aevQi425RTuqU-1
