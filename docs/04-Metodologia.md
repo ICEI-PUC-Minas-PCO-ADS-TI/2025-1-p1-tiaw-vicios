@@ -68,9 +68,9 @@ Link do GitHub Projects:
 https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/2025-1-p1-tiaw-vicios.git
 
 Ferramentas
-# Ferramentas de Comunicação: Discord e Whatshapp – São ferramentas que muitos usam no dia a dia para conversar, apresenta fácil acesso, possui troca de mensagens rápida e permite criar chamadas 
-de conversa de maneira ágil
+# Ferramentas de Comunicação: Discord e Whatshapp – São ferramentas que muitos usam no dia a dia para conversar, apresenta fácil acesso, possui troca de mensagens rápida e permite criar chamadas de conversa de maneira ágil
 
 # Ferramentas de Trabalho: Mirio, Figma, Canva, Excel – Muito recomendada para uso profissional, ótima para criar e editar projetos, além disso possui várias funcionalidades tanto para editação, alteração dos arquivos e outras capacidades. 
 
 # Ferramenta de Armazenamento de dados: GitHub -  Site recomendado para Programadores, é uso obrigatório para realização da tarefa.  
+
