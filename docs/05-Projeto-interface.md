@@ -9,52 +9,36 @@
 
  ## User flow
 
+Foram separados em três partes para ficar legível
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+1
+![image](https://github.com/user-attachments/assets/acfc9f1c-341f-4f04-8845-6da87b5e839d)
 
-Fluxo de usuário (user flow) é uma técnica que permite ao desenvolvedor mapear todo o fluxo de navegação do usuário na aplicação. Essa técnica serve para alinhar os caminhos e as possíveis ações que o usuário pode realizar junto com os membros da equipe.
+2
+![image](https://github.com/user-attachments/assets/46ea4de2-14cc-4cfd-99bc-1d84508f2b79)
 
-**✳️✳️✳️ COLOQUE AQUI O USER FLOW ✳️✳️✳️**
+3
+![image](https://github.com/user-attachments/assets/cf305b9f-9098-47d5-8897-919ae55f31d0)
 
-![Exemplo de fluxo de telas](images/exemplo-userflow.png)
-
-> **Links úteis**:
-> - [User flow: o quê é e como fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User flow vs site maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 user flow tools & templates for smooth](https://www.mockplus.com/blog/post/user-flow-tools)
-
+Link:https://app.flowmapp.com/share/projects/abb0925e-a5e7-45c9-9887-f398f1e9830c/sitemap/622a1416-87fb-497f-8906-5a02c4cc75af
 
 ## Wireframes
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+1
+![image](https://github.com/user-attachments/assets/d88950e4-7be5-4bde-b767-db36025eed18)
 
-São protótipos usados no design de interface para sugerir a estrutura de um site web e seu relacionamento entre suas páginas. Um wireframe web é uma ilustração que mostra o layout dos elementos fundamentais na interface.
+2
+![image](https://github.com/user-attachments/assets/b52ba263-b1b4-45d5-92ba-cedcd1d860ca)
 
-**✳️✳️✳️ COLOQUE AQUI OS PROTÓTIPOS DE TELAS COM TÍTULO E DESCRIÇÃO ✳️✳️✳️**
-
-##### TELA XPTO ⚠️ EXEMPLO ⚠️
-
-Descrição para a tela XPTO
-
-![Exemplo de wireframe](images/exemplo-wireframe.png)
-
- 
-> **Links úteis**:
-> - [Protótipos: baixa, média ou alta fidelidade?](https://medium.com/ladies-that-ux-br/prot%C3%B3tipos-baixa-m%C3%A9dia-ou-alta-fidelidade-71d897559135)
-> - [Protótipos vs wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de wireframes](https://rockcontent.com/blog/wireframes/)
-> - [Figma](https://www.figma.com/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-
+Link: https://www.figma.com/design/A0UV3BOsD0LZ2aEz6RI1tx/Untitled?node-id=7-42&t=818aevQi425RTuqU-1
 
 ### Protótipo Interativo
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Um protótipo interativo apresenta o projeto das interfaces e permite ao usuário navegar pelas funcionalidades como se estivesse utilizando o software finalizado. Utilize as mesmas ferramentas de criação de wireframes para a montagem do seu protótipo interativo. Inclua o link para o protótipo interativo do projeto.
+1
+![image](https://github.com/user-attachments/assets/227e1ec5-086f-4ea7-95a0-9b0faf4416f6)
 
-**✳️✳️✳️ COLOQUE AQUI UM IFRAME COM SEU PROTÓTIPO INTERATIVO ✳️✳️✳️**
+2
+![image](https://github.com/user-attachments/assets/954359b4-77ec-4cac-84aa-1200942f8fa1)
 
-✅ [Protótipo interativo](https://marvelapp.com/prototype/4hd6091?emb=1&iosapp=false&frameless=false)  ⚠️ EXEMPLO ⚠️
-https://www.figma.com/design/A0UV3BOsD0LZ2aEz6RI1tx/Untitled?node-id=7-42&t=818aevQi425RTuqU-1
+Link: https://www.figma.com/design/A0UV3BOsD0LZ2aEz6RI1tx/Untitled?node-id=7-42&t=818aevQi425RTuqU-1
+
