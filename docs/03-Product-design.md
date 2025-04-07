@@ -4,6 +4,7 @@
 
 
 (História dos usuários) 
+
  ![image](https://github.com/user-attachments/assets/0b7e31a5-7684-443a-8800-515befacbb84)
 
 (Proposta de Valor)
