@@ -6,6 +6,7 @@ Contexto do Projeto: Site de Apoio na Superação de Vícios O vício, seja em s
 
 
 Nosso site contará com: 
+
 • Informações sobre diferentes tipos de vícios e seus efeitos;
 
 • Relatos de superação, para inspirar e motivar quem está lutando;
