@@ -8,15 +8,21 @@
  ![image](https://github.com/user-attachments/assets/0b7e31a5-7684-443a-8800-515befacbb84)
 
 (Proposta de Valor)
+
 Luiz Amaral
  
 ![image](https://github.com/user-attachments/assets/cdb41563-265e-4b95-8269-b4e319c4ba40)
 
 
 Luana Vieira
+
+
  ![image](https://github.com/user-attachments/assets/a1d963c4-ca3a-43af-85eb-d4c2207e5686)
 
+
 Ana Costa
+
+
  ![image](https://github.com/user-attachments/assets/54874650-142d-4611-bd45-fb12b6462075)
 
 
