@@ -27,6 +27,7 @@ Ana Costa
 
 
 (Requisitos de Projeto)
+
 a)	Requisitos Funcionais (o que o sistema faz) 
 • - O usuário pode criar uma conta. 
 • - O usuário pode registrar o progresso diário (dias sóbrio). 
@@ -34,6 +35,7 @@ a)	Requisitos Funcionais (o que o sistema faz)
 • - O usuário pode acessar vídeos e conteúdos educativos. 
 • - O sistema permite contato com profissionais de saúde (ex: psicólogos, terapeutas). 
 • - O sistema envia tarefas e desafios diários para motivação e disciplina.
+
 b)	Requisitos Não Funcionais (qualidade, desempenho, segurança) 
 • - O sistema deve estar disponível 24 horas por dia, 7 dias por semana. 
 • - A interface deve ser simples, acessível e intuitiva. 
