@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Lista de Tarefas</h1>
+    <div class="entrada">
+      <form id="formTarefas">
+        <input type="text" placeholder="Nome da Tarefa..." id="campoEntrada" />
+        <button type="submit">Adicionar</button>
+      </form>
+    </div>
+
+    <div>
+      <h3>Tarefas</h3>
+      <ul id="listaTarefas"></ul>
+    </div>
+
+    <div class="progress">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: Verdana;
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+  }
+  
+  .container {
+    width: 400px;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 3rem;
+  }
+  
+  .container h1 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  .entrada form {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .entrada form > * {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .entrada input {
+    flex: 1;
+    border: none;
+    border-bottom: 1px solid #40a640;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  .entrada button {
+    background-color: #40a640;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  
+  .entrada button:hover {
+    background-color: #369136;
+  }
+  
+  #listaTarefas {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  #listaTarefas li {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 0.5rem;
+  }
+  
+  #listaTarefas li span {
+    flex: 1;
+    cursor: pointer;
+  }
+  
+  #listaTarefas li button {
+    background: none;
+    border: none;
+    color: #dc143c;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  span.concluida {
+    text-decoration: line-through;
+    color: #778899;
+  }
+  
+  .input-erro {
+    border-bottom: 1px solid #dc143c !important;
+    background-color: #ffe5e5 !important;
+  }
+  .container {
+    width: 400px;
+  }
+
+  .progress {
+    padding: 6px;
+    background: #000;
+    border-radius: 30px;
+  }
+
+
+  .progress-bar {
+    height: 18px;
+    background-color: #bd47ef;
+    border-radius: 30px;
+    animation: progressAnimation 7s;
+  }
+
+  @keyframes progressAnimation {
+    0% { width: 0%; }
+    80% {width: 85%; }
+    100% {width: 100%;}
+    
+  }
+
+  /* ... [código anterior permanece igual até o final] ... */
+
+.progress {
+    height: 20px;
+    background: #e0e0e0;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 1rem;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #40a640;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
+  }
+  

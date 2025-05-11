@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .taskbar {
+    display: flex;
+    align-items: center;
+    background-color: #5d2b8a; 
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 20px;
+    gap: 15px;
+  }
+  
+  .menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .logo {
+    height: 30px;
+    width: 30px;
+  }
+  
+  .nav-icons i {
+    color: white;
+    margin: 0 8px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .search-box {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 0 10px;
+  }
+  
+  .search-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  .search-box i {
+    color: #5d2b8a;
+    margin-left: 5px;
+  }
+  
+  .right-icons i {
+    color: white;
+    margin-left: 15px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
