@@ -1,0 +1,142 @@
+.card {
+    border-radius: 10px;
+    transition: transform 0.3s ease; 
+    cursor: pointer; 
+    
+  }
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;            
+    justify-content: center; 
+    width: 100%;
+    max-width: 1200px;     
+    margin: 0 auto;       
+    margin-top: 20px;
+  }
+  /*Cores */
+  .cards-container h5{
+    color: rgb(113, 102, 102);
+  }
+  .cards-container p{
+    color: white;
+  }
+  .cards-container h5,p{
+   border: 2px solid black; 
+    padding: 8px; 
+    border-radius: 5px; 
+    background-color: rgb(100, 52, 100);
+  }
+ 
+  .container{
+    background-color: rgb(94, 2, 94);
+    padding-top: 20px;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    min-height: 80vh; 
+    width: 50%;
+  }
+  /*Cores de detalhes.html*/
+  .container h1{
+  color: white;
+  }
+  .container p{
+   color: white;
+  }
+  /*Cores de detalhes.html*/
+    
+  /*Cores */
+  .card-body {
+    padding: 15px;
+    background-color: purple;
+  }
+  #voltar{
+    width: 200px;
+  }
+  .card-pesquisa {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 calc(25% - 20px); 
+    min-width: 250px;                      
+    box-sizing: border-box;    
+  }
+  
+  .card-pesquisa:hover {
+    transform: scale(1.05);
+  }
+
+  body  {
+    font-family: Arial, sans-serif;
+    background-color: rgb(213, 204, 204) !important;
+    padding: 0px;
+    display: flex;              
+    flex-direction: column;     
+    align-items: center;        
+    min-height: 100vh;          
+    margin: 0;                  
+  } 
+
+  .search-container {
+    max-width: 1000px;          
+    width: 100%;                
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(118, 69, 118);
+    padding-top: 120px; 
+  }
+  
+  .menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: purple;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+
+  input[type="text"] {
+    width: 25%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: border 0.3s;
+    
+  }
+
+  input[type="text"]:focus {
+    border-color: rgb(173, 15, 173);
+    outline: none;
+  }
+  .no-results {
+    color: #999;
+    margin-top: 20px;
+    display: none;
+  }
+
+  /* Responsividade */
+@media (max-width: 1100px) {
+    .card-pesquisa {
+      flex: 0 0 calc(33.33% - 20px); 
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .card-pesquisa {
+      flex: 0 0 calc(50% - 20px); 
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .card-pesquisa {
+      flex: 0 0 100%; 
+    }
+  }
