@@ -2,33 +2,34 @@
  * Dados dos cards (armazenamento temporário).
  * TODO: Migrar para LocalStorage/JSON Server no futuro.
  */
+$(document).ready(function () {
 const pesquisa = {
   cartaz: [
     {
       id: 1,
       titulo: "Vício",
-      imagem: "https://picsum.photos/300/300",
+      imagem: "https://picsum.photos/300/300?1",
       descricao: "Descubra o significado de vício, como ele surge e os impactos na vida cotidiana.",
       detalhes: "Vício é um hábito prejudicial que se torna compulsivo e difícil de controlar, afetando negativamente a saúde física, mental e social da pessoa. Pode estar relacionado a substâncias como álcool e drogas, ou comportamentos como jogos, redes sociais e compras excessivas."
     },
     {
       id: 2,
       titulo: "Tarefas Diárias",
-      imagem: "https://picsum.photos/300/300",
+      imagem: "https://picsum.photos/300/300?2",
       descricao: "Lista prática de tarefas diárias para promover disciplina, foco e equilíbrio pessoal.",
       detalhes: "Criar uma rotina estruturada com tarefas diárias pode ajudar no controle de vícios, proporcionando senso de propósito, organização e substituindo comportamentos prejudiciais por hábitos saudáveis e produtivos."
     },
     {
       id: 3,
       titulo: "Tratamentos",
-      imagem: "https://picsum.photos/300/300",
+      imagem: "https://picsum.photos/300/300?3",
       descricao: "Conheça as abordagens mais eficazes para tratar diferentes tipos de vício.",
       detalhes: "Os tratamentos para vício incluem terapias comportamentais, uso de medicação apropriada, acompanhamento psicológico, participação em grupos de apoio (como os Alcoólicos Anônimos), e estratégias para prevenção de recaídas. O suporte familiar e social também é fundamental."
     },
     {
       id: 4,
       titulo: "Casos de Vício",
-      imagem: "https://picsum.photos/300/300",
+      imagem: "https://picsum.photos/300/300?4",
       descricao: "Acompanhe histórias reais de pessoas que enfrentaram o vício e os caminhos que seguiram.",
       detalhes: "Histórias reais mostram como o vício impacta vidas de forma profunda, levando à perda de emprego, relacionamentos e saúde. Porém, também revelam superações, mostrando que com ajuda e determinação, a recuperação é possível."
     },
@@ -87,9 +88,34 @@ const pesquisa = {
       imagem: "https://picsum.photos/300/300?12",
       descricao: "Exemplos inspiradores de pessoas que venceram o vício.",
       detalhes: "Relatos de superação demonstram que a recuperação é possível, reforçam a importância da esperança e mostram o papel de terapias, apoio familiar, espiritualidade e mudança de hábitos na conquista de uma vida livre do vício."
-    }
+    },
+    
   ]
 };
+
+  // Função para montar os cards dinamicamente
+  function montarCards() {
+    const container = $('#cards-container');
+    container.empty(); // Limpa o container antes de adicionar novos cards
+
+    pesquisa.cartaz.forEach(item => {
+      const card = `
+        <div class="card card-pesquisa" data-id="${item.id}">
+          <img src="${item.imagem}" class="card-img-top" alt="${item.titulo}">
+          <div class="card-body">
+            <h5 class="card-title">${item.titulo}</h5>
+            <p class="card-text">${item.descricao}</p>
+          </div>
+        </div>
+      `;
+      container.append(card);
+    });
+  }
+
+  // Chama a função para montar os cards quando a página carrega
+  if (window.location.pathname.includes("pesquisa.html")) {
+    montarCards();
+  }
 
 /**
  * Evento de clique no botão "Voltar"
@@ -101,32 +127,26 @@ $("#voltar").click(function() {
 /**
  * Redireciona para a página de detalhes ao clicar em um card
  */
-$(".card-pesquisa").click(function() {
-  const id = $(this).data("id");
+$(document).on('click', '.card-pesquisa', function() {
+  const id = $(this).data('id');
   window.location.href = `detalhes.html?id=${id}`;
 });
 
 /**
  * Filtro de pesquisa
  */
-document.addEventListener('DOMContentLoaded', function() {
-  const input = document.getElementById('search');
-  const cards = document.querySelectorAll('.card-pesquisa');
-  const semResultado = document.getElementById('semResultado');
-
-  input.addEventListener('keyup', () => {
-    const filtro = input.value.toLowerCase();
-    let temResultado = false;
-
-    cards.forEach(card => {
-      const titulo = card.querySelector('.card-title').textContent.toLowerCase();
-      const mostrar = titulo.includes(filtro);
-      card.style.display = mostrar ? 'flex' : 'none';
-      if (mostrar) temResultado = true;
-    });
-
-    semResultado.style.display = temResultado ? 'none' : 'block';
+$('#search').on('keyup', function() {
+  const filtro = $(this).val();
+  let temResultado = false;
+  
+  $('.card-pesquisa').each(function() {
+    const titulo = $(this).find('.card-title').text();
+    const mostrar = titulo.includes(filtro);
+    $(this).toggle(mostrar);
+    if (mostrar) temResultado = true;
   });
+
+  $('#semResultado').toggle(!temResultado);
 });
 
 /**
@@ -149,3 +169,4 @@ if (window.location.pathname.includes("detalhes.html")) {
     document.getElementById("conteudo-pesquisa").innerHTML = "<p>Item não encontrado!</p>";
   }
 }
+});
