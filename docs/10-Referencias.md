@@ -2,26 +2,28 @@
 
 Inclua todas as referências (livros, artigos, sites, etc.) utilizadas no desenvolvimento do trabalho.
 
-	Goodman, A. (2001). Vícios: Uma abordagem integrada. Artmed Editora.
+Livros:
+BECKER, Howard S. Outsiders: estudos de sociologia do desvio. Tradução de [s.n]. Rio de Janeiro: Zahar, 2008.
 
-	Miller, W. R., & Rollnick, S. (2013). Entrevista motivacional: Ajudando as pessoas a mudar. Artmed Editora.
+FOUCAULT, Michel. Vigiar e punir: história da violência nas prisões. Tradução de [s.n]. Petrópolis: Vozes, 1975.
 
-	Peele, S. (2007). The Meaning of Addiction: Compulsive Experience and Its Interpretation. Jossey-Bass.
+GALANTER, Marc; KLEBER, Herbert D. Manual de tratamento do abuso de substâncias da American Psychiatric Publishing. Washington, DC: American Psychiatric Publishing, 2011.
 
-	Galanter, M., & Kleber, H. D. (2011). The American Psychiatric Publishing Textbook of Substance Abuse Treatment. American Psychiatric Publishing.
+GOODMAN, Arnold. Vícios: uma abordagem integrada. Porto Alegre: Artmed, 2001.
 
-	Ksir, C., Hart, C. L., & Ray, O. (2012). Drugs, Society, and Human Behavior. McGraw-Hill.
+KSIR, Charles; HART, Carl L.; RAY, Oakley. Drogas, sociedade e comportamento humano. São Paulo: McGraw-Hill, 2012.
 
-	Volkow, N. D., & Morales, M. (2015). The Brain on Drugs: From Reward to Addiction. Cell, 162(4), 712–725.
+MILLER, William R.; ROLLNICK, Stephen. Entrevista motivacional: ajudando as pessoas a mudar. Porto Alegre: Artmed, 2013.
 
-	Koob, G. F., & Le Moal, M. (2005). Plasticity of reward neurocircuitry and the “dark side” of drug addiction. Nature Neuroscience, 8(11), 1442–1444.
+PEELE, Stanton. O significado da dependência: experiência compulsiva e sua interpretação. San Francisco: Jossey-Bass, 2007.
 
-	Griffiths, M. D. (2005). A 'components' model of addiction within a biopsychosocial framework. Journal of Substance Use, 10(4), 191–197.
+Artigos em Periódicos:
+GRIFFITHS, Mark D. Um modelo de "componentes" de dependência dentro de uma estrutura biopsicossocial. Journal of Substance Use, v. 10, n. 4, p. 191–197, 2005.
 
-	Shaffer, H. J., LaPlante, D. A., LaBrie, R. A., Kidman, R. C., Donato, A. N., & Stanton, M. V. (2004). Toward a syndrome model of addiction. Harvard Review of Psychiatry, 12(6), 367–374.
+KOOB, George F.; LE MOAL, Michel. Plasticidade dos neurocircuitos de recompensa e o “lado sombrio” da dependência química. Nature Neuroscience, v. 8, n. 11, p. 1442–1444, 2005.
 
-	Nestler, E. J. (2001). Molecular basis of long-term plasticity underlying addiction. Nature Reviews Neuroscience, 2(2), 119–128.
+NESTLER, Eric J. Base molecular da plasticidade de longo prazo subjacente ao vício. Nature Reviews Neuroscience, v. 2, n. 2, p. 119–128, 2001.
 
-	Becker, H. S. (2008). Outsiders: Estudos de Sociologia do Desvio. Zahar Editora.
+SHAFFER, Howard J. et al. Rumo a um modelo sindrômico de dependência. Harvard Review of Psychiatry, v. 12, n. 6, p. 367–374, 2004.
 
-	Foucault, M. (1975). Vigiar e Punir: História da Violência nas Prisões. Vozes. (Aplicável para entender a construção social dos “desviantes”)
+VOLKOW, Nora D.; MORALES, Marisela. O cérebro sob o efeito das drogas: da recompensa ao vício. Cell, v. 162, n. 4, p. 712–725, 2015.
