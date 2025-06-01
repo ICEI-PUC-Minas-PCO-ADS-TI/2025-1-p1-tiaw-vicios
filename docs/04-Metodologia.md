@@ -3,7 +3,7 @@
 
 <span style="color:red">Pré-requisitos: <a href="03-Product-design.md"> Product design</a></span>
 
-(Organização da equipe e divisão de papeis)
+# Organização da equipe e divisão de papeis
 
 Para garantir melhor desenvolvimento do nosso site, vamos utilizar a metodologia ágil e flexível do Scrum, pois com a flexibilidade será garantido um atendimento as diversas necessidades do usuário com o decorrer do projeto e a agilidade possibilitara respostas rápidas para possíveis dificuldades ou mudanças do cliente.
 
@@ -14,7 +14,7 @@ Para garantir melhor desenvolvimento do nosso site, vamos utilizar a metodologia
 
  
 
-(Controle de versão)
+# Controle de versão
 
 Na gestão das ferramentas de versionamento do projeto, foram utilizados dois tipos principais de branches: o branch principal (main), responsável por armazenar as versões estáveis e finalizadas do projeto, e branches secundários (unstable, testing e dev), nos quais os membros da equipe desenvolveram novas funcionalidades e realizaram testes. Após a validação das alterações, os conteúdos dessas branches secundárias foram integrados à main por meio de merges, garantindo que apenas versões revisadas e funcionais fossem incorporadas ao projeto final.
 Os commits foram utilizados de forma estratégica para registrar o progresso das tarefas realizadas por cada membro da equipe. Eles foram feitos principalmente nas branches secundárias, sempre com mensagens claras e objetivas que descreveram as mudanças implementadas, o que contribuiu para um histórico de desenvolvimento bem documentado.
@@ -24,7 +24,7 @@ A gestão de tags também desempenhou um papel importante, sendo utilizada para 
 Os merges foram essenciais para consolidar os arquivos e funcionalidades desenvolvidas nas branches secundárias, integrando-as ao branch principal de forma organizada e segura.
 A gestão de questões foi fundamental para o bom andamento do projeto. Cada tarefa, sugestão de melhoria ou problema identificado foi registrado como uma questão no repositório, com descrições claras e responsáveis atribuídos. Além disso, o uso de etiquetas como bug, enhancement, feature e documentation auxiliou na categorização e priorização das atividades, tornando o fluxo de trabalho mais eficiente e colaborativo.
 
-(Planejamento do projeto)
+# Planejamento do projeto
 
 
 Divisão de papéis
@@ -36,7 +36,7 @@ Divisão de papéis
 
 •	Equipe de Design: Pablo Henrique Fernandes / Romulo Correa / Vinicius Gomes Pereira / Vinicius Tales Silva
 
-(Processo)
+# Processo
 
 
 Processo de Design Thinking:
@@ -57,7 +57,7 @@ Para o gerenciamento das tarefas, foi utilizado o GitHub Projects, uma ferrament
 Além disso, a integração entre o GitHub Projects as gestões de ferramentas e gestões de questões, facilitou o controle de demandas e bugs.
 
 
-(Quadro de tarefas-Kanban)
+# Quadro de tarefas-Kanban
 
 
 ![image](https://github.com/user-attachments/assets/c075f29c-828a-4650-8808-64ad88b37a14) 
@@ -67,10 +67,11 @@ Além disso, a integração entre o GitHub Projects as gestões de ferramentas e
 Link do GitHub Projects: 
 https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/2025-1-p1-tiaw-vicios.git
 
-Ferramentas
-# Ferramentas de Comunicação: Discord e Whatshapp – São ferramentas que muitos usam no dia a dia para conversar, apresenta fácil acesso, possui troca de mensagens rápida e permite criar chamadas de conversa de maneira ágil
+# Ferramentas
 
-# Ferramentas de Trabalho: Mirio, Figma, Canva, Excel – Muito recomendada para uso profissional, ótima para criar e editar projetos, além disso possui várias funcionalidades tanto para editação, alteração dos arquivos e outras capacidades. 
+Ferramentas de Comunicação: Discord e Whatshapp – São ferramentas que muitos usam no dia a dia para conversar, apresenta fácil acesso, possui troca de mensagens rápida e permite criar chamadas de conversa de maneira ágil
 
-# Ferramenta de Armazenamento de dados: GitHub -  Site recomendado para Programadores, é uso obrigatório para realização da tarefa.  
+Ferramentas de Trabalho: Mirio, Figma, Canva, Excel – Muito recomendada para uso profissional, ótima para criar e editar projetos, além disso possui várias funcionalidades tanto para editação, alteração dos arquivos e outras capacidades. 
+
+Ferramenta de Armazenamento de dados: GitHub -  Site recomendado para Programadores, é uso obrigatório para realização da tarefa.  
 
