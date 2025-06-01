@@ -7,7 +7,7 @@
 
 Para garantir melhor desenvolvimento do nosso site, vamos utilizar a metodologia ágil e flexível do Scrum, pois com a flexibilidade será garantido um atendimento as diversas necessidades do usuário com o decorrer do projeto e a agilidade possibilitara respostas rápidas para possíveis dificuldades ou mudanças do cliente.
 
-(Relação de ambientes de trabalho)
+ ### Relação de ambientes de trabalho
 
 
 ![image](images/ambiente-ferramentas.png)
@@ -27,31 +27,32 @@ A gestão de questões foi fundamental para o bom andamento do projeto. Cada tar
 # Planejamento do projeto
 
 
-Divisão de papéis
-•	Scrum Master: João Pedro Vital Fortes 
+### Divisão de papéis
 
-•	Product Owner: Vinicius Gomes Pereira
+•	<strong>Scrum Master:</strong> João Pedro Vital Fortes 
 
-•	Equipe de Desenvolvimento:  Adriel Dias Lino /João Pedro Vital Fortes / Pablo Henrique Fernandes / Romulo Correa / Vinicius Gomes Pereira / Vinicius Tales Silva   
+•	<strong>Product Owner:</strong> Vinicius Gomes Pereira
 
-•	Equipe de Design: Pablo Henrique Fernandes / Romulo Correa / Vinicius Gomes Pereira / Vinicius Tales Silva
+•	<strong>Equipe de Desenvolvimento:</strong>  Adriel Dias Lino /João Pedro Vital Fortes / Pablo Henrique Fernandes / Romulo Correa / Vinicius Gomes Pereira / Vinicius Tales Silva   
+
+•	<strong>Equipe de Design:</strong> Pablo Henrique Fernandes / Romulo Correa / Vinicius Gomes Pereira / Vinicius Tales Silva
 
 # Processo
 
 
-Processo de Design Thinking:
+### Processo de Design Thinking:
 
 No desenvolvimento do projeto, o grupo utilizou o processo de Design Thinking para estruturar as ideias e encontrar soluções criativas para o problema do vício. A primeira etapa foi a iniciação, na qual os integrantes realizaram pesquisas sobre o tema, explorando conteúdos relacionados e analisando os impactos sociais e individuais causados pelo vício. Em seguida, na fase de Product Discovery, foram utilizados mapas mentais e discussões em grupo para identificar causas, consequências e possíveis abordagens de intervenção.
 Durante a fase de ideação a solução escolhida foi a criação de um site interativo com o objetivo de ajudar usuários a reduzir comportamentos viciantes. A plataforma teria funcionalidades inspiradas no Duolingo, mas voltadas à saúde mental e bem-estar, incluindo textos educativos, vídeos informativos e um chat-box para dúvidas e suporte. Na etapa de Product Design, foram criados os primeiros esboços da interface, e o grupo utilizou a ferramenta de design chamado Figma para validar a estrutura da plataforma antes da implementação final.
 
 
-Implementação do Framework Scrum:
+### Implementação do Framework Scrum:
 
 Para organizar o desenvolvimento do projeto, o grupo aplicou o framework Scrum. O trabalho foi dividido em sprints, cada uma com metas específicas e tempo determinado para execução. Foram definidos os papéis dentro da equipe: um membro atuou como Scrum Master,sendo o João Pedro Vital, responsável por facilitar o processo e remover impedimentos, enquanto outro assumiu o papel de Product Owner, sendo o Vinicius Gomes, cuidando das funcionalidades e requisitos do produto.
 O time utilizou o quadro Kanban para acompanhar o progresso das tarefas, divididas em colunas como “Tarefas”, “Em Progresso” e “Concluído”. Ferramentas como o Discord foram usadas para as reuniões e discussões de planejamento. Ao fim de cada sprint, o grupo realizou revisões e retrospectivas para avaliar o que foi feito e ajustar o andamento do projeto, garantindo a melhoria contínua.
 
 
-GitHub Projects: 
+### GitHub Projects:
 
 Para o gerenciamento das tarefas, foi utilizado o GitHub Projects, uma ferramenta integrada ao repositório do grupo. Nela, as tarefas foram organizadas em cartões, com descrições claras e responsáveis definidos. Cada cartão representava uma funcionalidade, correção ou atividade, permitindo acompanhar o progresso em tempo real. O uso de etiquetas como em andamento, finalizado e pendente ajudou na visualização do status de cada item.
 Além disso, a integração entre o GitHub Projects as gestões de ferramentas e gestões de questões, facilitou o controle de demandas e bugs.
@@ -69,9 +70,9 @@ https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/2025-1-p1-tiaw-vicios.git
 
 # Ferramentas
 
-Ferramentas de Comunicação: Discord e Whatshapp – São ferramentas que muitos usam no dia a dia para conversar, apresenta fácil acesso, possui troca de mensagens rápida e permite criar chamadas de conversa de maneira ágil
+<strong>Ferramentas de Comunicação:</strong> Discord e Whatshapp – São ferramentas que muitos usam no dia a dia para conversar, apresenta fácil acesso, possui troca de mensagens rápida e permite criar chamadas de conversa de maneira ágil
 
-Ferramentas de Trabalho: Mirio, Figma, Canva, Excel – Muito recomendada para uso profissional, ótima para criar e editar projetos, além disso possui várias funcionalidades tanto para editação, alteração dos arquivos e outras capacidades. 
+<strong>Ferramentas de Trabalho:</strong> Mirio, Figma, Canva, Excel – Muito recomendada para uso profissional, ótima para criar e editar projetos, além disso possui várias funcionalidades tanto para editação, alteração dos arquivos e outras capacidades. 
 
-Ferramenta de Armazenamento de dados: GitHub -  Site recomendado para Programadores, é uso obrigatório para realização da tarefa.  
+<strong>Ferramenta de Armazenamento de dados:</strong> GitHub -  Site recomendado para Programadores, é uso obrigatório para realização da tarefa.  
 
