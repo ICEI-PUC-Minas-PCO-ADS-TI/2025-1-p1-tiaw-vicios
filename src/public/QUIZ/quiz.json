@@ -29,6 +29,26 @@
             "id": 6,
             "question": "O vício pode levar a problemas legais e financeiros.",
             "answer": true
+        },
+        {
+            "id": 7,
+            "question": "O tratamento para vícios pode envolver terapia comportamental.",
+            "answer": true
+        },
+        {
+            "id": 8,
+            "question": "O vício não afeta a saúde mental da pessoa.",
+            "answer": false
+        },
+        {
+            "id": 9,
+            "question": "Medicamentos podem ser usados para ajudar no tratamento de alguns vícios.",
+            "answer": true
+        },
+        {
+            "id": 10,
+            "question": "O vício é sempre causado por fraqueza de caráter.",
+            "answer": false
         }
     ]
 }

@@ -11,16 +11,8 @@ fetch('quiz.json')
     h1.innerHTML= `
       <h1>Quiz</h1>
     `;
-    h1.style.backgroundColor= '#9D6EF9';
-    h1.style.borderRadius = '20%'
-    h1.style.textAlign = 'center'
-    h1.style.width = '40%'
-    h1.style.height = '10%'
-    h1.style.margin = 'auto'
-    h1.style.padding = '10px'
-    h1.style.color = 'white'
-    h1.style.fontFamily = 'Arial, sans-serif'
-    h1.style.fontSize = '30px'
+    
+    
     
     const questionDiv = document.createElement('div');
     questionDiv.classList.add('question');
@@ -47,12 +39,14 @@ fetch('quiz.json')
         if(data.questoes[currentIndex].answer == true){
         currentIndex++;
         showQuestion(currentIndex);
-        } else{
-          alert("Você não pode continuar, pois ainda não respondeu a pergunta anterior");
+          alert("Você Acertou!");
+          } else{
+          alert("Você não pode continuar, pois ainda não respondeu corretamente");
+        }
         }
       }
       
-    });
+    );
     const falso = document.getElementById('falso');
     falso.textContent = 'Falso';
 
@@ -61,6 +55,7 @@ fetch('quiz.json')
         if(data.questoes[currentIndex].answer == false ){
         currentIndex++;
         showQuestion(currentIndex);
+          alert("Você Acertou!");
         } else{
           alert("Você não pode continuar, pois ainda não respondeu a pergunta anterior");
         }
