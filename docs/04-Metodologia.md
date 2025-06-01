@@ -10,7 +10,7 @@ Para garantir melhor desenvolvimento do nosso site, vamos utilizar a metodologia
 (Relação de ambientes de trabalho)
 
 
-![image](https://github.com/user-attachments/assets/1ed9d82c-e798-455b-8134-2a67a9a2f0c2)
+![image](images/ambiente-ferramentas.png)
 
  
 
@@ -60,7 +60,7 @@ Além disso, a integração entre o GitHub Projects as gestões de ferramentas e
 # Quadro de tarefas-Kanban
 
 
-![image](https://github.com/user-attachments/assets/c075f29c-828a-4650-8808-64ad88b37a14) 
+![image](images/kanbam.png)
 
 
 
