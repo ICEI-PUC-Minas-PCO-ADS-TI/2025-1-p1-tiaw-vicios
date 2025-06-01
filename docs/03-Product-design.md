@@ -7,20 +7,20 @@
 
  ![image](images/historia-usarios.png)
 
-(Proposta de Valor)
+# Proposta de Valor
 
-Luiz Amaral
+<strong>Luiz Amaral</strong>
  
 ![image](images/proposta-valor1.png)
 
 
-Luana Vieira
+<strong>Luana Vieira</strong>
 
 
 ![image](images/proposta-valor2.png)
 
 
-Ana Costa
+<strong>Ana Costa</strong>
 
 
  ![image](images/proposta-valor3.png)
@@ -28,7 +28,7 @@ Ana Costa
 
 # Requisitos de Projeto
 
-a)	Requisitos Funcionais (o que o sistema faz)
+<strong>A)	Requisitos Funcionais (o que o sistema faz)</strong>
 
 • - O usuário pode criar uma conta.
 
@@ -42,7 +42,7 @@ a)	Requisitos Funcionais (o que o sistema faz)
 
 • - O sistema envia tarefas e desafios diários para motivação e disciplina.
 
-b)	Requisitos Não Funcionais (qualidade, desempenho, segurança)
+<strong>B)	Requisitos Não Funcionais (qualidade, desempenho, segurança)</strong>
 
 • - O sistema deve estar disponível 24 horas por dia, 7 dias por semana.
 
