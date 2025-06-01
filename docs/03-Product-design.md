@@ -3,7 +3,7 @@
 <span style="color:red">Pré-requisitos: <a href="02-Product-discovery.md"> Product discovery</a></span>
 
 
-(História dos usuários) 
+# História dos usuários 
 
  ![image](https://github.com/user-attachments/assets/0b7e31a5-7684-443a-8800-515befacbb84)
 
@@ -26,7 +26,7 @@ Ana Costa
  ![image](https://github.com/user-attachments/assets/54874650-142d-4611-bd45-fb12b6462075)
 
 
-(Requisitos de Projeto)
+# Requisitos de Projeto
 
 a)	Requisitos Funcionais (o que o sistema faz)
 
