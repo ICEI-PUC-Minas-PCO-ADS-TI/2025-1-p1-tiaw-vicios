@@ -5,25 +5,25 @@
 
 # História dos usuários 
 
- ![image](https://github.com/user-attachments/assets/0b7e31a5-7684-443a-8800-515befacbb84)
+ ![image](images/historia-usarios.png)
 
 (Proposta de Valor)
 
 Luiz Amaral
  
-![image](https://github.com/user-attachments/assets/cdb41563-265e-4b95-8269-b4e319c4ba40)
+![image](images/proposta-valor1.png)
 
 
 Luana Vieira
 
 
- ![image](https://github.com/user-attachments/assets/a1d963c4-ca3a-43af-85eb-d4c2207e5686)
+![image](images/proposta-valor2.png)
 
 
 Ana Costa
 
 
- ![image](https://github.com/user-attachments/assets/54874650-142d-4611-bd45-fb12b6462075)
+ ![image](images/proposta-valor3.png)
 
 
 # Requisitos de Projeto
