@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meu Perfil</title>
+    <link rel="stylesheet" href="Cadastro.css" />
+</head>
+<body>
+    
+
+    <main class="main-content">
+        <h1>MEU PERFIL</h1>
+        <div class="profile-container">
+            <section class="profile-left">
+                <div class="profile-picture">
+                    <div class="avatar-placeholder">👤</div>
+                    <button class="edit-btn" aria-label="Editar perfil">⚙️</button>
+                </div>
+                <label for="nome" class="label-name">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome" />
+                <input type="tel" id="telefone" name="telefone" placeholder="Telefone" />
+                <input type="email" id="email" name="email" placeholder="Email" />
+            </section>
+
+            <section class="profile-right">
+                <fieldset class="info-box">
+                    <legend>Informações e mais</legend>
+                    <div class="form-row">
+                        <label for="vicio" class="label-bold">Vício:</label>
+                        <select id="vicio" name="vicio">
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="alcool">Álcool</option>
+                            <option value="tabaco">Tabaco</option>
+                            <option value="drogas">Drogas</option>
+                            <option value="jogo">Jogo</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="idade" class="label-bold">Idade:</label>
+                        <input type="number" id="idade" name="idade" />
+                    </div>
+                    <div class="form-row">
+                        <label for="quandoComecou" class="label-bold">Quando começou:</label>
+                        <input type="date" id="quandoComecou" name="quandoComecou" />
+                    </div>
+                    <div class="form-row">
+                        <label for="genero" class="label-bold">Gênero:</label>
+                        <select id="genero" name="genero">
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="estadoCivil" class="label-bold">Estado civil:</label>
+                        <input type="text" id="estadoCivil" name="estadoCivil" />
+                    </div>
+                    <div class="form-row">
+                        <label for="profissao" class="label-bold">Profissão:</label>
+                        <input type="text" id="profissao" name="profissao" />
+                    </div>
+                    <div class="descricao-box">
+                        <label for="descricao" class="label-bold">Descrição</label>
+                        <textarea id="descricao" name="descricao" placeholder="Breve descrição sobre o seu vício.."></textarea>
+                    </div>
+                </fieldset>
+            </section>
+        </div>
+    </main>
+
+    <section class="profiles-list-section">
+        <h2>Perfis Cadastrados</h2>
+        <div id="profilesList"></div>
+    </section>
+
+    <script src="cadastro.js"></script>
+</body>
+</html>
