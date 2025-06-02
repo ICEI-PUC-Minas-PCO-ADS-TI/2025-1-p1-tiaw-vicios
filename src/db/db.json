@@ -1,25 +1,19 @@
 {
-  "usuarios": [
+  
+  "data": [
     {
       "id": 1,
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
-    },
-    {
-      "id": 2,
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
-    },
-    {
-      "login": "rommel",
-      "senha": "123",
-      "nome": "Rommel",
-      "email": "rommel@gmail.com",
-      "id": 3
+      "nome": "João Silva",
+      "telefone": "123456789",
+      "email": "joao@example.com",
+      "vicio": "alcool",
+      "idade": 30,
+      "quandoComecou": "2015-01-01",
+      "genero": "Masculino",
+      "estadoCivil": "Solteiro",
+      "profissao": "Engenheiro",
+      "descricao": "Vício de álcool desde os 20 anos, busca ajuda para controlar o consumo."
     }
   ]
 }
+
