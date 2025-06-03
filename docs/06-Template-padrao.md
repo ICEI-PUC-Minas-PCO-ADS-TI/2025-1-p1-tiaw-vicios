@@ -51,8 +51,6 @@ A iconografia reforça os pilares do projeto: equilíbrio, leveza, transformaç�
 
 ![Lótus](https://github.com/user-attachments/assets/9c68ab92-7840-4193-bd2c-6c6574935104)
 
-
-
 > **Links úteis**:
 >
 > - [CSS website layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
