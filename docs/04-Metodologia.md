@@ -7,22 +7,39 @@
 
 Para garantir melhor desenvolvimento do nosso site, vamos utilizar a metodologia ágil e flexível do Scrum, pois com a flexibilidade será garantido um atendimento as diversas necessidades do usuário com o decorrer do projeto e a agilidade possibilitara respostas rápidas para possíveis dificuldades ou mudanças do cliente.
 
- ### Relação de ambientes de trabalho
+ ## Relação de ambientes de trabalho
 
 
 ![image](images/ambiente-ferramentas.png)
 
  
 
-# Controle de versão
+## Controle de versão
+
+A ferramenta de controle de versão adotada no projeto foi o [GiT](...), sendo que [Git](...) foi utilizado para hospedagem do repositório.
+
+O projeto segue a seguinte convenção para o nome de branches:
+
+- `main`: versão estavel já testada do software
+- `unstable`: versão já testada do software, poréam instável
+- `testing`: versão em testes do software
+- `dev`: versão de desenvolvimento do software
+
+Quanto à gerência de issues, o projeto adota a seguinte convenção para etiquetas:
+
+- `documentation`: melhoria ou acréscimos à documentação
+-  `bug`: uma funcionalidade encontra-se com problemas
+-  `enhancement`: uma funcionalidade precisa ser melhorada
+-  `feature`: uma nova funcionalidade precisa ser introduzida
+
 
 Na gestão das ferramentas de versionamento do projeto, foram utilizados dois tipos principais de branches: o branch principal (main), responsável por armazenar as versões estáveis e finalizadas do projeto, e branches secundários (unstable, testing e dev), nos quais os membros da equipe desenvolveram novas funcionalidades e realizaram testes. Após a validação das alterações, os conteúdos dessas branches secundárias foram integrados à main por meio de merges, garantindo que apenas versões revisadas e funcionais fossem incorporadas ao projeto final.
 Os commits foram utilizados de forma estratégica para registrar o progresso das tarefas realizadas por cada membro da equipe. Eles foram feitos principalmente nas branches secundárias, sempre com mensagens claras e objetivas que descreveram as mudanças implementadas, o que contribuiu para um histórico de desenvolvimento bem documentado.
 
 A gestão de tags também desempenhou um papel importante, sendo utilizada para marcar versões específicas do projeto que exigiram atualizações e testes antes de se tornarem estáveis. Isso facilitou o controle das versões e o acompanhamento das melhorias implementadas ao longo do tempo.
 
-Os merges foram essenciais para consolidar os arquivos e funcionalidades desenvolvidas nas branches secundárias, integrando-as ao branch principal de forma organizada e segura.
-A gestão de questões foi fundamental para o bom andamento do projeto. Cada tarefa, sugestão de melhoria ou problema identificado foi registrado como uma questão no repositório, com descrições claras e responsáveis atribuídos. Além disso, o uso de etiquetas como bug, enhancement, feature e documentation auxiliou na categorização e priorização das atividades, tornando o fluxo de trabalho mais eficiente e colaborativo.
+As mesclagens foram essenciais para consolidar os arquivos e funcionalidades desenvolvidas nas filiais secundárias, integrando-as ao ramo principal de forma organizada e segura. A gestão de questões foi fundamental para o bom andamento do projeto. Cada tarefa, sugestão de melhoria ou problema identificado foi registrada como uma questão no repositório, com especificações claras e responsabilidades. Além disso, o uso de etiquetas como bug, aprimoramento, recurso e documentação auxilia na categorização e priorização das atividades, tornando o fluxo de trabalho mais eficiente e colaborativo.
+
 
 # Planejamento do projeto
 
@@ -62,7 +79,6 @@ Além disso, a integração entre o GitHub Projects as gestões de ferramentas e
 
 
 ![image](images/kanbam.png)
-
 
 
 Link do GitHub Projects: 
