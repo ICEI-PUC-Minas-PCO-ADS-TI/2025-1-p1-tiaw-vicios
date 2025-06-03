@@ -23,6 +23,10 @@ A tipografia principal da interface é moderna e sem serifa (ex: **Poppins** ou 
 
 ---
 
+![image](https://github.com/user-attachments/assets/ad58b6b1-7bc2-41c5-a148-db5d318979ac)
+
+---
+
 ## 2. **Layout Padrão**
 
 Todas as páginas seguem uma estrutura unificada, para reforçar a identidade visual e facilitar a navegação:
