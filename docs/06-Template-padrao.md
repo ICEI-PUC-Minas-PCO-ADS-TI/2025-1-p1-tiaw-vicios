@@ -33,7 +33,6 @@ Cabeçalho fixo: com o logotipo da Lotus, menu principal e ícone de perfil do u
 Rodapé padrão: com links institucionais, contato e direitos autorais.
 
 
-
 3. Responsividade
 O layout foi projetado seguindo a abordagem mobile first, garantindo que o site funcione perfeitamente em celulares, tablets e desktops.
 As principais estratégias utilizadas são:
@@ -43,8 +42,6 @@ Flexbox e CSS Grid para disposição dos elementos.
 Media queries para adaptar tamanhos, espaçamentos e esconder/mostrar elementos.
 
 Menu hambúrguer responsivo para telas menores.
-
-
 
 4. Iconografia
 O símbolo principal da marca é a flor de lótus, usada em diferentes variações de cor e contexto:
