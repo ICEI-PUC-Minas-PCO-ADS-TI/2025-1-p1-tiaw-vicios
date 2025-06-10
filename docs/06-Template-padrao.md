@@ -1,13 +1,9 @@
 # Template padrão da aplicação
 
-**Pré-requisitos:**  
-[Especificação do projeto](03-Product-design.md), [Metodologia](04-Metodologia.md), [Projeto de interface](05-Projeto-interface.md)
-
----
+<span style="color:red">Pré-requisitos: <a href="03-Product-design.md"> Especificação do projeto</a></span>, <a href="04-Metodologia.md"> Metodologia</a>, <a href="05-Projeto-interface.md"> Projeto de interface</a>
 
 Layout padrão da aplicação que será utilizado em todas as páginas, com a definição de identidade visual, aspectos de responsividade e iconografia.
 
----
 
 ## 1. **Identidade Visual**
 
