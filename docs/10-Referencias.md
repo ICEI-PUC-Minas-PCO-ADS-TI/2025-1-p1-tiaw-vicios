@@ -1,5 +1,7 @@
 ## Referências
 
+Inclua todas as referências (livros, artigos, sites, etc.) utilizadas no desenvolvimento do trabalho.
+
 ### Livros
 
 BECKER, Howard S. *Outsiders: estudos de sociologia do desvio*. Tradução de s.n. Rio de Janeiro: Zahar, 2008.
@@ -27,3 +29,7 @@ NESTLER, Eric J. Base molecular da plasticidade de longo prazo subjacente ao ví
 SHAFFER, Howard J. et al. Rumo a um modelo sindrômico de dependência. *Harvard Review of Psychiatry*, v. 12, n. 6, p. 367–374, 2004.
 
 VOLKOW, Nora D.; MORALES, Marisela. O cérebro sob o efeito das drogas: da recompensa ao vício. *Cell*, v. 162, n. 4, p. 712–725, 2015.
+
+> **Links úteis**:
+> - [Padrão PUC Minas de normalização ABNT](http://portal.pucminas.br/biblioteca/documentos/GUIA-COMPLETO-ABNT-Elaborar-formatar-trabalho-cientificoNOVO.pdf)
+> - [Formato ABNT](https://www.normastecnicas.com/abnt/)
