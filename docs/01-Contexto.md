@@ -13,7 +13,7 @@ A maioria dos vícios tem a função de trazer uma satisfação temporária ao u
 > - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 
-# Objetivos
+## Objetivos
 
 *Oferecer um ambiente virtual seguro, acolhedor e livre de julgamentos para pessoas que enfrentam vícios.
 
