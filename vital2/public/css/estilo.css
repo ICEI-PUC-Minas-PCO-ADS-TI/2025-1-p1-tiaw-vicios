@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.btn-feedback {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1001;
+}
+.btn-feedback img {
+  width: 200px; /* ajuste conforme necessário */
+  height: auto;
+  margin-bottom: 5px;
+}
+.btn-feedback span {
+  background-color: purple;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.btn-flutuante {
+  position: fixed;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#abrir-feedback { bottom: 80px; }
+#abrir-visualizacao { bottom: 20px; }
+
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* aumenta a prioridade da camada */
+}
+
+.modal-conteudo {
+  background: purple;
+  padding: 25px ;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+.modal-conteudo h2{
+  text-align: center;
+}
+.modal-conteudo p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}
+#lista-feedbacks p,
+#lista-feedbacks h4 {
+  background-color: white;
+  display: inline-block; /* ← ajusta ao conteúdo */
+  padding: 8px 8px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  max-width: 100%;             /* impede que passe da tela */
+  word-wrap: break-word;       /* quebra palavras longas */
+  overflow-wrap: break-word;   /* suporte adicional */
+  white-space: pre-wrap;       /* mantém quebras de linha e quebra texto */
+}
+.modal input, .modal textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.modal .fechar {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+#modal-feedback {
+  z-index: 10001;
+}
+
+#modal-visualizacao {
+  z-index: 10000;
+}
+
+.oculto {
+  display: none;
+}
+#enviar:hover{
+  background-color: #bbb;
+}
+
+#voltar-visualizacao:hover {
+  background-color: #bbb;
+}
+/* Responsivo para telas pequenas */
+@media screen and (max-width: 600px) {
+  .btn-feedback img {
+    width: 150px;
+  }
+
+  .btn-feedback span {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
