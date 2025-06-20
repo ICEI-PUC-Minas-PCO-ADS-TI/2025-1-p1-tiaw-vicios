@@ -1,0 +1,360 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/**********************************/
+/* 0. Variáveis
+/* 1. Tags
+/* 2. Body
+/* 3. Game
+/*   3.1 Pads
+/*   3.2 Center
+/*      3.2.1 GUI
+/* 4. Footer
+/**********************************/
+
+/**********************************/
+/* Color Guide:
+/* 
+/* Paleta de cores atualizada:
+/* #B39DDB : roxo-claro (destaques sutis, títulos secundários)
+/* #673AB7 : roxo-escuro (botões principais, CTAs)
+/* #2A3D66 : azul-marinho (fundos, cabeçalhos, textos principais)
+/* #E0E0E0 : cinza-claro (fundos secundários)
+/* #FFFFFF : branco (textos em fundos escuros)
+/*
+/**********************************/
+
+/**********************************/
+/* 0. Variáveis
+/**********************************/
+
+:root {
+	/* Paleta de cores atualizada */
+	--clr-roxo-claro: #B39DDB;
+	--clr-roxo-escuro: #673AB7;
+	--clr-azul-marinho: #2A3D66;
+	--clr-cinza-claro: #E0E0E0;
+	--clr-branco: #FFFFFF;
+
+	/* Cores dos pads do jogo */
+	--clr-normal-green: #1a821d;
+	--clr-normal-red: #a4140a;
+	--clr-normal-yellow: #ecb716;
+	--clr-normal-blue: #1f71b4;
+
+	--clr-light-green: #B39DDB;
+	--clr-light-red: #673AB7;
+	--clr-light-yellow: #2A3D66;
+	--clr-light-blue: #E0E0E0;
+
+	--clr-border: #292037;
+	--clr-center: var(--clr-cinza-claro);
+
+	--clr-counter-bg: var(--clr-azul-marinho);
+	--clr-counter-off: var(--clr-roxo-claro);
+	--clr-counter-on: var(--clr-roxo-escuro);
+
+	--clr-switch: var(--clr-roxo-escuro);
+
+	--game-size: 48rem;
+	--game-border: 1.5rem solid var(--clr-border);
+}
+
+/**********************************/
+/* 1. Tags
+/**********************************/
+
+html {
+	font-size: 62.5%;
+	/* 1rem = 10px */
+}
+
+body {
+	background: linear-gradient(135deg, #673AB7, #150129);
+	font-family: 'poppins', verdana, sans-serif;
+	min-height: 100vh;
+	margin: 0;
+	padding: 20px 0;
+}
+
+/**********************************/
+/* 2. Body
+/**********************************/
+
+.container {
+	width: var(--game-size);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/**********************************/
+/* 3. Game
+/**********************************/
+
+.game {
+	width: var(--game-size);
+	height: var(--game-size);
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 5rem;
+	position: relative;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game__title {
+	font-size: 4rem;
+	text-transform: uppercase;
+	margin: 0;
+	padding-left: 1.2rem;
+	padding-top: 4.7rem;
+	color: var(--clr-azul-marinho);
+	font-weight: 700;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+
+
+/**********************************/
+/* 3.1 Pads
+/**********************************/
+
+.game__pad {
+	width: calc(var(--game-size) / 2);
+	height: calc(var(--game-size) / 2);
+	border: var(--game-border);
+	transition: all 0.2s ease;
+	box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+}
+
+.game__pad--tl {
+	background-color: var(--clr-normal-green);
+	border-top-left-radius: 100%;
+}
+
+.game__pad--tr {
+	background-color: var(--clr-normal-red);
+	border-top-right-radius: 100%;
+}
+
+.game__pad--bl {
+	background-color: var(--clr-normal-yellow);
+	border-bottom-left-radius: 100%;
+}
+
+.game__pad--br {
+	background-color: var(--clr-normal-blue);
+	border-bottom-right-radius: 100%;
+}
+
+.game__pad--tl.game__pad--active {
+	background-color: var(--clr-light-green);
+}
+
+.game__pad--tr.game__pad--active {
+	background-color: var(--clr-light-red);
+}
+
+.game__pad--bl.game__pad--active {
+	background-color: var(--clr-light-yellow);
+}
+
+.game__pad--br.game__pad--active {
+	background-color: var(--clr-light-blue);
+}
+
+.game__pad--btn {
+	cursor: pointer;
+}
+
+.game__pad:hover {
+	transform: scale(1.02);
+	box-shadow: inset 0 0 30px rgba(0,0,0,0.3), 0 0 20px rgba(255,255,255,0.1);
+}
+
+
+
+/**********************************/
+/* 3.2 Center
+/**********************************/
+
+.game__options {
+	position: absolute;
+	background: linear-gradient(145deg, var(--clr-cinza-claro), var(--clr-branco));
+	box-shadow: 0 10px 30px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.8);
+
+	width: calc(var(--game-size) / 2);
+	height: calc(var(--game-size) / 2);
+
+	top: calc(var(--game-size) / 4);
+	left: calc(var(--game-size) / 4);
+
+	border: var(--game-border);
+	border-radius: 25rem;
+}
+
+/**********************************/
+/* 3.2.1 GUI
+/**********************************/
+
+.gui {
+	padding-left: 1.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+}
+
+.group {
+	margin-right: 2.2rem;
+}
+
+.group-large {
+	display: flex;
+	width: 10rem;
+	margin-left: 4.5rem;
+}
+
+.gui__label {
+	font-family: 'Arima Madurai', cursive;
+	font-weight: bold;
+	font-size: 0.75rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.gui__label--switch {
+	margin: 0;
+	padding-top: 0.75rem;
+}
+
+.gui__btn {
+	width: 2.5rem;
+	height: 2.5rem;
+	margin-left: .2rem;
+	border-radius: 5rem;
+	box-shadow: 0 .4rem .6rem rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.3);
+	border: .2rem solid var(--clr-azul-marinho);
+	cursor: pointer;
+	transition: all 0.1s ease;
+}  
+
+.gui__btn:hover {
+	transform: translateY(-1px);
+	box-shadow: 0 .6rem .8rem rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.3);
+}
+
+.gui__btn:active{
+	transform: translateY(.2rem);
+	box-shadow: 0 .1rem .2rem rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.3);
+}
+
+.gui__btn--start {
+	background: linear-gradient(145deg, var(--clr-roxo-escuro), var(--clr-roxo-claro));
+}
+
+.gui__btn--strict {
+	background: linear-gradient(145deg, var(--clr-roxo-claro), var(--clr-branco));
+}
+
+.gui__btn-switch {
+	background: linear-gradient(145deg, var(--clr-azul-marinho), #1a2a4a);
+	margin-left: .5rem;
+	margin-right: .5rem;
+	width: 5rem;
+	height: 2.3rem;
+	border-radius: .3rem;
+	cursor: pointer;
+	border: .2rem solid var(--clr-azul-marinho);
+	box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+	transition: all 0.2s ease;
+}
+
+.gui__btn-switch::before {
+	content: '';
+	background: linear-gradient(145deg, var(--clr-roxo-escuro), var(--clr-roxo-claro));
+	display: block;
+	position: relative;
+	left: 2.5rem;
+	width: 2.2rem;
+	height: 1.9rem;
+	border-radius: .3rem;
+	border: .2rem solid var(--clr-azul-marinho);
+	transition: all 0.2s ease;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.gui__btn-switch--on::before {
+	left: 0;
+	background: linear-gradient(145deg, var(--clr-roxo-claro), var(--clr-branco));
+}
+
+.gui__counter {
+	background: linear-gradient(145deg, var(--clr-azul-marinho), #1a2a4a);
+	color: var(--clr-counter-off);
+	font-family: "Iceland", cursive;
+	font-weight: bold;
+	font-size: 3rem;
+	text-align: right;
+	width: 5.5rem;
+	border: .3rem solid var(--clr-azul-marinho);
+	border-radius: 1rem;
+	padding-right: .2rem;
+	padding-left: .3rem;
+	box-shadow: inset 0 2px 4px rgba(0,0,0,0.3), 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.gui__counter--on {
+	color: var(--clr-counter-on);
+}
+
+.gui__led {
+	background: linear-gradient(145deg, var(--clr-azul-marinho), #1a2a4a);
+	margin-left: 1rem;
+	margin-bottom: .5rem;
+	width: .8rem;
+	height: .8rem;
+	border: .2rem solid var(--clr-azul-marinho);
+	border-radius: 2rem;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.gui__led--active {
+	background: radial-gradient(circle, var(--clr-roxo-escuro), var(--clr-roxo-claro));
+	box-shadow: 0 0 10px var(--clr-roxo-escuro), inset 0 1px 2px rgba(255,255,255,0.3);
+}
+
+
+
+/**********************************/
+/* 4. Footer
+/**********************************/
+
+
+
+
+@media  (max-width: 600px) {
+	html {
+		font-size: 45%;
+		/* 1rem = 8px */
+	}
+	
+	.container {
+		padding: 0 10px;
+	}
+
+	.gui {
+		margin-top: -3rem;
+	}
+	
+	
+	.game {
+		margin-top: 2rem;
+	}
+}
