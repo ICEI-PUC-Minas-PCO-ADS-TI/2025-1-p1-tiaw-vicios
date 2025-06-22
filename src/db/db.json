@@ -1,19 +1,71 @@
+
 {
-  
-  "data": [
+  "questoes": [
     {
       "id": 1,
-      "nome": "João Silva",
-      "telefone": "123456789",
-      "email": "joao@example.com",
-      "vicio": "alcool",
-      "idade": 30,
-      "quandoComecou": "2015-01-01",
-      "genero": "Masculino",
-      "estadoCivil": "Solteiro",
-      "profissao": "Engenheiro",
-      "descricao": "Vício de álcool desde os 20 anos, busca ajuda para controlar o consumo."
+      "question": "O tratamento para vícios é sempre o mesmo, independentemente do tipo de vício.",
+      "answer": false
+    },
+    {
+      "id": 2,
+      "question": "O apoio de amigos e familiares pode ser crucial na recuperação de um vício.",
+      "answer": true
+    },
+    {
+      "id": 3,
+      "question": "O vício é uma escolha e não uma doença.",
+      "answer": false
+    },
+    {
+      "id": 4,
+      "question": "A prevenção do vício pode incluir educação e conscientização sobre os riscos.",
+      "answer": true
+    },
+    {
+      "id": 5,
+      "question": "Uma pessoa viciada pode parar de usar a substância ou comportamento vicioso a qualquer momento sem ajuda.",
+      "answer": false
+    },
+    {
+      "id": 6,
+      "question": "O vício pode levar a problemas legais e financeiros.",
+      "answer": true
+    },
+    {
+      "id": 7,
+      "question": "O tratamento para vícios pode envolver terapia comportamental.",
+      "answer": true
+    },
+    {
+      "id": 8,
+      "question": "O vício não afeta a saúde mental da pessoa.",
+      "answer": false
+    },
+    {
+      "id": 9,
+      "question": "Medicamentos podem ser usados para ajudar no tratamento de alguns vícios.",
+      "answer": true
+    },
+    {
+      "id": 10,
+      "question": "O vício é sempre causado por fraqueza de caráter.",
+      "answer": false
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Admin User",
+      "email": "admin@example.com",
+      "senha": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "nome": "Regular User",
+      "email": "user@example.com",
+      "senha": "user123",
+      "role": "user"
     }
   ]
 }
-
