@@ -1,0 +1,193 @@
+Use the following SEARCH/REPLACE blocks to update src/public/modulos/login/Cadastro/cadastro.js to recreate the table from scratch on save:
+
+1.
+<<<<<<< SEARCH
+document.addEventListener("DOMContentLoaded", () => {
+    init();
+    buildHistoryTable();
+});
+=======
+document.addEventListener("DOMContentLoaded", () => {
+    init();
+});
+>>>>>>> REPLACE
+
+2.
+<<<<<<< SEARCH
+// Function to build history table below the form
+async function buildHistoryTable() {
+    const historyData = await fetchHistoryData();
+
+    const container = document.createElement("div");
+    container.id = "history-container";
+    container.style.marginTop = "40px";
+
+    const heading = document.createElement("h2");
+    heading.textContent = "Histórico de Cadastros";
+    heading.style.textAlign = "center";
+    container.appendChild(heading);
+
+    const table = document.createElement("table");
+    table.style.width = "100%";
+    table.style.borderCollapse = "collapse";
+
+    // Table header
+    const thead = document.createElement("thead");
+    const headerRow = document.createElement("tr");
+    const headers = ["Nome", "Telefone", "Email", "Vício", "Idade", "Quando começou", "Gênero", "Estado civil", "Profissão", "Descrição"];
+    headers.forEach(text => {
+        const th = document.createElement("th");
+        th.textContent = text;
+        th.style.border = "1px solid #ddd";
+        th.style.padding = "8px";
+        th.style.backgroundColor = "#f2f2f2";
+        th.style.textAlign = "left";
+        headerRow.appendChild(th);
+    });
+    thead.appendChild(headerRow);
+    table.appendChild(thead);
+
+    // Table body
+    const tbody = document.createElement("tbody");
+    historyData.forEach(item => {
+        const row = document.createElement("tr");
+        headers.forEach(header => {
+            const key = header.toLowerCase().replace(/ /g, "").replace("quandocomeçou", "quandoComecou");
+            const td = document.createElement("td");
+            td.textContent = item[key] || "";
+            td.style.border = "1px solid #ddd";
+            td.style.padding = "8px";
+            row.appendChild(td);
+        });
+        tbody.appendChild(row);
+    });
+    table.appendChild(tbody);
+
+    container.appendChild(table);
+
+    // Append container below the info section
+    const infoSection = document.getElementById("info-section");
+    infoSection.parentNode.insertBefore(container, infoSection.nextSibling);
+}
+=======
+>>>>>>> REPLACE
+
+3.
+<<<<<<< SEARCH
+    saveButton.addEventListener("click", () => {
+        // Collect updated data
+        const updatedData = {
+            nome: document.querySelector("#profile-section input[type='text']").value,
+            telefone: document.querySelector("#profile-section input[type='tel']").value,
+            email: document.querySelector("#profile-section input[type='email']").value,
+            vicio: formFields.getElementsByTagName("select")[0]?.value || "",
+            idade: formFields.getElementsByTagName("input")[0]?.value || "",
+            quandoComecou: formFields.getElementsByTagName("input")[1]?.value || "",
+            genero: formFields.getElementsByTagName("input")[2]?.value || "",
+            estadoCivil: formFields.getElementsByTagName("input")[3]?.value || "",
+            profissao: formFields.getElementsByTagName("input")[4]?.value || "",
+            descricao: descricaoTextarea.value || ""
+        };
+
+        // Add new entry to history data array
+        historyData.push(updatedData);
+
+        // Add new row to history table
+        const historyTableBody = document.getElementById("history-tbody");
+        if (historyTableBody) {
+            const newRow = document.createElement("tr");
+            const headers = ["nome", "telefone", "email", "vicio", "idade", "quandoComecou", "genero", "estadoCivil", "profissao", "descricao"];
+            headers.forEach(key => {
+                const td = document.createElement("td");
+                td.textContent = updatedData[key] || "";
+                td.style.border = "1px solid #ddd";
+                td.style.padding = "8px";
+                newRow.appendChild(td);
+            });
+            historyTableBody.appendChild(newRow);
+        }
+
+        console.log("Dados atualizados:", updatedData);
+        alert("Dados salvos com sucesso!");
+    });
+=======
+    saveButton.addEventListener("click", () => {
+        // Collect updated data
+        const updatedData = {
+            nome: document.querySelector("#profile-section input[type='text']").value,
+            telefone: document.querySelector("#profile-section input[type='tel']").value,
+            email: document.querySelector("#profile-section input[type='email']").value,
+            vicio: formFields.getElementsByTagName("select")[0]?.value || "",
+            idade: formFields.getElementsByTagName("input")[0]?.value || "",
+            quandoComecou: formFields.getElementsByTagName("input")[1]?.value || "",
+            genero: formFields.getElementsByTagName("input")[2]?.value || "",
+            estadoCivil: formFields.getElementsByTagName("input")[3]?.value || "",
+            profissao: formFields.getElementsByTagName("input")[4]?.value || "",
+            descricao: descricaoTextarea.value || ""
+        };
+
+        // Add new entry to history data array
+        historyData.push(updatedData);
+
+        // Check if table exists, if not create it
+        let historyContainer = document.getElementById("history-container");
+        if (!historyContainer) {
+            historyContainer = document.createElement("div");
+            historyContainer.id = "history-container";
+            historyContainer.style.marginTop = "40px";
+
+            const heading = document.createElement("h2");
+            heading.textContent = "Histórico de Cadastros";
+            heading.style.textAlign = "center";
+            historyContainer.appendChild(heading);
+
+            const table = document.createElement("table");
+            table.style.width = "100%";
+            table.style.borderCollapse = "collapse";
+
+            // Table header
+            const thead = document.createElement("thead");
+            const headerRow = document.createElement("tr");
+            const headers = ["Nome", "Telefone", "Email", "Vício", "Idade", "Quando começou", "Gênero", "Estado civil", "Profissão", "Descrição"];
+            headers.forEach(text => {
+                const th = document.createElement("th");
+                th.textContent = text;
+                th.style.border = "1px solid #ddd";
+                th.style.padding = "8px";
+                th.style.backgroundColor = "#f2f2f2";
+                th.style.textAlign = "left";
+                headerRow.appendChild(th);
+            });
+            thead.appendChild(headerRow);
+            table.appendChild(thead);
+
+            // Table body
+            const tbody = document.createElement("tbody");
+            tbody.id = "history-tbody";
+            table.appendChild(tbody);
+
+            historyContainer.appendChild(table);
+
+            // Append container below the info section
+            const infoSection = document.getElementById("info-section");
+            infoSection.parentNode.insertBefore(historyContainer, infoSection.nextSibling);
+        }
+
+        // Add new row to history table
+        const historyTableBody = document.getElementById("history-tbody");
+        if (historyTableBody) {
+            const newRow = document.createElement("tr");
+            const headers = ["nome", "telefone", "email", "vicio", "idade", "quandoComecou", "genero", "estadoCivil", "profissao", "descricao"];
+            headers.forEach(key => {
+                const td = document.createElement("td");
+                td.textContent = updatedData[key] || "";
+                td.style.border = "1px solid #ddd";
+                td.style.padding = "8px";
+                newRow.appendChild(td);
+            });
+            historyTableBody.appendChild(newRow);
+        }
+
+        console.log("Dados atualizados:", updatedData);
+        alert("Dados salvos com sucesso!");
+    });
