@@ -1,4 +1,3 @@
-
 {
   "questoes": [
     {
@@ -54,18 +53,124 @@
   ],
   "usuarios": [
     {
+      "login": "aaaa",
+      "senha": "123",
+      "nome": "aaaa",
+      "email": "aaaaa@.com",
+      "id": 3
+    },
+    {
+      "login": "aaaa",
+      "senha": "123",
+      "nome": "aaaa",
+      "email": "aaaaa@.com",
+      "id": 4
+    },
+    {
+      "login": "Vinicius ",
+      "senha": "123",
+      "nome": "Gomes",
+      "email": "perei@gmail.com",
+      "id": 5
+    }
+    
+  ],
+  "carouselItems": [
+    {
       "id": 1,
-      "nome": "Admin User",
-      "email": "admin@example.com",
-      "senha": "admin123",
-      "role": "admin"
+      "imgSrc": "assets/images/dinamica_web.png",
+      "searchTerm": "vício",
+      "title": "Combate ao Vício",
+      "description": "O combate ao vício é o primeiro passo para a liberdade.",
+      "link": "search.html?query=vício"
     },
     {
       "id": 2,
-      "nome": "Regular User",
-      "email": "user@example.com",
-      "senha": "user123",
-      "role": "user"
+      "imgSrc": "assets/images/banner_ti.png",
+      "searchTerm": "tecnologia",
+      "title": "Tecnologia Avançada",
+      "description": "Explore as últimas tendências em tecnologia.",
+      "link": "search.html?query=tecnologia"
+    },
+    {
+      "id": 3,
+      "imgSrc": "assets/images/arquivo_json.png",
+      "searchTerm": "programação",
+      "title": "Programação Moderna",
+      "description": "Aprenda programação com as melhores práticas.",
+      "link": "search.html?query=programação"
+    },
+    {
+      "id": 4,
+      "imgSrc": "assets/images/arquivo_json.png",
+      "searchTerm": "json",
+      "title": "JSON Simplificado",
+      "description": "Entenda como o JSON facilita a troca de dados.",
+      "link": "search.html?query=json"
+    },
+    {
+      "id": 5,
+      "imgSrc": "assets/images/arquivo_json.png",
+      "searchTerm": "dados",
+      "title": "Gerenciamento de Dados",
+      "description": "Descubra como gerenciar dados de forma eficiente.",
+      "link": "search.html?query=dados"
+    },
+    {
+      "id": 6,
+      "imgSrc": "assets/images/arquivo_json.png",
+      "searchTerm": "web",
+      "title": "Desenvolvimento Web",
+      "description": "Construa aplicações web modernas e responsivas.",
+      "link": "search.html?query=web"
+    },
+    {
+      "id": 7,
+      "imgSrc": "assets/images/arquivo_json.png",
+      "searchTerm": "front-end",
+      "title": "Front-End Inovador",
+      "description": "Crie interfaces de usuário incríveis.",
+      "link": "search.html?query=front-end"
+    },
+    {
+      "id": 8,
+      "imgSrc": "assets/images/arquivo_json.png",
+      "searchTerm": "back-end",
+      "title": "Back-End Robusto",
+      "description": "Desenvolva servidores e APIs eficientes.",
+      "link": "search.html?query=back-end"
+    },
+    {
+      "id": 9,
+      "imgSrc": "assets/images/arquivo_json.png",
+      "searchTerm": "full-stack",
+      "title": "Full-Stack Completo",
+      "description": "Domine tanto o front-end quanto o back-end.",
+      "link": "search.html?query=full-stack"
+    },
+    {
+      "id": 10,
+      "imgSrc": "assets/images/arquivo_json.png",
+      "searchTerm": "api",
+      "title": "APIs Poderosas",
+      "description": "Aprenda a criar e consumir APIs.",
+      "link": "search.html?query=api"
+    },
+    {
+      "id": 11,
+      "imgSrc": "assets/images/arquivo_json.png",
+      "searchTerm": "javascript",
+      "title": "JavaScript Avançado",
+      "description": "Aprofunde-se em JavaScript e suas bibliotecas.",
+      "link": "search.html?query=javascript"
+    },
+    {
+      "id": 12,
+      "imgSrc": "assets/images/arquivo_json.png",
+      "searchTerm": "html",
+      "title": "HTML e CSS",
+      "description": "Fundamentos do desenvolvimento web.",
+      "link": "search.html?query=html"
     }
   ]
 }
