@@ -1,7 +1,3 @@
-/**
- * Dados dos cards (armazenamento temporário).
- * TODO: Migrar para LocalStorage/JSON Server no futuro.
- */
 $(document).ready(function () {
 const pesquisa = {
   cartaz: [
