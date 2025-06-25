@@ -77,7 +77,10 @@ document.getElementById('voltar-visualizacao').onclick = () => {
 };
 
 async function carregarFeedbacks() {
+      try {
+
   const res = await fetch(API_URL);
+  if (!res.ok) throw new Error('Erro ao carregar feedbacks');
   const feedbacks = await res.json();
 
   const container = document.getElementById('lista-feedbacks');
@@ -109,7 +112,13 @@ div.appendChild(document.createElement('hr'));
 container.appendChild(div);
 
   });
+}catch (error) {
+    alert("Erro ao buscar feedbacks. Verifique se o servidor está ativo.");
+    console.error(error);
+  }
 }
+
+
 
 async function excluirFeedback(id) {
   await fetch(`${API_URL}/${id}`, {
