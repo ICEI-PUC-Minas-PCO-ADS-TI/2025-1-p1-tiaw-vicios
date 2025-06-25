@@ -1,52 +1,52 @@
 {
   "questoes": [
     {
-      "id": 1,
+      "id": "1",
       "question": "O tratamento para vícios é sempre o mesmo, independentemente do tipo de vício.",
       "answer": false
     },
     {
-      "id": 2,
+      "id": "2",
       "question": "O apoio de amigos e familiares pode ser crucial na recuperação de um vício.",
       "answer": true
     },
     {
-      "id": 3,
+      "id": "3",
       "question": "O vício é uma escolha e não uma doença.",
       "answer": false
     },
     {
-      "id": 4,
+      "id": "4",
       "question": "A prevenção do vício pode incluir educação e conscientização sobre os riscos.",
       "answer": true
     },
     {
-      "id": 5,
+      "id": "5",
       "question": "Uma pessoa viciada pode parar de usar a substância ou comportamento vicioso a qualquer momento sem ajuda.",
       "answer": false
     },
     {
-      "id": 6,
+      "id": "6",
       "question": "O vício pode levar a problemas legais e financeiros.",
       "answer": true
     },
     {
-      "id": 7,
+      "id": "7",
       "question": "O tratamento para vícios pode envolver terapia comportamental.",
       "answer": true
     },
     {
-      "id": 8,
+      "id": "8",
       "question": "O vício não afeta a saúde mental da pessoa.",
       "answer": false
     },
     {
-      "id": 9,
+      "id": "9",
       "question": "Medicamentos podem ser usados para ajudar no tratamento de alguns vícios.",
       "answer": true
     },
     {
-      "id": 10,
+      "id": "10",
       "question": "O vício é sempre causado por fraqueza de caráter.",
       "answer": false
     }
@@ -57,27 +57,26 @@
       "senha": "123",
       "nome": "aaaa",
       "email": "aaaaa@.com",
-      "id": 3
+      "id": "3"
     },
     {
       "login": "aaaa",
       "senha": "123",
       "nome": "aaaa",
       "email": "aaaaa@.com",
-      "id": 4
+      "id": "4"
     },
     {
       "login": "Vinicius ",
       "senha": "123",
       "nome": "Gomes",
       "email": "perei@gmail.com",
-      "id": 5
+      "id": "5"
     }
-    
   ],
   "carouselItems": [
     {
-      "id": 1,
+      "id": "1",
       "imgSrc": "assets/images/dinamica_web.png",
       "searchTerm": "vício",
       "title": "Combate ao Vício",
@@ -85,7 +84,7 @@
       "link": "search.html?query=vício"
     },
     {
-      "id": 2,
+      "id": "2",
       "imgSrc": "assets/images/banner_ti.png",
       "searchTerm": "tecnologia",
       "title": "Tecnologia Avançada",
@@ -93,7 +92,7 @@
       "link": "search.html?query=tecnologia"
     },
     {
-      "id": 3,
+      "id": "3",
       "imgSrc": "assets/images/arquivo_json.png",
       "searchTerm": "programação",
       "title": "Programação Moderna",
@@ -101,7 +100,7 @@
       "link": "search.html?query=programação"
     },
     {
-      "id": 4,
+      "id": "4",
       "imgSrc": "assets/images/arquivo_json.png",
       "searchTerm": "json",
       "title": "JSON Simplificado",
@@ -109,7 +108,7 @@
       "link": "search.html?query=json"
     },
     {
-      "id": 5,
+      "id": "5",
       "imgSrc": "assets/images/arquivo_json.png",
       "searchTerm": "dados",
       "title": "Gerenciamento de Dados",
@@ -117,7 +116,7 @@
       "link": "search.html?query=dados"
     },
     {
-      "id": 6,
+      "id": "6",
       "imgSrc": "assets/images/arquivo_json.png",
       "searchTerm": "web",
       "title": "Desenvolvimento Web",
@@ -125,7 +124,7 @@
       "link": "search.html?query=web"
     },
     {
-      "id": 7,
+      "id": "7",
       "imgSrc": "assets/images/arquivo_json.png",
       "searchTerm": "front-end",
       "title": "Front-End Inovador",
@@ -133,7 +132,7 @@
       "link": "search.html?query=front-end"
     },
     {
-      "id": 8,
+      "id": "8",
       "imgSrc": "assets/images/arquivo_json.png",
       "searchTerm": "back-end",
       "title": "Back-End Robusto",
@@ -141,7 +140,7 @@
       "link": "search.html?query=back-end"
     },
     {
-      "id": 9,
+      "id": "9",
       "imgSrc": "assets/images/arquivo_json.png",
       "searchTerm": "full-stack",
       "title": "Full-Stack Completo",
@@ -149,7 +148,7 @@
       "link": "search.html?query=full-stack"
     },
     {
-      "id": 10,
+      "id": "10",
       "imgSrc": "assets/images/arquivo_json.png",
       "searchTerm": "api",
       "title": "APIs Poderosas",
@@ -157,7 +156,7 @@
       "link": "search.html?query=api"
     },
     {
-      "id": 11,
+      "id": "11",
       "imgSrc": "assets/images/arquivo_json.png",
       "searchTerm": "javascript",
       "title": "JavaScript Avançado",
@@ -165,14 +164,14 @@
       "link": "search.html?query=javascript"
     },
     {
-      "id": 12,
+      "id": "12",
       "imgSrc": "assets/images/arquivo_json.png",
       "searchTerm": "html",
       "title": "HTML e CSS",
       "description": "Fundamentos do desenvolvimento web.",
       "link": "search.html?query=html"
     }
-  ],  
+  ],
   "feedback": [
     {
       "nome": "João Pedro",
@@ -183,4 +182,3 @@
     }
   ]
 }
-

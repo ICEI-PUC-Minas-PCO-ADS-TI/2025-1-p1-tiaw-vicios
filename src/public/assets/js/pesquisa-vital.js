@@ -96,7 +96,7 @@ const pesquisa = {
   // Função para montar os cards dinamicamente
   function montarCards() {
     const container = $('#cards-container');
-    container.empty(); // Limpa o container antes de adicionar novos cards
+    container.empty(); 
 
     pesquisa.cartaz.forEach(item => {
       const card = `
