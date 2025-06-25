@@ -1,0 +1,12 @@
+{
+  "name": "scrum-2",
+  "version": "1.0.0",
+  "description": "Este projeto tem como objetivo permitir que usuários registrem e visualizem feedbacks sobre o conteúdo de um site. Ele foi desenvolvido como parte do trabalho interdisciplinar da disciplina de Aplicações Web. O meu artefato é Cadastro de Informações(CRUD)",
+  "main": "index.js",
+  "scripts": {
+      "start":   "json-server --watch db/db.json --port 3000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
