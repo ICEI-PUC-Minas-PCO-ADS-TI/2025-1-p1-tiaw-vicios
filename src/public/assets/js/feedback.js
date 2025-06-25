@@ -3,8 +3,8 @@ const API_URL = "http://localhost:3000/feedback";
 
 document.getElementById('feedback-link').onclick = (e) => {
   e.preventDefault();
-  sessionStorage.removeItem("editandoId"); // ← limpa o ID de edição
-  limparCampos(); // ← limpa os campos do formulário
+  sessionStorage.removeItem("editandoId"); 
+  limparCampos(); 
   document.getElementById('modal-feedback').classList.remove('oculto');
 };
 
@@ -45,7 +45,7 @@ document.getElementById('enviar').onclick = async () => {
   });
   sessionStorage.removeItem("editandoId");
 } else {
-  // NÃO inclui "id", deixe o JSONServer gerar
+  
   await fetch(API_URL, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -65,7 +65,7 @@ document.getElementById('feedback-link').onclick = (e) => {
   e.preventDefault();
   sessionStorage.removeItem("editandoId");
   limparCampos();
-  document.getElementById('voltar-visualizacao').classList.add('oculto'); // ← aqui!
+  document.getElementById('voltar-visualizacao').classList.add('oculto'); 
   document.getElementById('modal-feedback').classList.remove('oculto');
 };
 document.getElementById('voltar-visualizacao').onclick = () => {
@@ -133,7 +133,7 @@ async function editarFeedback(id) {
   document.getElementById('modal-visualizacao').classList.add('oculto');
   document.getElementById('voltar-visualizacao').classList.remove('oculto');
 
-  sessionStorage.setItem("editandoId", id); // armazena o id para edição posterior
+  sessionStorage.setItem("editandoId", id); 
   document.getElementById('modal-feedback').classList.remove('oculto');
 }
 function limparCampos() {

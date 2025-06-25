@@ -129,7 +129,7 @@ $("#voltar").click(function() {
  */
 $(document).on('click', '.card-pesquisa', function() {
   const id = $(this).data('id');
-  window.location.href = `detalhes.html?id=${id}`;
+  window.location.href = `detalhes-pesquisa.html?id=${id}`;
 });
 
 /**
@@ -152,7 +152,7 @@ $('#search').on('keyup', function() {
 /**
  * Página de detalhes
  */
-if (window.location.pathname.includes("detalhes.html")) {
+if (window.location.pathname.includes("detalhes-pesquisa.html")) {
   const urlParams = new URLSearchParams(window.location.search);
   const id = parseInt(urlParams.get('id'));
   const item = pesquisa.cartaz.find(p => p.id === id);

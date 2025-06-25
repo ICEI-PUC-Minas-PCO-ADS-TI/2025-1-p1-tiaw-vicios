@@ -172,5 +172,15 @@
       "description": "Fundamentos do desenvolvimento web.",
       "link": "search.html?query=html"
     }
+  ],  
+  "feedback": [
+    {
+      "nome": "João Pedro",
+      "email": "jpfortes11@gamil.com",
+      "data": "01/06/2025",
+      "comentario": "Teste- 12",
+      "id": "e098"
+    }
   ]
 }
+
