@@ -267,27 +267,24 @@
       "detalhes": "Relatos de superação demonstram que a recuperação é possível, reforçam a importância da esperança e mostram o papel de terapias, apoio familiar, espiritualidade e mudança de hábitos na conquista de uma vida livre do vício."
     }
   ],
-  "games": [
-    {
-      "name": "Quiz",
-      "img": "assets/images/quiz_image.jpg",
-      "id": "b39f"
-    },
-    {
-      "name": "Genio quiz",
-      "img": "assets/images/genio_quiz_image.jpg",
-      "id": "bc69"
-    },
-    {
-      "name": "antistress",
-      "img": "assets/images/antistress_image.jpg",
-      "id": "14e4"
-    },
-    {
-      "name": "Enigma",
-      "img": "assets/images/enigma_image.jpg",
-      "id": "7f5d"
-    }
-  ]
-  
+     "games" :[
+            {
+                "name": "Quiz",
+                "img": "assets/images/quiz_image.jpg"
+            },
+            {
+                "name": "Genio quiz",
+                "img": "assets/images/genio_quiz_image.jpg"
+            },
+            {
+                "name": "antistress",
+                "img": "assets/images/antistress_image.jpg"
+            },
+            {
+                "name": "Enigma",
+                "img": "assets/images/enigma_image.jpg"
+            }
+              ] 
+          
+          
 }
