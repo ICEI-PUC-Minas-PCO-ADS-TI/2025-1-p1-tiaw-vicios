@@ -1,51 +1,79 @@
-# Plano de Testes de Software
+# **Plano de Testes de Software**
 
- 1. Objetivo dos Testes
-Verificar se as funcionalidades do sistema que visam oferecer apoio a pessoas com vícios estão funcionando corretamente, garantindo usabilidade, confiabilidade e segurança.
+## 1. Objetivo dos Testes**
 
- 2. Escopo dos Testes
-Funcionalidades testadas:
-- Cadastro/login de usuários  
-- Acesso a conteúdos de apoio (textos, vídeos, links)    
-- Área administrativa para controle de conteúdo
+Verificar se as funcionalidades do sistema, voltadas ao apoio de pessoas com vícios, funcionam corretamente. O foco é garantir **usabilidade**, **confiabilidade** e **segurança**, mesmo utilizando dados armazenados em arquivos JSON.
 
- 3. Tipos de Testes
-- Testes Funcionais: Validação de cada funcionalidade descrita nos requisitos.  
-- Testes de Interface: Avaliação da usabilidade e acessibilidade.  
-- Testes de Integração: Verificação da comunicação entre frontend e backend.  
-- Testes de Segurança: Garantir que dados sensíveis dos usuários estejam protegidos.
 
- 4. Ambiente de Testes
-- Navegadores: Google Chrome, Mozilla Firefox  
-- Dispositivos: Desktop e smartphones   
-- Ferramentas: Postman (API), Selenium (automação), OWASP ZAP (segurança)
+## 2. Escopo dos Testes**
 
- 5. Casos de Teste (Exemplos)
+Funcionalidades que serão testadas:
 
-| Caso de Teste               | Entrada                     | Saída Esperada              | Resultado |
-|----------------------------|-----------------------------|-----------------------------|-----------|
-| Cadastro de usuário        | Nome, email, senha válida   | Conta criada com sucesso    | Aprovado  |
-| Login com dados incorretos | Email incorreto, senha      | Mensagem de erro            | Aprovado  |
-| Acesso a material de apoio | Clique em link de conteúdo  | Conteúdo carregado corretamente | Aprovado  |
+* Cadastro e login de usuários (com persistência em JSON)
+* Acesso a conteúdos de apoio (textos, vídeos, links)
+* Área administrativa para gerenciamento de conteúdo
 
-6. Critérios de Aceitação
-- Todos os testes devem passar com sucesso  
-- Não pode haver falhas críticas ou de segurança  
-- Interface deve ser acessível e intuitiva
 
- 7. Cronograma
+## 3. Tipos de Testes**
 
-| Atividade                  | Início  | Término |
-|---------------------------|---------|---------|
-| Planejamento de testes    | 11/06   | 15/06   |
-| Execução dos testes       | 11/06   | 15/06   |
-| Análise e correções       | 11/06   | 15/06   |
+* **Testes Funcionais**: Garantir que cada funcionalidade descrita nos requisitos opere como esperado.
+* **Testes de Interface**: Avaliar a experiência do usuário, navegação e acessibilidade.
+* **Testes de Integração**: Verificar a comunicação entre a interface e os dados armazenados no arquivo JSON.
+* **Testes de Segurança**: Proteger dados sensíveis (ex: senhas), mesmo que armazenados localmente.
 
- 8. Riscos
-- Baixa cobertura de testes pode ocultar falhas em áreas críticas  
-- Falta de testes de acessibilidade pode prejudicar o público-alvo
 
- 9. Responsáveis
-- Vinicius tales silva,   
-- Equipe de Desenvolvimento – Lotus ( Ajuda no Controle no Combate ao Vício )
+## 4. Ambiente de Testes**
 
+* **Navegadores**: Google Chrome, Mozilla Firefox
+* **Dispositivos**: Desktop e smartphones
+* **Ferramentas Utilizadas**:
+
+  * **Postman** – Para testar requisições simuladas ao JSON
+  * **Selenium** – Para automação de testes de interface
+  * **OWASP ZAP** – Para verificar falhas de segurança
+  * **VS Code + Live Server** – Execução e simulação local do sistema
+
+
+
+## 5. Casos de Teste (Exemplos)**
+
+| Caso de Teste               | Entrada                           | Saída Esperada                         | Resultado |
+| --------------------------- | --------------------------------- | -------------------------------------- | --------- |
+| Cadastro de usuário         | Nome, email e senha válidos       | Conta criada e salva no JSON           | Aprovado  |
+| Cadastro com email repetido | Email já existente no JSON        | Mensagem de erro "Email já cadastrado" | Aprovado  |
+| Login com dados corretos    | Email e senha existentes no JSON  | Usuário autenticado e redirecionado    | Aprovado  |
+| Login com dados incorretos  | Email inexistente ou senha errada | Mensagem de erro                       | Aprovado  |
+| Acesso a material de apoio  | Clique em link de conteúdo        | Conteúdo carregado corretamente        | Aprovado  |
+| Adição de conteúdo (admin)  | Formulário de novo conteúdo       | JSON atualizado com novo item          | Aprovado  |
+
+
+
+## 6. Critérios de Aceitação**
+
+* Todos os testes devem ser concluídos com sucesso
+* Nenhuma falha crítica de execução ou segurança
+* Interface deve ser responsiva, intuitiva e acessível (atender, por exemplo, contraste e tamanho de fonte adequados)
+
+
+
+## 7. Cronograma**
+
+| Atividade               | Início | Término |
+| ----------------------- | ------ | ------- |
+| Planejamento dos Testes | 11/06  | 15/06   |
+| Execução dos Testes     | 11/06  | 15/06   |
+| Correção de Problemas   | 11/06  | 15/06   |
+
+
+
+## 8. Riscos**
+
+* Armazenamento em JSON pode limitar a escalabilidade e segurança dos dados
+* Cobertura de testes limitada pode deixar falhas escondidas
+* Ausência de testes de acessibilidade pode impactar negativamente usuários com deficiência visual ou motora
+
+
+## 9. Responsáveis**
+
+* **Vinicius Tales Silva** – Testes e Documentação
+* **Equipe de Desenvolvimento** – Lotus (Ajuda no Controle no Combate ao Vício)
