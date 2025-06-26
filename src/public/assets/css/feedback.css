@@ -1,22 +1,22 @@
 .btn-feedback {
-  position: fixed;
+  
   bottom: 80px;
   right: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:end;
   text-decoration: none;
   background-color: transparent;
   cursor: pointer;
   z-index: 1001;
 }
 .btn-feedback img {
-  width: 200px; 
+  width: 120px; 
   height: auto;
   margin-bottom: 5px;
 }
 .btn-feedback span {
-  background-color: purple;
+  background-color:  #673AB7;
   color: white;
   padding: 10px 15px;
   border-radius: 8px;
@@ -25,10 +25,10 @@
 }
 
 .btn-flutuante {
-  position: fixed;
+  
   right: 20px;
   padding: 10px 15px;
-  background-color: purple;
+  background-color:  #673AB7;
   color: white;
   border: none;
   border-radius: 8px;
@@ -50,56 +50,91 @@
   align-items: center;
   z-index: 9999; 
 }
+
 #modal-feedback .modal-conteudo,
 #modal-visualizacao .modal-conteudo {
-  background: purple;
+  background:  #3e0061;
   padding: 25px;
 
 }
 
 .modal-conteudo {
-  background: purple;
-  padding: 25px ;
+  background: #3e0061;
+  padding: 25px;
   border-radius: 8px;
   width: 90%;
   max-width: 500px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Adiciona espaçamento entre os elementos */
 }
-.modal-conteudo h2{
+
+.modal-conteudo h2 {
   text-align: center;
+  color: white;
+  margin-bottom: 15px; /* Adiciona margem abaixo do título */
 }
 .modal-conteudo p {
   word-wrap: break-word;
   overflow-wrap: break-word;
   white-space: pre-wrap;
+  
 }
 #lista-feedbacks p,
 #lista-feedbacks h4 {
+ 
   background-color: white;
-  display: inline-block; /* ← ajusta ao conteúdo */
+  display: inline-block; 
   padding: 8px 8px;
   border-radius: 8px;
   margin-bottom: 5px;
-  max-width: 100%;             /* impede que passe da tela */
-  word-wrap: break-word;       /* quebra palavras longas */
-  overflow-wrap: break-word;   /* suporte adicional */
-  white-space: pre-wrap;       /* mantém quebras de linha e quebra texto */
+  max-width: 100%;            
+  word-wrap: break-word;       
+  overflow-wrap: break-word;   
+  white-space: pre-wrap;       
 }
-.modal input, .modal textarea {
+.modal-conteudo input,
+.modal-conteudo textarea,
+.modal-conteudo button {
   width: 100%;
-  margin-bottom: 10px;
   padding: 10px;
   border-radius: 6px;
   border: 1px solid #ccc;
 }
+.modal-conteudo textarea {
+  min-height: 100px; /* Altura mínima para a área de texto */
+  resize: vertical; /* Permite redimensionar apenas verticalmente */
+}
+.modal-conteudo button {
+  background-color: #673AB7;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
 
-.modal .fechar {
+.modal-conteudo button:hover {
+  background-color: #5e35b1;
+}
+
+.modal-conteudo .fechar {
   position: absolute;
   right: 15px;
   top: 10px;
+  font-size: 28px;
   cursor: pointer;
-  font-size: 20px;
+  padding: 15px; /* Área clicável maior */
+  margin: -15px -15px 0 0; /* Compensa o padding para não ocupar espaço extra */
+  line-height: 1; /* Alinhamento vertical do "X" */
 }
+
+/* Opcional: destaque visual ao passar o mouse */
+.modal-conteudo .fechar:hover {
+  color: white;
+}
+
 #modal-feedback {
   z-index: 10001;
 }
@@ -118,6 +153,39 @@
 #voltar-visualizacao:hover {
   background-color: #bbb;
 }
+
+/* Adicione estas regras ao seu CSS existente */
+
+#modal-visualizacao .modal-conteudo {
+  max-height: 80vh; /* Limita a altura do modal a 80% da altura da tela */
+  overflow-y: auto; /* Habilita a rolagem vertical quando necessário */
+}
+
+#lista-feedbacks {
+  max-height: calc(80vh - 100px); /* Subtrai o espaço do título e outros elementos */
+  overflow-y: auto; /* Habilita a rolagem no conteúdo dos feedbacks */
+  padding-right: 10px; /* Evita que o conteúdo toque na barra de rolagem */
+}
+
+/* Estilização da barra de rolagem (opcional) */
+#lista-feedbacks::-webkit-scrollbar {
+  width: 8px;
+}
+
+#lista-feedbacks::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+#lista-feedbacks::-webkit-scrollbar-thumb {
+  background: #673AB7;
+  border-radius: 10px;
+}
+
+#lista-feedbacks::-webkit-scrollbar-thumb:hover {
+  background: #5e35b1;
+}
+
 /* Responsivo para telas pequenas */
 @media screen and (max-width: 600px) {
   .btn-feedback img {

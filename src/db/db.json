@@ -174,11 +174,18 @@
   ],
   "feedback": [
     {
-      "nome": "João Pedro",
-      "email": "jpfortes11@gamil.com",
-      "data": "25/06/2025",
-      "comentario": "Teste- 69",
+      "nome": "João Pedro Vital",
+      "email": "jpfortes11@gmail.com",
+      "data": "26/06/2025",
+      "comentario": "Teste-10",
       "id": "e098"
+    },
+    {
+      "id": "953a",
+      "nome": "João Pedro Vital",
+      "email": "rommel@gmail.com",
+      "data": "26/06/2025",
+      "comentario": "Fazendo teste  teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste"
     }
   ],
   "cartaz": [
@@ -267,28 +274,26 @@
       "detalhes": "Relatos de superação demonstram que a recuperação é possível, reforçam a importância da esperança e mostram o papel de terapias, apoio familiar, espiritualidade e mudança de hábitos na conquista de uma vida livre do vício."
     }
   ],
-     "games" :[
-            {
-                "name": "Quiz",
-                "img": "assets/images/QUIZ.png"
-            },
-            {
-                "name": "Genio quiz",
-                "img": "assets/images/GENIUS.jpg"
-            },
-            {
-                "name": "antistress",
-                "img": "assets/images/STRES.jpg"
-            },
-            {
-                "name": "Enigma",
-                "img": "assets/images/logoENIGMA.png"
-            },
-            {
-                "name": "Piano tiles",
-                "img": "assets/images/piano.jpg"
-            }
-              ] 
-          
-          
+  "games": [
+    {
+      "name": "Quiz",
+      "img": "assets/images/QUIZ.png"
+    },
+    {
+      "name": "Genio quiz",
+      "img": "assets/images/GENIUS.jpg"
+    },
+    {
+      "name": "antistress",
+      "img": "assets/images/STRES.jpg"
+    },
+    {
+      "name": "Enigma",
+      "img": "assets/images/logoENIGMA.png"
+    },
+    {
+      "name": "Piano tiles",
+      "img": "assets/images/piano.jpg"
+    }
+  ]
 }
