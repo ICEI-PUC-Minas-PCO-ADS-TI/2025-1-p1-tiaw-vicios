@@ -101,6 +101,12 @@ body {
   box-shadow: 0 8px 15px rgba(102, 126, 234, 0.4);
 }
 
+.volta-btn {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+  color: white;
+  box-shadow: 0 8px 15px rgba(255, 107, 107, 0.4);
+}
+
 .play-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 20px rgba(102, 126, 234, 0.6);
@@ -529,4 +535,118 @@ body {
   pointer-events: none;
   animation: particle 0.6s ease-out forwards;
 }
+
+.secret-message {
+  margin-top: 20px;
+  padding: 15px 25px;
+  background: linear-gradient(45deg, #a2d2ff, #8ecae6);
+  color: #003366;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  animation: fadeInScale 0.5s ease-out forwards;
+}
+
+.secret-message strong {
+  color: #0077b6;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+
+/* Enigma Card */
+.enigma-card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    visibility: hidden; /* Initially hidden */
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+.enigma-card--visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.enigma-card__content {
+    background: linear-gradient(145deg, var(--clr-roxo-claro), var(--clr-branco));
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    color: var(--clr-azul-marinho);
+    max-width: 500px;
+    transform: scale(0.9);
+    transition: transform 0.5s ease-in-out;
+}
+
+.enigma-card--visible .enigma-card__content {
+    transform: scale(1);
+}
+
+.enigma-card__content h2 {
+    font-family: 'Bungee', cursive;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: var(--clr-roxo-escuro);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.enigma-card__content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.enigma-card__content button {
+    background: linear-gradient(145deg, var(--clr-roxo-escuro), var(--clr-roxo-claro));
+    color: var(--clr-branco);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.enigma-card__content button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.enigma-card__content button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+:root {
+  --clr-roxo-claro: #a2d2ff;
+  --clr-branco: #ffffff;
+  --clr-azul-marinho: #003366;
+  --clr-roxo-escuro: #667eea;
+}
+
 

@@ -1,39 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Piano Tiles - Página Principal</title>
   <link rel="stylesheet" href="assets/css/piano.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
+
 <body>
   <div class="main-container">
     <header class="header">
       <h1 class="main-title">🎹 Piano Tiles</h1>
       <p class="subtitle">Teste seus reflexos e ritmo!</p>
     </header>
-    
+
     <div class="menu-container">
       <div class="game-info">
         <h2>Como Jogar</h2>
         <p>Clique nas teclas pretas que descem pela tela. Não deixe nenhuma passar e não clique nas teclas brancas!</p>
       </div>
-      
+
       <div class="buttons-container">
         <button class="menu-btn play-btn" onclick="startNewGame()">
-          <span class="btn-icon">▶️</span>
+          <span class="btn-icon"><i class="bi bi-play-fill"></i></span>
+
           Jogar
         </button>
-        
+
         <button class="menu-btn info-btn" onclick="showInfo()">
-          <span class="btn-icon">ℹ️</span>
+          <span class="btn-icon"><i class="bi bi-info-circle-fill"></i></span>
+
           Informações
+        </button>
+
+        <button class="menu-btn play-btn">
+        <a href="jogos.html">
+
+
+          <p style="color: aliceblue;">Voltar</p>
+          
+        </a>
         </button>
       </div>
     </div>
-    
+
     <footer class="footer">
-      <p>Desenvolvido com ❤️ | Piano Tiles Melhorado</p>
+      <p>| Piano Tiles Melhorado |</p>
     </footer>
   </div>
 
@@ -41,24 +56,37 @@
   <div class="game-container" id="gameContainer" style="display: none;">
     <div class="game-header">
       <button class="back-btn" onclick="backToMenu()">
-        <span class="btn-icon">⬅️</span>
+        <span class="btn-icon"><i class="bi bi-arrow-left"></i></span>
+
         Voltar
       </button>
       <h2>Piano Tiles</h2>
       <p id="score">Pontuação: 0</p>
     </div>
-    
+
     <div class="game-area" id="gameArea"></div>
-    
+
     <div class="game-controls">
       <button id="restartBtn" onclick="restartGame()" style="display: none;">
-        <span class="btn-icon">🔄</span>
+        <span class="btn-icon"><i class="bi bi-arrow-clockwise"></i></span>
+
         Reiniciar
       </button>
       <button class="pause-btn" id="pauseBtn" onclick="togglePause()">
-        <span class="btn-icon">⏸️</span>
+        <span class="btn-icon"><i class="bi bi-pause-fill"></i></span>
         Pausar
       </button>
+    </div>
+  </div>
+
+  <!-- NOVO CÓDIGO AQUI -->
+  <div id="enigmaCard" class="enigma-card">
+    <div class="enigma-card__content">
+      <h2>Parabéns!</h2>
+      <p>Você desbloqueou uma chave do enigma!</p>
+      <p><strong>Chave:</strong> 1234</p>
+      <p>Use a chave para abrir o próximo desafio.</p>
+      <button id="closeEnigmaCard">Continuar</button>
     </div>
   </div>
 
@@ -89,5 +117,5 @@
 
   <script src="assets/js/piano.js"></script>
 </body>
-</html>
 
+</html>
