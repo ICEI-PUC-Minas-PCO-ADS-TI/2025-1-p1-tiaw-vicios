@@ -1,12 +1,12 @@
-/* CSS Responsivo para Navbar - Versão Final */
-
-@font-face {
-  font-family: 'poppins';
-  src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-  font-weight: 400;
-  font-display: swap;
-  font-stretch: normal;
-  font-variant: normal;
+/* Add styles to fix navbar at the top */
+.floating-navbar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    background-color: #2e1a47; /* match purple tone */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   font-size: 16px;
   font-weight: 400;
   font-weight: 500;

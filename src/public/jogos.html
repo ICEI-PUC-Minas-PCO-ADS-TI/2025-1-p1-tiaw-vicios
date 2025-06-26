@@ -1,27 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Barra de Tarefas - Lotus</title>
-    <link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Catálogo de Brincadeiras</title>
+    <link rel="stylesheet" href="assets/css/jogos.css" />
+    <link rel = "stylesheet" href = "assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-    <script src="index.js" defer></script>
+    <script src="assets/js/nav.js" defer></script>
 </head>
-
-<body>
-
-
-
-
-
-
-
-
+<body id="jogos">
     <!-- Navbar Responsiva - HTML atualizado -->
     <nav class="navbar floating-navbar">
         <div class="container-fluid">
@@ -31,11 +22,14 @@
                 <button class="navbar-toggler offcanvasty" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
+                    
                 </button>
 
                 <!-- Logo -->
+                 
                 <a class="navbar-brand text-white" href="#">
-                    <img src="LotusBranco.png" alt="iconeLotus" width="40" height="40"
+                    
+                <img src="assets/images/LotusBranco.png" alt="iconeLotus" width="40" height="40"
                         class="d-inline-block align-text-top">
                 </a>
 
@@ -62,7 +56,7 @@
                     </button>
 
                     <!-- Logo -->
-                    <a class="navbar-brand text-white me-4" href="#">
+                    <a class="navbar-brand text-white me-4" href="index.html">
                         <img src="LotusBranco.png" alt="iconeLotus" width="50" height="50"
                             class="d-inline-block align-text-top">
                     </a>
@@ -107,13 +101,24 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">
-                                <i class="bi bi-gear-fill nav-icon"></i>
+                            <a class="nav-link text-white" href="jogos.html">
+                                <i class="bi bi-bell-fill nav-icon">aa</i>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="#">
+                                <i class="bi bi-gear-fill nav-icon"></i>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">
                                 <i class="bi bi-box-arrow-in-right nav-icon"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pesquisa-vital.html" class="nav-link text-white" href="#">
+                                <i class="bi bi-box-arrow-in-right nav-icon"></i> <!-- Alterar o icone de pesquisa -->
                             </a>
                         </li>
                     </ul>
@@ -168,8 +173,13 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">
+                    <a class="nav-link text-white" href="login.html">
                         <i class="bi bi-box-arrow-in-right me-2"></i>Login
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="pesquisa-vital.html">
+                        <i class="bi bi-box-arrow-in-right me-2"></i>Pesquisa
                     </a>
                 </li>
             </ul>
@@ -179,10 +189,26 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-        crossorigin="anonymous"></script>
 
+
+
+
+
+
+
+    <h1>Catálogo de Brincadeiras</h1>
+
+    <!-- Links for each game, easy to maintain -->
+    <div id="links" style="display:none;">
+        <a id="link-Quiz" href="QUIZ/quiz.html"></a>
+        <a id="link-Genio quiz" href="genio_quiz.html"></a>
+        <a id="link-antistress" href="antistress/index.html"></a>
+        <a id="link-Enigma" href="enigma.html"></a>
+    </div>
+
+    <div id="catalog"></div>
+    <div id="error-message"></div>
+
+    <script src="assets/js/jogos.js"></script>
 </body>
-
 </html>
