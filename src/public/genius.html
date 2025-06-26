@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Genius Game</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+		integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200&family=Bungee&family=Iceland&family=Poppins:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/genius.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="game">
+			<div class="game__pad game__pad--tl" data-pad="0"></div>
+			<div class="game__pad game__pad--tr" data-pad="1"></div>
+			<div class="game__pad game__pad--bl" data-pad="2"></div>
+			<div class="game__pad game__pad--br" data-pad="3"></div>
+
+			<div class="game__options">
+				<div class="logo-container">
+				<img class="game__logo" src="assets/images/lotusroxo.png" style="width: 100px;" alt="Genius Game Logo">
+				</div>
+
+				<div class="gui">
+
+					<div class="group">
+						<div class="gui__counter">--</div>
+						<p class="gui__label">count</p>
+
+					</div><!--.group-->
+
+					<div class="group">
+						<div class="gui__btn gui__btn--start"></div>
+						<p class="gui__label">start</p>
+
+					</div> <!--.group-->
+
+					<div class="group">
+						<div class="gui__led "></div>
+						<div class="gui__btn gui__btn--strict"></div>
+						<p class="gui__label">strict</p>
+
+					</div><!--.group-->
+
+					<div class="group group-large">
+						<p class="gui__label gui__label--switch">ON</p>
+						<div class="gui__btn-switch"></div>
+						<p class="gui__label gui__label--switch">OFF</p>
+
+					</div><!--.group-->
+
+				</div> <!--.gui-->
+
+
+			</div><!--Game__options-->
+		</div><!--Game-->
+	</div><!--Container-->
+
+    <!-- NOVO CÓDIGO AQUI -->
+    <div id="enigmaCard" class="enigma-card">
+        <div class="enigma-card__content">
+            <h2>Parabéns!</h2>
+            <p>Você desbloqueou uma chave do enigma!</p>
+            <p><strong>Chave:</strong> 1234</p>
+            <p>Use a chave para abrir o próximo desafio.</p>
+            <button id="closeEnigmaCard">Continuar</button>
+        </div>
+    </div>
+    <!-- FIM DO NOVO CÓDIGO -->
+
+	<script src="assets/js/genius.js"></script>
+</body>
+
+</html>
