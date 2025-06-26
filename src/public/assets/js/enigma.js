@@ -6,11 +6,11 @@ function musica() {
 
 function verificarResposta(fase) {
     const respostasFases = {
-        1: "resposta01",
-        2: "kebab",
-        3: "manganga",
-        4: "2025",
-        5: "156074"
+        1: "CLAREZA",
+        2: "CONTROLE",
+        3: "ALÍVIO",
+        4: "DIVISOR DE ÁGUAS",
+
     };
 
     const resposta = document.getElementById(`resposta${fase}`).value.toLowerCase();
