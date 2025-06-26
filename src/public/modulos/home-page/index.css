@@ -18,6 +18,8 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background-color: #E9E9E9;
+  min-height: 100vh;
+
 }
 
 /* ===== NAVBAR PRINCIPAL ===== */
@@ -180,6 +182,8 @@ body {
 
   body {
     padding-top: 90px;
+    min-height: 100vh;
+
   }
 }
 
@@ -198,6 +202,35 @@ body {
 
   .nav-icon {
     font-size: 1.4rem;
+  }
+
+  body {
+    padding-top: 80px;
+    height: 165vh;
+
+    .carrossel-com-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Move o card de álcool para depois do carrossel visualmente */
+    .cardDetalhes:first-of-type {
+      order: 2;
+    }
+
+    .bannerPrincipal {
+      order: 1;
+    }
+
+    .cardDetalhes:last-of-type {
+      order: 3;
+    }
+
+    .bannerPrincipal {
+      flex: 1 1 100%;
+
+    }
+
   }
 
 
@@ -235,6 +268,8 @@ body {
 
   body {
     padding-top: 7px;
+    min-height: 100vh;
+
   }
 
   .offcanvasty .navbar-toggler-icon {
@@ -318,7 +353,7 @@ input[style*="width: 650px"] {
 /* Garante que o carrossel não fique estourando nas telas pequenas */
 .bannerPrincipal .carousel {
   width: 100%;
-  max-width: 700px;
+  max-width: 600px;
 }
 
 /* Indicadores quadrados */
@@ -378,7 +413,7 @@ input[style*="width: 650px"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 0px;
   flex-wrap: wrap;
   margin-top: 40px;
 }
@@ -406,114 +441,125 @@ input[style*="width: 650px"] {
 
 /* Estilos globais */
 body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    background-color: #E0E0E0;
-    border-radius: 8px;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #E0E0E0;
+  border-radius: 8px;
 }
 
 /* Botão para abrir o modal */
 #openModalBtn {
-    padding: 10px 20px;
-    background-color: #673AB7;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+  padding: 10px 20px;
+  background-color: #673AB7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 /* Modal */
 .modal-custom {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
+  z-index: 1060;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-content-custom {
-    background: rgb(47, 3, 73);
-    padding: 30px;
-    border-radius: 12px;
-    width: 95%;           /* Aumenta a largura para 95% */
-    max-width: 1000px;    /* Ajuste o valor para um máximo desejado */
-    max-height: 80vh;     /* Define uma altura máxima (80% da altura da janela) */
-    overflow-y: auto;     /* Adiciona rolagem vertical quando o conteúdo exceder a altura */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 30px;
-    position: relative;
+  background: rgba(47, 3, 73, 0.827);
+  backdrop-filter: blur(10px);
+  /* Cor de fundo do modal */
+  padding: 30px;
+  border-radius: 12px;
+  width: 95%;
+  /* Aumenta a largura para 95% */
+  max-width: 1000px;
+  /* Ajuste o valor para um máximo desejado */
+  max-height: 80vh;
+  /* Define uma altura máxima (80% da altura da janela) */
+  overflow-y: auto;
+  /* Adiciona rolagem vertical quando o conteúdo exceder a altura */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  position: relative;
 }
 
 
 
 
 .modal-custom h2 {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 24px;
-    cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 /* Gráficos no modal */
 .grafico {
-    width: 250px;
-    text-align: center;
+  width: 250px;
+  text-align: center;
 }
 
 /* Barras de progresso */
 .progresso-container {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .barra {
-    background-color: #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    max-height: 20px;
-    max-width: 1000px;
-    margin-top: 5px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  max-height: 20px;
+  max-width: 1000px;
+  margin-top: 5px;
 }
 
 .preenchimento {
-    height: 100px;
-    background-color: #3e0061;
-    text-align: center;
-    color: white;
-    line-height: 20px;
+  height: 100px;
+  background-color: #3e0061;
+  text-align: center;
+  color: white;
+  line-height: 20px;
 }
 
 .botaoDetalhes {
-    display: block;
-    margin: 20px auto 0 auto; /* 20px de margem superior, automático nas laterais */
-    display: block;
-    margin: 20px auto 0 auto;
-    padding: 10px 24px;
-    background-color: #00000068; /* roxo escuro */
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(57, 19, 123, 0.3);
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  .botaoDetalhes:hover {
-    background-color: #5E35B1; /* roxo um pouco mais escuro no hover */
-    transform: scale(1.05);
-  }
+  display: block;
+  margin: 20px auto 0 auto;
+  /* 20px de margem superior, automático nas laterais */
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 10px 24px;
+  background-color: #00000068;
+  /* roxo escuro */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(57, 19, 123, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botaoDetalhes:hover {
+  background-color: #5E35B1;
+  /* roxo um pouco mais escuro no hover */
+  transform: scale(1.05);
+}
 
 .cardDetalhes {
   color: #FFFFFF;
@@ -536,14 +582,12 @@ body {
   margin-bottom: 10px;
   font-size: 20px;
 }
-  
-  
+
+
 
 canvas {
-    max-width: 250px;
-    max-height: 250px;
-    margin: 10px;
-    
+  max-width: 250px;
+  max-height: 250px;
+  margin: 10px;
+
 }
-
-

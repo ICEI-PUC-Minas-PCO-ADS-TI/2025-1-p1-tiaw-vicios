@@ -26,8 +26,8 @@ const dadosUsuario = {
         objetivoDias: 30,
         quizzesConcluidos: 2,
         totalQuizzes: 3,
-        tarefasConcluidas: 3,
-        totalTarefas: 5,
+        tarefasConcluidas: 9,
+        totalTarefas: 10,
         videoaulasAssistidas: 2,
         totalVideoaulas: 4
     },
