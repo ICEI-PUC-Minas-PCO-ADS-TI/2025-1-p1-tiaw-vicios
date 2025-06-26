@@ -1,11 +1,11 @@
 # **Plano de Testes de Software**
 
-## 1. Objetivo dos Testes**
+## 1. Objetivo dos Testes
 
 Verificar se as funcionalidades do sistema, voltadas ao apoio de pessoas com vícios, funcionam corretamente. O foco é garantir **usabilidade**, **confiabilidade** e **segurança**, mesmo utilizando dados armazenados em arquivos JSON.
 
 
-## 2. Escopo dos Testes**
+## 2. Escopo dos Testes
 
 Funcionalidades que serão testadas:
 
@@ -14,7 +14,7 @@ Funcionalidades que serão testadas:
 * Área administrativa para gerenciamento de conteúdo
 
 
-## 3. Tipos de Testes**
+## 3. Tipos de Testes
 
 * **Testes Funcionais**: Garantir que cada funcionalidade descrita nos requisitos opere como esperado.
 * **Testes de Interface**: Avaliar a experiência do usuário, navegação e acessibilidade.
@@ -22,7 +22,7 @@ Funcionalidades que serão testadas:
 * **Testes de Segurança**: Proteger dados sensíveis (ex: senhas), mesmo que armazenados localmente.
 
 
-## 4. Ambiente de Testes**
+## 4. Ambiente de Testes
 
 * **Navegadores**: Google Chrome, Mozilla Firefox
 * **Dispositivos**: Desktop e smartphones
@@ -35,7 +35,7 @@ Funcionalidades que serão testadas:
 
 
 
-## 5. Casos de Teste (Exemplos)**
+## 5. Casos de Teste (Exemplos)
 
 | Caso de Teste               | Entrada                           | Saída Esperada                         | Resultado |
 | --------------------------- | --------------------------------- | -------------------------------------- | --------- |
@@ -48,7 +48,7 @@ Funcionalidades que serão testadas:
 
 
 
-## 6. Critérios de Aceitação**
+## 6. Critérios de Aceitação
 
 * Todos os testes devem ser concluídos com sucesso
 * Nenhuma falha crítica de execução ou segurança
@@ -56,7 +56,7 @@ Funcionalidades que serão testadas:
 
 
 
-## 7. Cronograma**
+## 7. Cronograma
 
 | Atividade               | Início | Término |
 | ----------------------- | ------ | ------- |
@@ -66,14 +66,14 @@ Funcionalidades que serão testadas:
 
 
 
-## 8. Riscos**
+## 8. Riscos
 
 * Armazenamento em JSON pode limitar a escalabilidade e segurança dos dados
 * Cobertura de testes limitada pode deixar falhas escondidas
 * Ausência de testes de acessibilidade pode impactar negativamente usuários com deficiência visual ou motora
 
 
-## 9. Responsáveis**
+## 9. Responsáveis
 
 * **Vinicius Tales Silva** – Testes e Documentação
 * **Equipe de Desenvolvimento** – Lotus (Ajuda no Controle no Combate ao Vício)
