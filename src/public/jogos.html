@@ -11,12 +11,11 @@
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-    <script src="assets/js/nav.js" defer></script>
 </head>
 
 <body id="jogos">
 
-        <script src="assets/js/nav.js"></script>
+
 
     <!-- Navbar Responsiva - HTML atualizado -->
     <nav class="navbar floating-navbar">
@@ -61,7 +60,7 @@
                     </button>
 
                     <!-- Logo -->
-                    <a class="navbar-brand text-white me-4" href="index.html">
+                    <a class="navbar-brand text-white me-4" href="home.html">
                         <img src="LotusBranco.png" alt="iconeLotus" width="50" height="50"
                             class="d-inline-block align-text-top">
                     </a>
@@ -69,18 +68,18 @@
                     <!-- Ícones de navegação -->
                     <ul class="navbar-nav d-flex flex-row gap-3 me-4">
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">
-                                <i class="bi bi-house-fill nav-icon"></i>
+                            <a class="nav-link text-white" href="videos.html">
+                                <i class="bi bi-film nav-icon"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">
+                            <a class="nav-link text-white" href="lista.html">
                                 <i class="bi bi-clipboard-heart-fill nav-icon"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">
-                                <i class="bi bi-bar-chart-line-fill nav-icon"></i>
+                            <a class="nav-link text-white" href="caderno.html">
+                                <i class="bi bi-journal-bookmark-fill  nav-icon"></i>
                             </a>
                         </li>
                     </ul>
@@ -91,6 +90,7 @@
                     <form class="d-flex search-form" role="search">
                         <input class="form-control me-2 search-input" type="search" placeholder="Search"
                             aria-label="Search">
+
                         <button class="btn btn-outline-light search-btn" type="submit">
                             <i class="bi bi-search"></i>
                         </button>
@@ -111,19 +111,19 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">
+                            <a class="nav-link text-white" href="">
                                 <i class="bi bi-gear-fill nav-icon"></i>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">
+                            <a class="nav-link text-white" href="index.html">
                                 <i class="bi bi-box-arrow-in-right nav-icon"></i>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="pesquisa-vital.html" class="nav-link text-white" href="#">
-                                <i class="bi bi-box-arrow-in-right nav-icon"></i> <!-- Alterar o icone de pesquisa -->
+                                <i class="bi bi-search nav-icon"></i> <!-- Alterar o icone de pesquisa -->
                             </a>
                         </li>
                     </ul>
@@ -153,38 +153,40 @@
         <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">
+                    <a class="nav-link text-white" href="home.html">
                         <i class="bi bi-house-fill me-2"></i>Home
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">
-                        <i class="bi bi-clipboard-heart-fill me-2"></i>Favoritos
+                    <a class="nav-link text-white" href="lista.html">
+                        <i class="bi bi-clipboard-heart-fill me-2"></i>Lista de Tarefas
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">
-                        <i class="bi bi-bar-chart-line-fill me-2"></i>Estatísticas
+                    <a class="nav-link text-white" href="videos.html">
+                        <i class="bi bi-film me-2"></i>
+                        Vídeos
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">
-                        <i class="bi bi-bell-fill me-2"></i>Notificações
+                    <a class="nav-link text-white" href="caderno.html">
+                        <i class="bi bi-journal-bookmark-fill  me-2"></i>
+                        Diario
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">
-                        <i class="bi bi-gear-fill me-2"></i>Configurações
+                    <a class="nav-link text-white" href="jogos.html">
+                        <i class="bi bi-controller me-2"></i>Jogos
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="login.html">
+                    <a class="nav-link text-white" href="index.html">
                         <i class="bi bi-box-arrow-in-right me-2"></i>Login
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="pesquisa-vital.html">
-                        <i class="bi bi-box-arrow-in-right me-2"></i>Pesquisa
+                        <i class="bi bi-search me-2"></i>Pesquisa <!-- Alterar o icone de pesquisa -->
                     </a>
                 </li>
             </ul>
@@ -204,7 +206,7 @@
         <h1>Catálogo de Brincadeiras</h1>
 
         <!-- Links for each game, easy to maintain -->
-        <div id="links"  class="container-links-jogos">
+        <div id="links" class="container-links-jogos">
             <a id="link-Quiz" href="quiz.html"></a>
             <a id="link-Genio quiz" href="genius.html"></a>
             <a id="link-antistress" href="Anti.html"></a>
@@ -217,6 +219,10 @@
     </div>
 
     <script src="assets/js/jogos.js"></script>
+    <script src="assets/js/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
