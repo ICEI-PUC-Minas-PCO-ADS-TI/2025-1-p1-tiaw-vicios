@@ -174,18 +174,11 @@
   ],
   "feedback": [
     {
-      "nome": "João Pedro Vital",
-      "email": "jpfortes11@gmail.com",
+      "id": "b6f2",
+      "nome": "Pablo Henrique Fernandes",
+      "email": "pablohenriquefernandes07@gmail.com",
       "data": "26/06/2025",
-      "comentario": "Teste-10",
-      "id": "e098"
-    },
-    {
-      "id": "953a",
-      "nome": "João Pedro Vital",
-      "email": "rommel@gmail.com",
-      "data": "26/06/2025",
-      "comentario": "Fazendo teste  teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste"
+      "comentario": "texte"
     }
   ],
   "cartaz": [
@@ -277,23 +270,28 @@
   "games": [
     {
       "name": "Quiz",
-      "img": "assets/images/QUIZ.png"
+      "img": "assets/images/QUIZ.png",
+      "id": "a0c3"
     },
     {
       "name": "Genio quiz",
-      "img": "assets/images/GENIUS.jpg"
+      "img": "assets/images/GENIUS.jpg",
+      "id": "0d3d"
     },
     {
       "name": "antistress",
-      "img": "assets/images/STRES.jpg"
+      "img": "assets/images/STRES.jpg",
+      "id": "e730"
     },
     {
       "name": "Enigma",
-      "img": "assets/images/logoENIGMA.png"
+      "img": "assets/images/logoENIGMA.png",
+      "id": "0b80"
     },
     {
       "name": "Piano tiles",
-      "img": "assets/images/piano.jpg"
+      "img": "assets/images/piano.jpg",
+      "id": "6e64"
     }
   ]
 }

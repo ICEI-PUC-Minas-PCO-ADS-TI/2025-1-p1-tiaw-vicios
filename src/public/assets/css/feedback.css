@@ -1,14 +1,10 @@
 .btn-feedback {
-  
-  bottom: 80px;
-  right: 20px;
   display: flex;
   flex-direction: column;
-  align-items:end;
+  align-items: center;
   text-decoration: none;
   background-color: transparent;
   cursor: pointer;
-  z-index: 1001;
 }
 .btn-feedback img {
   width: 120px; 
@@ -16,24 +12,42 @@
   margin-bottom: 5px;
 }
 .btn-feedback span {
-  background-color:  #673AB7;
+  background-color: #673AB7;
   color: white;
-  padding: 10px 15px;
+  padding: 8px 12px;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 13px;
   text-align: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 .btn-flutuante {
   
-  right: 20px;
   padding: 10px 15px;
-  background-color:  #673AB7;
+  background-color: #673AB7;
+  margin: auto;
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  margin: 10px;
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.btn-flutuante:hover {
+  background-color: #5e35b1;
+}
+
+.btn-flutuante-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  z-index: 1000;
 }
 
 #abrir-feedback { bottom: 80px; }
@@ -53,9 +67,27 @@
 
 #modal-feedback .modal-conteudo,
 #modal-visualizacao .modal-conteudo {
-  background:  #3e0061;
+  background-color:  #3d006185;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+
   padding: 25px;
 
+}
+
+
+.lista-feedbacks{
+  button {
+    margin-top: 10px;
+    background-color: #673AB7;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
 }
 
 .modal-conteudo {
@@ -196,4 +228,25 @@
     font-size: 12px;
     padding: 8px 12px;
   }
+}
+
+.papelzin {
+  background-color: #cbcbc06a;
+  width: 150px;
+  height: 150px;
+  border: #464149 2px solid;
+  box-shadow: #1b0b24 0px 0px 10px;
+  margin-bottom: 5px;
+  border-radius: 6px;
+}
+
+.linha {
+  width: 80%;
+  height: 2px;
+  background-color: #464149;
+  margin: 10px auto 0 auto;
+}
+
+.oculto {
+  display: none;
 }

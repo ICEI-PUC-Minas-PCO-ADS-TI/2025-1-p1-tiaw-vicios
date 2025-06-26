@@ -96,7 +96,7 @@ const texto = document.createElement('p');
 texto.textContent = f.comentario;
 
 const btnEditar = document.createElement('button');
-btnEditar.textContent = '✏️';
+btnEditar.innerHTML = '<i class="bi bi-pencil"></i>';
 btnEditar.addEventListener('click', () => editarFeedback(f.id));
 
 const btnExcluir = document.createElement('button');
