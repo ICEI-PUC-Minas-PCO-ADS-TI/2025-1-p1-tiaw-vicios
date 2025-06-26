@@ -270,19 +270,23 @@
      "games" :[
             {
                 "name": "Quiz",
-                "img": "assets/images/quiz_image.jpg"
+                "img": "assets/images/QUIZ.png"
             },
             {
                 "name": "Genio quiz",
-                "img": "assets/images/genio_quiz_image.jpg"
+                "img": "assets/images/GENIUS.jpg"
             },
             {
                 "name": "antistress",
-                "img": "assets/images/antistress_image.jpg"
+                "img": "assets/images/STRES.jpg"
             },
             {
                 "name": "Enigma",
-                "img": "assets/images/enigma_image.jpg"
+                "img": "assets/images/logoENIGMA.png"
+            },
+            {
+                "name": "Piano tiles",
+                "img": "assets/images/piano.jpg"
             }
               ] 
           
