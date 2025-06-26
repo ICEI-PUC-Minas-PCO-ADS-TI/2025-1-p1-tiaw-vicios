@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Tarefas - Organizador Pessoal</title>
+  <link rel="stylesheet" href="assets/css/lista.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">
+          <i class="fas fa-tasks"></i>
+          <h1>Lista de Tarefas</h1>
+        </div>
+        <div class="header-stats">
+          <div class="stat-item">
+            <span class="stat-number" id="totalTasks">0</span>
+            <span class="stat-label">Total</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" id="completedTasks">0</span>
+            <span class="stat-label">Concluídas</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" id="pendingTasks">0</span>
+            <span class="stat-label">Pendentes</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="container">
+        <!-- Task Input Section -->
+        <section class="task-input-section">
+          <div class="input-container">
+            <form id="formTarefas" class="task-form">
+              <div class="input-group">
+                <i class="fas fa-plus input-icon"></i>
+                <input 
+                  type="text" 
+                  placeholder="Adicione uma nova tarefa..." 
+                  id="campoEntrada" 
+                  class="task-input"
+                  maxlength="100"
+                />
+                <select id="taskPriority" class="priority-select">
+                  <option value="baixa">Baixa</option>
+                  <option value="media" selected>Média</option>
+                  <option value="alta">Alta</option>
+                </select>
+                <button type="submit" class="add-btn">
+                  <i class="fas fa-plus"></i>
+                  Adicionar
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <!-- Filters and Search -->
+        <section class="controls-section">
+          <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input 
+              type="text" 
+              placeholder="Buscar tarefas..." 
+              id="searchInput" 
+              class="search-input"
+            />
+          </div>
+          
+          <div class="filter-container">
+            <button class="filter-btn active" data-filter="todas">
+              <i class="fas fa-list"></i>
+              Todas
+            </button>
+            <button class="filter-btn" data-filter="pendentes">
+              <i class="fas fa-clock"></i>
+              Pendentes
+            </button>
+            <button class="filter-btn" data-filter="concluidas">
+              <i class="fas fa-check"></i>
+              Concluídas
+            </button>
+          </div>
+
+          <div class="sort-container">
+            <select id="sortSelect" class="sort-select">
+              <option value="data">Data de criação</option>
+              <option value="prioridade">Prioridade</option>
+              <option value="alfabetica">Ordem alfabética</option>
+            </select>
+          </div>
+        </section>
+
+        <!-- Progress Section -->
+        <section class="progress-section">
+          <div class="progress-container">
+            <div class="progress-info">
+              <span class="progress-text">Progresso Geral</span>
+              <span class="progress-percentage" id="progressPercentage">0%</span>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-bar" id="progressBar"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Tasks Section -->
+        <section class="tasks-section">
+          <div class="tasks-header">
+            <h2>
+              <i class="fas fa-clipboard-list"></i>
+              Suas Tarefas
+            </h2>
+            <div class="bulk-actions">
+              <button class="bulk-btn" id="selectAllBtn">
+                <i class="fas fa-check-square"></i>
+                Selecionar Todas
+              </button>
+              <button class="bulk-btn danger" id="deleteSelectedBtn" style="display: none;">
+                <i class="fas fa-trash"></i>
+                Excluir Selecionadas
+              </button>
+            </div>
+          </div>
+          
+          <div class="tasks-container">
+            <ul id="listaTarefas" class="tasks-list"></ul>
+            
+            <!-- Empty State -->
+            <div class="empty-state" id="emptyState">
+              <div class="empty-icon">
+                <i class="fas fa-clipboard-check"></i>
+              </div>
+              <h3>Nenhuma tarefa encontrada</h3>
+              <p>Adicione sua primeira tarefa para começar a organizar seu dia!</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2024 Lista de Tarefas - Organize sua vida com eficiência</p>
+        <div class="footer-actions">
+          <button class="footer-btn" id="clearAllBtn">
+            <i class="fas fa-broom"></i>
+            Limpar Todas
+          </button>
+          <button class="footer-btn" id="exportBtn">
+            <i class="fas fa-download"></i>
+            Exportar
+          </button>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Modal for Task Details -->
+  <div class="modal" id="taskModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Detalhes da Tarefa</h3>
+        <button class="close-btn" id="closeModal">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="editTaskName">Nome da Tarefa:</label>
+          <input type="text" id="editTaskName" class="modal-input">
+        </div>
+        <div class="form-group">
+          <label for="editTaskPriority">Prioridade:</label>
+          <select id="editTaskPriority" class="modal-select">
+            <option value="baixa">Baixa</option>
+            <option value="media">Média</option>
+            <option value="alta">Alta</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="editTaskNotes">Notas:</label>
+          <textarea id="editTaskNotes" class="modal-textarea" placeholder="Adicione observações sobre esta tarefa..."></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="modal-btn secondary" id="cancelEdit">Cancelar</button>
+        <button class="modal-btn primary" id="saveEdit">Salvar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notifications -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="assets/js/lista.js"></script>
+</body>
+</html>
+

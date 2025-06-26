@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piano Tiles - Página Principal</title>
+  <link rel="stylesheet" href="assets/css/piano.css">
+</head>
+<body>
+  <div class="main-container">
+    <header class="header">
+      <h1 class="main-title">🎹 Piano Tiles</h1>
+      <p class="subtitle">Teste seus reflexos e ritmo!</p>
+    </header>
+    
+    <div class="menu-container">
+      <div class="game-info">
+        <h2>Como Jogar</h2>
+        <p>Clique nas teclas pretas que descem pela tela. Não deixe nenhuma passar e não clique nas teclas brancas!</p>
+      </div>
+      
+      <div class="buttons-container">
+        <button class="menu-btn play-btn" onclick="startNewGame()">
+          <span class="btn-icon">▶️</span>
+          Jogar
+        </button>
+        
+        <button class="menu-btn info-btn" onclick="showInfo()">
+          <span class="btn-icon">ℹ️</span>
+          Informações
+        </button>
+      </div>
+    </div>
+    
+    <footer class="footer">
+      <p>Desenvolvido com ❤️ | Piano Tiles Melhorado</p>
+    </footer>
+  </div>
+
+  <!-- Tela do Jogo (inicialmente oculta) -->
+  <div class="game-container" id="gameContainer" style="display: none;">
+    <div class="game-header">
+      <button class="back-btn" onclick="backToMenu()">
+        <span class="btn-icon">⬅️</span>
+        Voltar
+      </button>
+      <h2>Piano Tiles</h2>
+      <p id="score">Pontuação: 0</p>
+    </div>
+    
+    <div class="game-area" id="gameArea"></div>
+    
+    <div class="game-controls">
+      <button id="restartBtn" onclick="restartGame()" style="display: none;">
+        <span class="btn-icon">🔄</span>
+        Reiniciar
+      </button>
+      <button class="pause-btn" id="pauseBtn" onclick="togglePause()">
+        <span class="btn-icon">⏸️</span>
+        Pausar
+      </button>
+    </div>
+  </div>
+
+  <!-- Modal de Informações -->
+  <div class="modal" id="infoModal" style="display: none;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Informações do Jogo</h3>
+        <button class="close-btn" onclick="closeModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <h4>Regras:</h4>
+        <ul>
+          <li>Clique apenas nas teclas pretas</li>
+          <li>Não deixe nenhuma tecla preta passar</li>
+          <li>Não clique nas teclas brancas</li>
+          <li>Sua pontuação aumenta a cada tecla preta clicada</li>
+        </ul>
+        <h4>Dicas:</h4>
+        <ul>
+          <li>Mantenha o foco na parte inferior da tela</li>
+          <li>Use os dedos de ambas as mãos para maior agilidade</li>
+          <li>Pratique para melhorar seus reflexos</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/piano.js"></script>
+</body>
+</html>
+
