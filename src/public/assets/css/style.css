@@ -24,7 +24,7 @@ body {
 
 /* ===== NAVBAR PRINCIPAL ===== */
 .floating-navbar {
-  position: fixed;
+  position: fixed !important;
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
