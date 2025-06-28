@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 const catalog = document.getElementById('catalog');
 const errorMessage = document.getElementById('error-message');
 
-fetch('http://localhost:3000/games')
+fetch('https://jsonvicios.vercel.app/games')
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not ok');

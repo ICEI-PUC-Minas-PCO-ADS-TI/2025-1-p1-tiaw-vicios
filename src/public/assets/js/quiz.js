@@ -1,6 +1,6 @@
 var perguntas = document.getElementById("quiz");
 
-fetch('http://localhost:3000/questoes')
+fetch('https://jsonvicios.vercel.app/questoes')
   .then(response => response.json())
   .then(data => {
     let currentIndex = 0;

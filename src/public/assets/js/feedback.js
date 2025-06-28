@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/feedback";
+const API_URL = "https://jsonvicios.vercel.app/feedback";
 
 
 document.getElementById('feedback-link').onclick = (e) => {

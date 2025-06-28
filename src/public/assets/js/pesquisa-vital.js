@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  const API_URL = "http://localhost:3000/cartaz";
+  const API_URL = "https://jsonvicios.vercel.app/cartaz";
 
   async function montarCards() {
     try {
