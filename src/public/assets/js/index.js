@@ -22,8 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const dadosUsuario = {
     alcool: {
-        diasSemUso: 15,
-        objetivoDias: 30,
+        
         quizzesConcluidos: 2,
         totalQuizzes: 3,
         tarefasConcluidas: 9,
@@ -32,8 +31,7 @@ const dadosUsuario = {
         totalVideoaulas: 4
     },
     tabaco: {
-        diasSemUso: 20,
-        objetivoDias: 30,
+      
         quizzesConcluidos: 1,
         totalQuizzes: 3,
         tarefasConcluidas: 4,
@@ -46,7 +44,7 @@ const dadosUsuario = {
 
 function calcularProgresso(dados) {
     const progresso = (
-        (dados.diasSemUso / dados.objetivoDias) +
+        
         (dados.quizzesConcluidos / dados.totalQuizzes) +
         (dados.tarefasConcluidas / dados.totalTarefas) +
         (dados.videoaulasAssistidas / dados.totalVideoaulas)
@@ -66,10 +64,10 @@ function criarDoughnut(ctxId, dados, titulo) {
     new Chart(ctx, {
         type: 'doughnut',
         data: {
-            labels: ['Dias', 'Quizzes', 'Tarefas', 'Videoaulas'],
+            labels: [ 'Quizzes', 'Tarefas', 'Videoaulas'],
             datasets: [{
                 data: [
-                    dados.diasSemUso / dados.objetivoDias * 100,
+                    
                     dados.quizzesConcluidos / dados.totalQuizzes * 100,
                     dados.tarefasConcluidas / dados.totalTarefas * 100,
                     dados.videoaulasAssistidas / dados.totalVideoaulas * 100
@@ -179,12 +177,11 @@ function criarGraficoCircular(id, concluido, total) {
 
 // Criar todos os gráficos com os dados simulados
 window.onload = () => {
-    criarGraficoCircular('alcoolDiasChart', dadosUsuario.alcool.diasSemUso, dadosUsuario.alcool.objetivoDias);
     criarGraficoCircular('alcoolQuizChart', dadosUsuario.alcool.quizzesConcluidos, dadosUsuario.alcool.totalQuizzes);
     criarGraficoCircular('alcoolTarefaChart', dadosUsuario.alcool.tarefasConcluidas, dadosUsuario.alcool.totalTarefas);
     criarGraficoCircular('alcoolVideoChart', dadosUsuario.alcool.videoaulasAssistidas, dadosUsuario.alcool.totalVideoaulas);
 
-    criarGraficoCircular('tabacoDiasChart', dadosUsuario.tabaco.diasSemUso, dadosUsuario.tabaco.objetivoDias);
+    
     criarGraficoCircular('tabacoQuizChart', dadosUsuario.tabaco.quizzesConcluidos, dadosUsuario.tabaco.totalQuizzes);
     criarGraficoCircular('tabacoTarefaChart', dadosUsuario.tabaco.tarefasConcluidas, dadosUsuario.tabaco.totalTarefas);
     criarGraficoCircular('tabacoVideoChart', dadosUsuario.tabaco.videoaulasAssistidas, dadosUsuario.tabaco.totalVideoaulas);
