@@ -20,26 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // JSON simulado do backend
 
 
-const dadosUsuario = {
-    alcool: {
-        
-        quizzesConcluidos: 2,
-        totalQuizzes: 3,
-        tarefasConcluidas: 9,
-        totalTarefas: 10,
-        videoaulasAssistidas: 2,
-        totalVideoaulas: 4
-    },
-    tabaco: {
-      
-        quizzesConcluidos: 1,
-        totalQuizzes: 3,
-        tarefasConcluidas: 4,
-        totalTarefas: 5,
-        videoaulasAssistidas: 3,
-        totalVideoaulas: 4
-    }
-};
+
 
 
 function calcularProgresso(dados) {
