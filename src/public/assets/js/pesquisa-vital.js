@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  const API_URL = "https://jsonvicios.vercel.app/cartaz";
+  const API_URL = "https://089e5876-c1ff-4d8a-9e39-0ae3f90d3ca3-00-3c7qqgjtneu9c.riker.replit.dev/cartaz";
 
   async function montarCards() {
     try {
@@ -54,7 +54,7 @@ $(document).ready(function () {
 
 // PÁGINA DE DETALHES
 if (window.location.pathname.includes("detalhes-pesquisa.html")) {
-  const API_URL = "http://localhost:3000/cartaz";
+  const API_URL = "https://089e5876-c1ff-4d8a-9e39-0ae3f90d3ca3-00-3c7qqgjtneu9c.riker.replit.dev/cartaz";
 
   const urlParams = new URLSearchParams(window.location.search);
   const id = parseInt(urlParams.get("id"));

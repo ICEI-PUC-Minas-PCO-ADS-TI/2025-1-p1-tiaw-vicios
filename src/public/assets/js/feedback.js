@@ -1,4 +1,4 @@
-const API_URL = "https://jsonvicios.vercel.app/feedback";
+const API_URL = "https://089e5876-c1ff-4d8a-9e39-0ae3f90d3ca3-00-3c7qqgjtneu9c.riker.replit.dev/feedback";
 
 
 document.getElementById('feedback-link').onclick = (e) => {

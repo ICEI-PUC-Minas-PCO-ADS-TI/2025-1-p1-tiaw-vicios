@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Check if user already exists
-    fetch('https://jsonvicios.vercel.app/usuarios')
+    fetch('https://089e5876-c1ff-4d8a-9e39-0ae3f90d3ca3-00-3c7qqgjtneu9c.riker.replit.dev/usuarios')
       .then(response => response.json())
       .then(users => {
         const userExists = users.some(u => u.login === email || u.email === email);
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
           senha: senha
         };
 
-        fetch('https://jsonvicios.vercel.app/usuarios', {
+        fetch('https://089e5876-c1ff-4d8a-9e39-0ae3f90d3ca3-00-3c7qqgjtneu9c.riker.replit.dev/usuarios', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Check credentials
-    fetch('https://jsonvicios.vercel.app/usuarios')
+    fetch('https://089e5876-c1ff-4d8a-9e39-0ae3f90d3ca3-00-3c7qqgjtneu9c.riker.replit.dev/usuarios')
       .then(response => response.json())
       .then(users => {
         const user = users.find(u => (u.login === email || u.email === email) && u.senha === senha);
