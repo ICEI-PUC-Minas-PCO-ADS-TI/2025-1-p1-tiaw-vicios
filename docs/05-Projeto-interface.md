@@ -59,6 +59,8 @@ Link: https://www.figma.com/design/A0UV3BOsD0LZ2aEz6RI1tx/Untitled?node-id=7-42&
 1
 ![image](images/wire-frame1.png)
 
+**Descrição:** O wireframe apresenta a estrutura principal da plataforma de apoio à recuperação de vícios, com telas focadas na visualização de progresso, acesso a conteúdos educativos e motivacionais, e navegação simplificada. A interface é construída com base em uma paleta de cores que prioriza acessibilidade, clareza e cores frias a fim de trazer tranquilidade ao usuário. As principais seções incluem a tela inicial com cards de desempenho, uma área de pesquisa com sugestões de conteúdo, uma visualização de progresso detalhado em formato gráfico e um player de vídeo integrado.
+
 2
 ![image](images/wire-frame2.png)
 
