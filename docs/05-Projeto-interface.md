@@ -36,11 +36,17 @@ Link:https://app.flowmapp.com/share/projects/abb0925e-a5e7-45c9-9887-f398f1e9830
 1
 ![image](images/wire-frame1.png)
 
+**Descrição:** O wireframe apresenta a estrutura principal da plataforma de apoio à recuperação de vícios, com telas focadas na visualização de progresso, acesso a conteúdos educativos e motivacionais, e navegação simplificada. A interface é construída com base em uma paleta de cores que prioriza acessibilidade, clareza e cores frias a fim de trazer tranquilidade ao usuário. As principais seções incluem a tela inicial com cards de desempenho, uma área de pesquisa com sugestões de conteúdo, uma visualização de progresso detalhado em formato gráfico e um player de vídeo integrado.
+
 2
 ![image](images/wire-frame2.png)
 
+**Descrição:** Wireframes das telas de Login/Cadastro, Sobre Nós na qual é apresentado o objetivo do projeto, Meu Perfil que vai permitir o usuário visualizar e editar suas informações e também fazer o seu acompanhamento individual, Minha Área para mostrar mostrar o desempenho do usuário e Modo + Saúde que irá ter rescursos voltados para saúde e bem-estar.
+
 3
 ![image](images/wire-frame3.png)
+
+**Descrição:** Wireframes voltadas para engajamento, aprendizado e interação dos usuários, Comunidade/Blog onde será possível trocar experiências, leitura de conteúdo informativos e quiz. A interface do Quiz é um módulo com perguntas de verdadeiro ou falso a fim de educar e testar o conhecimento dos usuários de forma lúdica, com feedback imediato ao usuário se acertou ou errou. Essas wireframe promove educação preventiva, reforço positivo e reflexão sobre o tema, atendendo aos requisitos funcionais de gamificação e apoio informativo.
 
 Link: https://www.figma.com/design/A0UV3BOsD0LZ2aEz6RI1tx/Untitled?node-id=7-42&t=818aevQi425RTuqU-1
 
@@ -58,8 +64,6 @@ Link: https://www.figma.com/design/A0UV3BOsD0LZ2aEz6RI1tx/Untitled?node-id=7-42&
 
 1
 ![image](images/wire-frame1.png)
-
-**Descrição:** O wireframe apresenta a estrutura principal da plataforma de apoio à recuperação de vícios, com telas focadas na visualização de progresso, acesso a conteúdos educativos e motivacionais, e navegação simplificada. A interface é construída com base em uma paleta de cores que prioriza acessibilidade, clareza e cores frias a fim de trazer tranquilidade ao usuário. As principais seções incluem a tela inicial com cards de desempenho, uma área de pesquisa com sugestões de conteúdo, uma visualização de progresso detalhado em formato gráfico e um player de vídeo integrado.
 
 2
 ![image](images/wire-frame2.png)
