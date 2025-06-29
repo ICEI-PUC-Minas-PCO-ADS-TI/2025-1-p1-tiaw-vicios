@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Verificar se o usuário já existe
-    fetch('http://localhost:3000/usuarios')
+    fetch('https://jsonvicios.vercel.app/usuarios')
       .then(response => response.json())
       .then(users => {
         const userExists = users.some(u => u.login === login || u.email === email);
