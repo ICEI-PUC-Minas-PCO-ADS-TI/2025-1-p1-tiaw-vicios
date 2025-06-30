@@ -64,16 +64,18 @@
           "totalQuizzes": 1,
           "tarefasConcluidas": 0,
           "totalTarefas": 0,
-          "videoaulasAssistidas": 0,
-          "totalVideoaulas": 9
+          "videoaulasAssistidas": 1,
+          "totalVideoaulas": 4,
+          "videosConcluidosIds": []
         },
         "tabaco": {
           "quizzesConcluidos": 0,
           "totalQuizzes": 1,
           "tarefasConcluidas": 0,
           "totalTarefas": 0,
-          "videoaulasAssistidas": 0,
-          "totalVideoaulas": 9
+          "videoaulasAssistidas": 1,
+          "totalVideoaulas": 5,
+          "videosConcluidosIds": []
         }
       }
     },
@@ -89,16 +91,18 @@
           "totalQuizzes": 1,
           "tarefasConcluidas": 0,
           "totalTarefas": 0,
-          "videoaulasAssistidas": 0,
-          "totalVideoaulas": 9
+          "videoaulasAssistidas": 1,
+          "totalVideoaulas": 4,
+          "videosConcluidosIds": []
         },
         "tabaco": {
           "quizzesConcluidos": 0,
           "totalQuizzes": 1,
           "tarefasConcluidas": 0,
           "totalTarefas": 0,
-          "videoaulasAssistidas": 0,
-          "totalVideoaulas": 9
+          "videoaulasAssistidas": 1,
+          "totalVideoaulas": 5,
+          "videosConcluidosIds": []
         }
       }
     },
@@ -114,16 +118,50 @@
           "totalQuizzes": 1,
           "tarefasConcluidas": 0,
           "totalTarefas": 0,
-          "videoaulasAssistidas": 0,
-          "totalVideoaulas": 9
+          "videoaulasAssistidas": 1,
+          "totalVideoaulas": 4,
+          "videosConcluidosIds": []
         },
         "tabaco": {
           "quizzesConcluidos": 0,
           "totalQuizzes": 1,
           "tarefasConcluidas": 0,
           "totalTarefas": 0,
-          "videoaulasAssistidas": 0,
-          "totalVideoaulas": 9
+          "videoaulasAssistidas": 1,
+          "totalVideoaulas": 5,
+          "videosConcluidosIds": []
+        }
+      }
+    },
+    {
+      "id": "e752",
+      "nome": "Pablo Henrique Fernandes",
+      "login": "pablohenriquefernandes07@gmail.com",
+      "email": "pablohenriquefernandes07@gmail.com",
+      "senha": "123",
+      "progresso": {
+        "alcool": {
+          "quizzesConcluidos": 0,
+          "totalQuizzes": 1,
+          "tarefasConcluidas": 0,
+          "totalTarefas": 0,
+          "videoaulasAssistidas": 2,
+          "totalVideoaulas": 4,
+          "videosConcluidosIds": [
+            "SsnaBPopuss"
+          ]
+        },
+        "tabaco": {
+          "quizzesConcluidos": 0,
+          "totalQuizzes": 1,
+          "tarefasConcluidas": 0,
+          "totalTarefas": 0,
+          "videoaulasAssistidas": 3,
+          "totalVideoaulas": 5,
+          "videosConcluidosIds": [
+            "VJqQoHJA8sI",
+            "AVK5QRzatyw"
+          ]
         }
       }
     }

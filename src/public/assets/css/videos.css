@@ -333,6 +333,186 @@ input[style*="width: 650px"] {
 
 
 
+/* Estilos para os botões de marcar vídeo como concluído */
+
+/* Estilo base para os botões de vídeo */
+.mark-video-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 12px 24px;
+    margin: 8px 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    min-width: 200px;
+}
+
+/* Efeito hover */
+.mark-video-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+/* Efeito de clique */
+.mark-video-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
+}
+
+/* Estilo específico para o botão de álcool */
+.mark-video-btn[data-module-type="alcool"] {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.mark-video-btn[data-module-type="alcool"]:hover {
+    background: linear-gradient(135deg, #ee5a24 0%, #ff6b6b 100%);
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+}
+
+/* Estilo específico para o botão de tabaco */
+.mark-video-btn[data-module-type="tabaco"] {
+    background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+    box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3);
+}
+
+.mark-video-btn[data-module-type="tabaco"]:hover {
+    background: linear-gradient(135deg, #44a08d 0%, #4ecdc4 100%);
+    box-shadow: 0 8px 25px rgba(78, 205, 196, 0.4);
+}
+
+/* Estado desabilitado (quando o vídeo já foi marcado como concluído) */
+.mark-video-btn:disabled {
+    background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: 0 2px 5px rgba(149, 165, 166, 0.2);
+    opacity: 0.7;
+}
+
+.mark-video-btn:disabled:hover {
+    transform: none;
+    box-shadow: 0 2px 5px rgba(149, 165, 166, 0.2);
+    background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);
+}
+
+/* Efeito de ondulação ao clicar */
+.mark-video-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.mark-video-btn:active::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* Ícone opcional (se você quiser adicionar um ícone) */
+.mark-video-btn::after {
+    content: '✓';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 16px;
+}
+
+.mark-video-btn:disabled::after {
+    opacity: 1;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .mark-video-btn {
+        font-size: 12px;
+        padding: 10px 20px;
+        min-width: 180px;
+        margin: 6px 2px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mark-video-btn {
+        font-size: 11px;
+        padding: 8px 16px;
+        min-width: 160px;
+        margin: 4px 1px;
+        border-radius: 20px;
+    }
+}
+
+/* Animação de pulso para chamar atenção (opcional) */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    }
+    50% {
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.6);
+    }
+    100% {
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    }
+}
+
+/* Aplicar animação de pulso apenas se o botão não foi clicado ainda */
+.mark-video-btn:not(:disabled) {
+    animation: pulse 2s infinite;
+}
+
+/* Parar a animação quando o usuário passa o mouse por cima */
+.mark-video-btn:hover {
+    animation: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Variáveis de Cores */

@@ -35,7 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 tarefasConcluidas: 0,
                 totalTarefas: 0, // Ajuste conforme o total de tarefas de álcool
                 videoaulasAssistidas: 0,
-                totalVideoaulas: 9 // Ajuste conforme o total de videoaulas de álcool
+                totalVideoaulas: 4, // Ajuste conforme o total de videoaulas de álcool
+                videosConcluidosIds: [] // Novo campo: array de IDs de vídeos
+
             },
             tabaco: {
                 quizzesConcluidos: 0,
@@ -43,7 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 tarefasConcluidas: 0,
                 totalTarefas: 5, // Ajuste conforme o total de tarefas de tabaco
                 videoaulasAssistidas: 0,
-                totalVideoaulas: 9 // Ajuste conforme o total de videoaulas de tabaco
+                totalVideoaulas: 5, // Ajuste conforme o total de videoaulas de tabaco
+                videosConcluidosIds: [] // Novo campo: array de IDs de vídeos
             }
         };
 
