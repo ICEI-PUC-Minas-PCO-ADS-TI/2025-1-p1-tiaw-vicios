@@ -6,7 +6,7 @@
 
 `1º semestre/2025`
 
-Escreva um ou dois parágrafos resumindo o objetivo do seu projeto.
+Nosso projeto tem como objetivo desenvolver um site que auxilie pessoas a controlarem um ou mais vícios, oferecendo recursos como textos e vídeos informativos sobre o tema, além de jogos e atividades práticas. Essas ferramentas são projetadas para ajudar o usuário a quebrar o ciclo repetitivo de satisfação, promovendo hábitos mais saudáveis e conscientes.
 
 ## Integrantes
 

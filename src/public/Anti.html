@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>anti stress</title>
+  <link rel="stylesheet" href="assets/css/anti.css">
+</head>
+
+<body>
+  <div class="radio-input" id="theme">
+    <label class="label">
+      <input type="radio" checked="" name="value-radio" value="1" />
+      <p class="text">Stress Ball</p>
+    </label>
+    <label class="label">
+      <input type="radio" name="value-radio" value="2" />
+      <p class="text">Bola de tênis</p>
+    </label>
+  </div>
+
+  <div class="presentation">
+    <h1>STRESS BALL</h1>
+    <p>Sinta seu estresse ir embora</p>
+  </div>
+
+  <div class="ball"></div>
+
+  <div class="hint backdrop">Arraste e solte a bola para se divertir!</div>
+
+  <!-- NOVO CÓDIGO AQUI -->
+  <div id="keywordCard" class="keyword-card">
+    <div class="keyword-card__content">
+      <h2>Parabéns!</h2>
+      <p>Você desbloqueou a palavra-chave secreta!</p>
+      <p><strong>Chave:</strong> ALÍVIO</p>
+      <p>Use a chave para abrir o próximo desafio.</p>
+      <button id="closeKeywordCard">Entendi</button>
+    </div>
+  </div>
+  <!-- FIM DO NOVO CÓDIGO -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/gsap/3.12.5/InertiaPlugin.min.js"></script>
+  <script src="assets/js/anti.js"></script>
+
+</body>
+
+</html>

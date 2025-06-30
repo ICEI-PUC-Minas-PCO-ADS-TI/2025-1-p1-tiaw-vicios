@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Buscar itens do carrossel do servidor JSON
   const items = [];
 
-  fetch('http://localhost:3000/carouselItems')
+  fetch('https://089e5876-c1ff-4d8a-9e39-0ae3f90d3ca3-00-3c7qqgjtneu9c.riker.replit.dev/carouselItems')
     .then(response => response.json())
     .then(data => {
       data.forEach(item => items.push(item));
