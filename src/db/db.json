@@ -141,7 +141,7 @@
       "senha": "123",
       "progresso": {
         "alcool": {
-          "quizzesConcluidos": 0,
+          "quizzesConcluidos": 1,
           "totalQuizzes": 1,
           "tarefasConcluidas": 0,
           "totalTarefas": 0,
@@ -152,7 +152,7 @@
           ]
         },
         "tabaco": {
-          "quizzesConcluidos": 0,
+          "quizzesConcluidos": 1,
           "totalQuizzes": 1,
           "tarefasConcluidas": 0,
           "totalTarefas": 0,
@@ -162,7 +162,8 @@
             "VJqQoHJA8sI",
             "AVK5QRzatyw"
           ]
-        }
+        },
+        "quizGeralConcluido": true
       }
     }
   ],
