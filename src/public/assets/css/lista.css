@@ -208,6 +208,19 @@ body {
   transition: var(--transition-normal);
 }
 
+
+.type-select {
+  padding: 0.875rem 1rem;
+  border: 2px solid var(--gray-200);
+  border-radius: var(--border-radius-md);
+  background: var(--bg-secondary);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition-normal);
+}
+
+
+
 .priority-select:focus {
   outline: none;
   border-color: var(--primary-color);

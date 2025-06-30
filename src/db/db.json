@@ -89,8 +89,8 @@
         "alcool": {
           "quizzesConcluidos": 0,
           "totalQuizzes": 1,
-          "tarefasConcluidas": 0,
-          "totalTarefas": 0,
+          "tarefasConcluidas": 1,
+          "totalTarefas": 2,
           "videoaulasAssistidas": 1,
           "totalVideoaulas": 4,
           "videosConcluidosIds": []
@@ -98,8 +98,8 @@
         "tabaco": {
           "quizzesConcluidos": 0,
           "totalQuizzes": 1,
-          "tarefasConcluidas": 0,
-          "totalTarefas": 0,
+          "tarefasConcluidas": 1,
+          "totalTarefas": 2,
           "videoaulasAssistidas": 1,
           "totalVideoaulas": 5,
           "videosConcluidosIds": []
