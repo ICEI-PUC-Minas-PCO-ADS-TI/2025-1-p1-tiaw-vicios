@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
 
         try {
-            const response = await fetch(`http://localhost:3000/usuarios/${currentUserId}`);
+            const response = await fetch(`https://089e5876-c1ff-4d8a-9e39-0ae3f90d3ca3-00-3c7qqgjtneu9c.riker.replit.dev/${currentUserId}`);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
             try {
                 // 1. Buscar os dados atuais do usuário
-                const response = await fetch(`http://localhost:3000/usuarios/${currentUserId}`);
+                const response = await fetch(`https://089e5876-c1ff-4d8a-9e39-0ae3f90d3ca3-00-3c7qqgjtneu9c.riker.replit.dev/${currentUserId}`);
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 }
 
                 // 4. Enviar a atualização para o db.json
-                const updateResponse = await fetch(`http://localhost:3000/usuarios/${currentUserId}`, {
+                const updateResponse = await fetch(`https://089e5876-c1ff-4d8a-9e39-0ae3f90d3ca3-00-3c7qqgjtneu9c.riker.replit.dev/${currentUserId}`, {
                     method: 'PATCH',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ progresso: userData.progresso })
