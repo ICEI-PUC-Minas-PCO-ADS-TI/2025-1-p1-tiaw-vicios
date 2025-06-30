@@ -8,44 +8,135 @@ Se necessário, deve-se descrever neste arquivo os aspectos relevantes da estrut
 Uma sugestão para a estrutura de diretórios do projeto é a seguinte:
 
 ```plaintext
-src/  (esta pasta aqui)
+Certo\! Entendi que você quer a estrutura sem pastas duplicadas e que reflita as informações de data e commit das imagens. Vou consolidar as informações para criar uma representação mais precisa e limpa.
+
+Aqui está a estrutura do seu projeto, organizada e com base nas informações das capturas de tela, evitando duplicatas e incorporando detalhes dos últimos commits:
+
+```
 │
-├── db/
-│   └── db.json (estruturas de dados)
-│
-├── public/ (seu site - front-end)
-│   ├── assets/
-│   │   ├── css/
-│   │   │   ├── styles.css
-│   │   │   └── (outros arquivos .css)
+├── src/
+│   ├── public/ (site - front-end)
+│   │   ├── assets/
+│   │   │   ├── audio/
+│   │   │   │   ├── Fundo.mp3 (enigma (falta troca as chaves e coloca a premiacao) - 4 days ago)
+│   │   │   │   ├── SimonSound1.mp3 (GENIUS SEMI-PRONTO (FALTA COLOCA A CHAVE) - 4 days ago)
+│   │   │   │   ├── SimonSound2.mp3 (GENIUS SEMI-PRONTO (FALTA COLOCA A CHAVE) - 4 days ago)
+│   │   │   │   ├── SimonSound3.mp3 (GENIUS SEMI-PRONTO (FALTA COLOCA A CHAVE) - 4 days ago)
+│   │   │   │   └── SimonSound4.mp3 (GENIUS SEMI-PRONTO (FALTA COLOCA A CHAVE) - 4 days ago)
+│   │   │   │
+│   │   │   ├── css/
+│   │   │   │   ├── adriel.css (Orgnanização - 4 days ago)
+│   │   │   │   ├── anti.css (jogo da bolinha (falta coloca a chave) - 4 days ago)
+│   │   │   │   ├── caderno.css (mudanças - 3 days ago)
+│   │   │   │   ├── calendario.css (Orgnanização - 4 days ago)
+│   │   │   │   ├── carousel.css (página de login, cadastro, cards e carrousel implementado - last week)
+│   │   │   │   ├── enigma.css (enigma (falta troca as chaves e coloca a premiacao) - 4 days ago)
+│   │   │   │   ├── feedback.css (home finalizada (talvez precise de mudanca na nav) - 3 days ago)
+│   │   │   │   ├── genius.css (GENIUS SEMI-PRONTO (FALTA COLOCA A CHAVE) - 4 days ago)
+│   │   │   │   ├── jogos.css (pronto (falta o enigma) - 3 days ago)
+│   │   │   │   ├── lista.css (pronto (falta o enigma) - 3 days ago)
+│   │   │   │   ├── login.css (Login-uptade - 5 hours ago)
+│   │   │   │   ├── minha_pagina.css (criação da minha-página - 3 days ago)
+│   │   │   │   ├── pesquisa_vital.css (padronizando - 3 days ago)
+│   │   │   │   ├── piano.css (piano (falta so a chave) - 3 days ago)
+│   │   │   │   ├── quiz.css (quiz finalizado e estilizado - 4 days ago)
+│   │   │   │   ├── style.css (padronizando - 3 days ago)
+│   │   │   │   └── videos.css (video integrado com o progresso - 39 minutes ago)
+│   │   │   │
+│   │   │   ├── images/
+│   │   │   │   ├── 1.png (criação da minha-página - 3 days ago)
+│   │   │   │   ├── 2.png (criação da minha-página - 3 days ago)
+│   │   │   │   ├── 3.png (criação da minha-página - 3 days ago)
+│   │   │   │   ├── arquivo_json.png (Initial commit - 3 months ago)
+│   │   │   │   ├── banner_ti.png (Initial commit - 3 months ago)
+│   │   │   │   ├── capa1.png (home pronta - 4 days ago)
+│   │   │   │   ├── capa2.png (home pronta - 4 days ago)
+│   │   │   │   ├── capa3.png (home pronta - 4 days ago)
+│   │   │   │   ├── capa4.png (home pronta - 4 days ago)
+│   │   │   │   ├── dinamica_web.png (Initial commit - 3 months ago)
+│   │   │   │   ├── GENIUS.png (Implementação das funcionalidades do vinicius thales e imagens - 4 days ago)
+│   │   │   │   ├── logoENIGMA.png (enigma (falta troca as chaves e coloca a premiacao) - 4 days ago)
+│   │   │   │   ├── LotusBranco.png (home pronta - 4 days ago)
+│   │   │   │   ├── lotusroxo.png (GENIUS SEMI-PRONTO (FALTA COLOCA A CHAVE) - 4 days ago)
+│   │   │   │   ├── piano.jpg (Implementação das funcionalidades do vinicius thales e imagens - 4 days ago)
+│   │   │   │   ├── piano.png (Implementação das funcionalidades do vinicius thales e imagens - 4 days ago)
+│   │   │   │   ├── QUIZ.png (Implementação das funcionalidades do vinicius thales e imagens - 4 days ago)
+│   │   │   │   ├── sem_imagem.png (Orgnanização - 4 days ago)
+│   │   │   │   ├── servidor.png (Initial commit - 3 months ago)
+│   │   │   │   ├── silhueta.png (criação da minha-página - 3 days ago)
+│   │   │   │   ├── stars.png (enigma (falta troca as chaves e coloca a premiacao) - 4 days ago)
+│   │   │   │   └── texto.png (Alteração da posição dos arquivos - 5 days ago)
+│   │   │   │
+│   │   │   └── js/
+│   │   │       ├── anti.js (jogo da bolinha (falta coloca a chave) - 4 days ago)
+│   │   │       ├── caderno.js (Orgnanização - 4 days ago)
+│   │   │       ├── calendario.js (Orgnanização - 4 days ago)
+│   │   │       ├── cards.js (página de login, cadastro, cards e carrousel implementado - last week)
+│   │   │       ├── carousel.js (página de login, cadastro, cards e carrousel implementado - last week)
+│   │   │       ├── Conteudo.js (Orgnanização - 4 days ago)
+│   │   │       ├── detalhes.js (página de login, cadastro, cards e carrousel implementado - last week)
+│   │   │       ├── enigma.js (CHAVES - 3 days ago)
+│   │   │       ├── feedback.js (uptdade na hospedagem para o replit - 4 hours ago)
+│   │   │       ├── genius.js (GENIUS SEMI-PRONTO (FALTA COLOCA A CHAVE) - 4 days ago)
+│   │   │       ├── index.js (resolvendo id nos links - 1 hour ago)
+│   │   │       ├── jquery-3.7.1.slim.min.js (Alteração nos arquivos e pastas do artefato vital - 4 days ago)
+│   │   │       ├── jogos.js (quizzz integrado com o progresso - 13 minutes ago)
+│   │   │       ├── lista.js (Implementação das funcionalidades do vinicius thales e imagens - 4 days ago)
+│   │   │       ├── login-cadastro.js (quizzz integrado com o progresso - 13 minutes ago)
+│   │   │       ├── nav.js (nav com links certo - 1 hour ago)
+│   │   │       ├── pesquisa.js (página de login, cadastro, cards e carrousel implementado - last week)
+│   │   │       ├── pesquisa-vital.js (uptdade na hospedagem para o replit - 4 hours ago)
+│   │   │       ├── piano.js (piano (falta so a chave) - 3 days ago)
+│   │   │       ├── quiz.js (quizzz integrado com o progresso - 13 minutes ago)
+│   │   │       └── videos_script.js (video integrado com o progresso - 40 minutes ago)
 │   │   │
-│   │   ├── js/
-│   │   │   ├── app.js
-│   │   │   └── (outros arquivos .js)
-│   │   │
-│   │   ├── images/
-│   │   │   ├── logo.png
-│   │   │   └── (outras imagens)
-│   │   │
-│   │   └── fonts/
-│   │       ├── font1.ttf
-│   │       └── (outras fontes)
+│   │   ├── about.html (Initial commit - 3 months ago)
+│   │   ├── Anti.html (CHAVES - 3 days ago)
+│   │   ├── cadastro.html (Login-uptade - 5 hours ago)
+│   │   ├── caderno.html (mudanças - 3 days ago)
+│   │   ├── detalhes.html (página de login, cadastro, cards e carrousel implementado - last week)
+│   │   ├── detalhes-pesquisa.html (pronto (falta o enigma) - 3 days ago)
+│   │   ├── enigma.html (CHAVES - 3 days ago)
+│   │   ├── favicon.ico (Orgnanização - 4 days ago)
+│   │   ├── genius.html (CHAVES - 3 days ago)
+│   │   ├── home.html (nav com links certo - 1 hour ago)
+│   │   ├── index.html (Login-uptade - 5 hours ago)
+│   │   ├── jogos.html (pronto (falta o enigma) - 3 days ago)
+│   │   ├── lista.html (pronto (falta o enigma) - 3 days ago)
+│   │   ├── minha_pagina.html (criação da minha-página - 3 days ago)
+│   │   ├── pesquisa.html (página de login, cadastro, cards e carrousel implementado - last week)
+│   │   ├── pesquisa-vital.html (pronto (falta o enigma) - 3 days ago)
+│   │   ├── piano.html (CHAVES - 3 days ago)
+│   │   ├── quiz.html (quiz finalizado e estilizado - 4 days ago)
+│   │   └── videos.html (video integrado com o progresso - 39 minutes ago)
 │   │
-│   ├── modulos/
-│   │   ├── modulo-1/
-│   │   │   └── (arquivos do módulo)
-│   │   │
-│   │   └── modulo-2/
-│   │       └── (arquivos do módulo)
+│   ├── .git/ (Este diretório provavelmente representa o controle de versão Git)
 │   │
-│   ├── index.html (página inicial front-end)
-│   ├── about.html
-│   ├── contact.html
-│   └── (outras páginas)
+│   ├── db/
+│   │   └── db.json (informações não visíveis nas capturas de tela para commits específicos)
+│   │
+│   ├── templates/ (Arquivos de template - inferido de estruturas comuns de projeto)
+│   │   └── (arquivos de template)
+│   │
+│   ├── CITATION.cff (informações não visíveis nas capturas de tela para commits específicos)
+│   ├── edit_instructions.txt (informações não visíveis nas capturas de tela para commits específicos)
+│   ├── LICENSE (informações não visíveis nas capturas de tela para commits específicos)
+│   ├── package.json (configuração back-end - informações não visíveis nas capturas de tela para commits específicos)
+│   ├── package-lock.json (informações não visíveis nas capturas de tela para commits específicos)
+│   ├── README.md (informações não visíveis nas capturas de tela para commits específicos)
+│   └── server.js (aplicativo back-end - informações não visíveis nas capturas de tela para commits específicos)
 │
-│── index.js (app back-end)
-│── package.json (configuração back-end)
-└── README.md (este arquivo aqui)
+└── 2025-1-P1-TIAW-VICIOS/ (Este parece ser o diretório raiz do projeto)
+    ├── artefatos RomuloC/ (Artefatos adicionais ou arquivos específicos do usuário)
+    │
+    ├── .vscode/ (Configurações do VS Code)
+    │
+    ├── docs/ (Documentação)
+    │
+    ├── presentation/ (Apresentação)
+    │
+    └── README.md (Este é o README.md na raiz do projeto)
+```
 ```
 
 ## Parte front-end
