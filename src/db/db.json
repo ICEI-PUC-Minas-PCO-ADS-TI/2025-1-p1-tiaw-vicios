@@ -57,14 +57,75 @@
       "nome": "aaa",
       "login": "aaaa@gmail.com",
       "email": "aaaa@gmail.com",
-      "senha": "123"
+      "senha": "123",
+      "progresso": {
+        "alcool": {
+          "quizzesConcluidos": 0,
+          "totalQuizzes": 1,
+          "tarefasConcluidas": 0,
+          "totalTarefas": 0,
+          "videoaulasAssistidas": 0,
+          "totalVideoaulas": 9
+        },
+        "tabaco": {
+          "quizzesConcluidos": 0,
+          "totalQuizzes": 1,
+          "tarefasConcluidas": 0,
+          "totalTarefas": 0,
+          "videoaulasAssistidas": 0,
+          "totalVideoaulas": 9
+        }
+      }
     },
     {
       "id": "ce85",
       "nome": "Vinicius",
       "login": "gomes@gmail.com",
       "email": "gomes@gmail.com",
-      "senha": "123"
+      "senha": "123",
+      "progresso": {
+        "alcool": {
+          "quizzesConcluidos": 0,
+          "totalQuizzes": 1,
+          "tarefasConcluidas": 0,
+          "totalTarefas": 0,
+          "videoaulasAssistidas": 0,
+          "totalVideoaulas": 9
+        },
+        "tabaco": {
+          "quizzesConcluidos": 0,
+          "totalQuizzes": 1,
+          "tarefasConcluidas": 0,
+          "totalTarefas": 0,
+          "videoaulasAssistidas": 0,
+          "totalVideoaulas": 9
+        }
+      }
+    },
+    {
+      "id": "65a9",
+      "nome": "admiro",
+      "login": "adm@gmail.com",
+      "email": "adm@gmail.com",
+      "senha": "123",
+      "progresso": {
+        "alcool": {
+          "quizzesConcluidos": 0,
+          "totalQuizzes": 1,
+          "tarefasConcluidas": 0,
+          "totalTarefas": 0,
+          "videoaulasAssistidas": 0,
+          "totalVideoaulas": 9
+        },
+        "tabaco": {
+          "quizzesConcluidos": 0,
+          "totalQuizzes": 1,
+          "tarefasConcluidas": 0,
+          "totalTarefas": 0,
+          "videoaulasAssistidas": 0,
+          "totalVideoaulas": 9
+        }
+      }
     }
   ],
   "carouselItems": [

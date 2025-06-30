@@ -1,106 +1,132 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   // Registration form handling
-  const registerForm = document.getElementById('register-form');
-  const registerMessage = document.getElementById('register-message');
+  const registerForm = document.getElementById("register-form");
+  const registerMessage = document.getElementById("register-message");
 
-  registerForm.addEventListener('submit', (e) => {
+  registerForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const nome = document.getElementById('nome').value.trim();
-    const email = document.getElementById('email-register').value.trim();
-    const senha = document.getElementById('senha-register').value.trim();
+    const nome = document.getElementById("nome").value.trim();
+    const email = document.getElementById("email-register").value.trim();
+    const senha = document.getElementById("senha-register").value.trim();
 
     if (!nome || !email || !senha) {
-      registerMessage.style.color = 'red';
-      registerMessage.textContent = 'Por favor, preencha todos os campos.';
+      registerMessage.style.color = "red";
+      registerMessage.textContent = "Por favor, preencha todos os campos.";
       return;
     }
 
     // Check if user already exists
-    fetch('https://089e5876-c1ff-4d8a-9e39-0ae3f90d3ca3-00-3c7qqgjtneu9c.riker.replit.dev/usuarios')
+    fetch("http://localhost:3000/usuarios")
       .then(response => response.json())
       .then(users => {
         const userExists = users.some(u => u.login === email || u.email === email);
         if (userExists) {
-          registerMessage.style.color = 'red';
-          registerMessage.textContent = 'Usuário ou email já cadastrado.';
+          registerMessage.style.color = "red";
+          registerMessage.textContent = "Usuário ou email já cadastrado.";
           return;
         }
 
-        // Create new user
+        // Define o progresso inicial para um novo usuário
+        const initialProgress = {
+            alcool: {
+                quizzesConcluidos: 0,
+                totalQuizzes: 1, // Ajuste conforme o total de quizzes de álcool
+                tarefasConcluidas: 0,
+                totalTarefas: 0, // Ajuste conforme o total de tarefas de álcool
+                videoaulasAssistidas: 0,
+                totalVideoaulas: 9 // Ajuste conforme o total de videoaulas de álcool
+            },
+            tabaco: {
+                quizzesConcluidos: 0,
+                totalQuizzes: 1, // Ajuste conforme o total de quizzes de tabaco
+                tarefasConcluidas: 0,
+                totalTarefas: 5, // Ajuste conforme o total de tarefas de tabaco
+                videoaulasAssistidas: 0,
+                totalVideoaulas: 9 // Ajuste conforme o total de videoaulas de tabaco
+            }
+        };
+
+        // Create new user with initial progress
         const newUser = {
           nome: nome,
           login: email,
           email: email,
-          senha: senha
+          senha: senha,
+          progresso: initialProgress // Adiciona o progresso inicial aqui
         };
 
-        fetch('https://089e5876-c1ff-4d8a-9e39-0ae3f90d3ca3-00-3c7qqgjtneu9c.riker.replit.dev/usuarios', {
-          method: 'POST',
+        fetch("http://localhost:3000/usuarios", {
+          method: "POST",
           headers: {
-            'Content-Type': 'application/json'
+            "Content-Type": "application/json"
           },
           body: JSON.stringify(newUser)
         })
           .then(response => {
             if (response.ok) {
-              alert('Cadastro realizado com sucesso! Você pode fazer login agora.');
+              alert("Cadastro realizado com sucesso! Você pode fazer login agora.");
               registerForm.reset();
-              window.location.href = 'home.html';
+              // Redireciona para a home, passando o ID do usuário recém-criado
+              response.json().then(createdUser => {
+                window.location.href = `home.html?userId=${createdUser.id}`;
+              });
             } else {
-              throw new Error('Erro ao cadastrar usuário.');
+              throw new Error("Erro ao cadastrar usuário.");
             }
           })
           .catch(error => {
-            registerMessage.style.color = 'red';
+            registerMessage.style.color = "red";
             registerMessage.textContent = error.message;
           });
       })
       .catch(error => {
-        registerMessage.style.color = 'red';
-        registerMessage.textContent = 'Erro ao conectar ao servidor.';
-        console.error('Erro:', error);
+        registerMessage.style.color = "red";
+        registerMessage.textContent = "Erro ao conectar ao servidor.";
+        console.error("Erro:", error);
       });
   });
 
   // Login form handling
-  const loginForm = document.getElementById('login-form');
-  const loginMessage = document.getElementById('login-message');
+  const loginForm = document.getElementById("login-form");
+  const loginMessage = document.getElementById("login-message");
 
-  loginForm.addEventListener('submit', (e) => {
+  loginForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const email = document.getElementById('email-login').value.trim();
-    const senha = document.getElementById('senha-login').value.trim();
+    const email = document.getElementById("email-login").value.trim();
+    const senha = document.getElementById("senha-login").value.trim();
 
     if (!email || !senha) {
-      loginMessage.style.color = 'red';
-      loginMessage.textContent = 'Por favor, preencha todos os campos.';
+      loginMessage.style.color = "red";
+      loginMessage.textContent = "Por favor, preencha todos os campos.";
       return;
     }
 
     // Check credentials
-    fetch('https://089e5876-c1ff-4d8a-9e39-0ae3f90d3ca3-00-3c7qqgjtneu9c.riker.replit.dev/usuarios')
+    fetch("http://localhost:3000/usuarios")
       .then(response => response.json())
       .then(users => {
         const user = users.find(u => (u.login === email || u.email === email) && u.senha === senha);
         if (user) {
-          alert('Login realizado com sucesso! Redirecionando...');
-          loginMessage.style.color = 'green';
-          loginMessage.textContent = 'Login realizado com sucesso! Redirecionando...';
+          alert("Login realizado com sucesso! Redirecionando...");
+          loginMessage.style.color = "green";
+          loginMessage.textContent = "Login realizado com sucesso! Redirecionando...";
           // Redirect to home or another page after successful login, including user id in URL
           setTimeout(() => {
             window.location.href = `home.html?userId=${user.id}`;
           }, 1500);
         } else {
-          loginMessage.style.color = 'red';
-          loginMessage.textContent = 'Email ou senha incorretos.';
+          loginMessage.style.color = "red";
+          loginMessage.textContent = "Email ou senha incorretos.";
         }
       })
       .catch(error => {
-        loginMessage.style.color = 'red';
-        loginMessage.textContent = 'Erro ao conectar ao servidor.';
-        console.error('Erro:', error);
+        loginMessage.style.color = "red";
+        loginMessage.textContent = "Erro ao conectar ao servidor.";
+        console.error("Erro:", error);
       });
   });
 });
+
+
