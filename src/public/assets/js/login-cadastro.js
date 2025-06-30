@@ -29,25 +29,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Define o progresso inicial para um novo usuário
         const initialProgress = {
-            alcool: {
-                quizzesConcluidos: 0,
-                totalQuizzes: 1, // Ajuste conforme o total de quizzes de álcool
-                tarefasConcluidas: 0,
-                totalTarefas: 0, // Ajuste conforme o total de tarefas de álcool
-                videoaulasAssistidas: 0,
-                totalVideoaulas: 4, // Ajuste conforme o total de videoaulas de álcool
-                videosConcluidosIds: [] // Novo campo: array de IDs de vídeos
+          alcool: {
+            quizzesConcluidos: 0,
+            totalQuizzes: 1, // Ajuste conforme o total de quizzes de álcool
+            tarefasConcluidas: 0,
+            totalTarefas: 0, // Ajuste conforme o total de tarefas de álcool
+            videoaulasAssistidas: 0,
+            totalVideoaulas: 4, // Ajuste conforme o total de videoaulas de álcool
+            videosConcluidosIds: [] // Novo campo: array de IDs de vídeos
 
-            },
-            tabaco: {
-                quizzesConcluidos: 0,
-                totalQuizzes: 1, // Ajuste conforme o total de quizzes de tabaco
-                tarefasConcluidas: 0,
-                totalTarefas: 5, // Ajuste conforme o total de tarefas de tabaco
-                videoaulasAssistidas: 0,
-                totalVideoaulas: 5, // Ajuste conforme o total de videoaulas de tabaco
-                videosConcluidosIds: [] // Novo campo: array de IDs de vídeos
-            }
+          },
+          tabaco: {
+            quizzesConcluidos: 0,
+            totalQuizzes: 1, // Ajuste conforme o total de quizzes de tabaco
+            tarefasConcluidas: 0,
+            totalTarefas: 5, // Ajuste conforme o total de tarefas de tabaco
+            videoaulasAssistidas: 0,
+            totalVideoaulas: 5, // Ajuste conforme o total de videoaulas de tabaco
+            videosConcluidosIds: [] // Novo campo: array de IDs de vídeos
+          },
+          quizGeralConcluido: false
+
         };
 
         // Create new user with initial progress
