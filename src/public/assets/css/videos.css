@@ -1,0 +1,733 @@
+/* ===== NAVBAR PRINCIPAL ===== */
+.floating-navbar {
+  position: fixed !important;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 16px;
+  background-color: #673AB7;
+  padding: 10px 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+/* ===== OFFCANVAS ===== */
+.offcanvas {
+  background-color: #683ab7b7 !important;
+  color: #f2f2f2 !important;
+  border-bottom-right-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.offcanvas-header {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.418) !important;
+}
+
+.dropdown-menu {
+  background-color: #683ab7b7 !important;
+  color: #f2f2f2 !important;
+  border-radius: 20px !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+}
+
+.dropdown-item {
+  color: #f2f2f2 !important;
+  padding: 10px 20px !important;
+  border-radius: 10px !important;
+}
+
+/* ===== BOTÃO DO MENU ===== */
+.offcanvasty {
+  border: 2px solid rgba(255, 255, 255, 0) !important;
+  background-color: transparent !important;
+  padding: 0.375rem 0.75rem;
+}
+
+.offcanvasty .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2.5' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  width: 1.5em;
+  height: 1.5em;
+}
+
+/* ===== FORMULÁRIO DE BUSCA ===== */
+.search-form {
+  max-width: 600px;
+  width: 100%;
+}
+
+.search-input {
+  border-radius: 20px !important;
+  padding: 10px 15px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.273);
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #f2f2f2 !important;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+  flex: 1;
+  min-width: 0;
+  /* Permite encolhimento */
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.search-input:focus {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25) !important;
+  color: #f2f2f2 !important;
+}
+
+.search-btn {
+  border-radius: 20px !important;
+  padding: 10px 15px;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+  min-width: 50px;
+}
+
+.search-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* ===== ÍCONES DE NAVEGAÇÃO ===== */
+.nav-icon {
+  font-size: 1.8rem;
+  transition: transform 0.2s ease;
+}
+
+.nav-link:hover .nav-icon {
+  transform: scale(1.1);
+}
+
+.nav-link {
+  padding: 0.5rem !important;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+/* ===== BUSCA MOBILE ===== */
+.mobile-search {
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== MEDIA QUERIES RESPONSIVAS ===== */
+
+/* Telas grandes (desktops) */
+@media (min-width: 992px) {
+  .floating-navbar {
+    padding: 15px 30px;
+  }
+
+  .search-form {
+    max-width: 500px;
+  }
+}
+
+/* Telas médias (tablets) */
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .floating-navbar {
+    width: 95%;
+    padding: 12px 20px;
+  }
+
+  .nav-icon {
+    font-size: 1.6rem;
+  }
+
+  body {
+    padding-top: 90px;
+    min-height: 100vh;
+
+  }
+}
+
+/* Telas pequenas (celulares) */
+@media (max-width: 767.98px) {
+  .floating-navbar {
+    width: 95%;
+    padding: 10px 15px;
+    top: 10px;
+  }
+
+  .navbar-brand img {
+    width: 35px !important;
+    height: 35px !important;
+  }
+
+  .nav-icon {
+    font-size: 1.4rem;
+  }
+
+  body {
+    padding-top: 80px;
+    height: 165vh;
+
+    .carrossel-com-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Move o card de álcool para depois do carrossel visualmente */
+    .cardDetalhes:first-of-type {
+      order: 2;
+    }
+
+    .bannerPrincipal {
+      order: 1;
+    }
+
+    .cardDetalhes:last-of-type {
+      order: 3;
+    }
+
+    .bannerPrincipal {
+      flex: 1 1 100%;
+
+    }
+
+  }
+
+
+
+  .search-input {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .search-btn {
+    padding: 8px 12px;
+  }
+}
+
+/* Telas extra pequenas */
+@media (max-width: 575.98px) {
+  .floating-navbar {
+    width: 98%;
+    padding: 8px 12px;
+    top: 5px;
+  }
+
+  .navbar-brand {
+    margin-right: 0.5rem !important;
+  }
+
+  .navbar-brand img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .nav-icon {
+    font-size: 1.2rem;
+  }
+
+  body {
+    padding-top: 7px;
+    min-height: 100vh;
+
+  }
+
+  .offcanvasty .navbar-toggler-icon {
+    width: 1.2em;
+    height: 1.2em;
+  }
+}
+
+/* ===== ESTADOS DE FOCO PARA ACESSIBILIDADE ===== */
+.nav-link:focus,
+.offcanvasty:focus,
+.search-btn:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
+}
+
+/* ===== TRANSIÇÕES SUAVES ===== */
+* {
+  transition: all 0.2s ease;
+}
+
+/* ===== CLASSES UTILITÁRIAS RESPONSIVAS ===== */
+.gap-responsive {
+  gap: 0.75rem;
+}
+
+@media (max-width: 767.98px) {
+  .gap-responsive {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .gap-responsive {
+    gap: 0.25rem;
+  }
+}
+
+/* ===== CORREÇÕES ESPECÍFICAS ===== */
+
+/* Remove a largura fixa problemática do input original */
+input[style*="width: 650px"] {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Garante que os elementos não quebrem o layout */
+.container-fluid {
+  overflow-x: hidden;
+}
+
+/* Melhora a aparência em telas muito pequenas */
+@media (max-width: 320px) {
+  .floating-navbar {
+    width: 99%;
+    padding: 6px 10px;
+  }
+
+  .navbar-brand img {
+    width: 25px !important;
+    height: 25px !important;
+  }
+
+  .nav-icon {
+    font-size: 1rem;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para os botões de marcar vídeo como concluído */
+
+/* Estilo base para os botões de vídeo */
+.mark-video-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 12px 24px;
+    margin: 8px 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    min-width: 200px;
+}
+
+/* Efeito hover */
+.mark-video-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+/* Efeito de clique */
+.mark-video-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
+}
+
+/* Estilo específico para o botão de álcool */
+.mark-video-btn[data-module-type="alcool"] {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.mark-video-btn[data-module-type="alcool"]:hover {
+    background: linear-gradient(135deg, #ee5a24 0%, #ff6b6b 100%);
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+}
+
+/* Estilo específico para o botão de tabaco */
+.mark-video-btn[data-module-type="tabaco"] {
+    background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+    box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3);
+}
+
+.mark-video-btn[data-module-type="tabaco"]:hover {
+    background: linear-gradient(135deg, #44a08d 0%, #4ecdc4 100%);
+    box-shadow: 0 8px 25px rgba(78, 205, 196, 0.4);
+}
+
+/* Estado desabilitado (quando o vídeo já foi marcado como concluído) */
+.mark-video-btn:disabled {
+    background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: 0 2px 5px rgba(149, 165, 166, 0.2);
+    opacity: 0.7;
+}
+
+.mark-video-btn:disabled:hover {
+    transform: none;
+    box-shadow: 0 2px 5px rgba(149, 165, 166, 0.2);
+    background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);
+}
+
+/* Efeito de ondulação ao clicar */
+.mark-video-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.mark-video-btn:active::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* Ícone opcional (se você quiser adicionar um ícone) */
+.mark-video-btn::after {
+    content: '✓';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 16px;
+}
+
+.mark-video-btn:disabled::after {
+    opacity: 1;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .mark-video-btn {
+        font-size: 12px;
+        padding: 10px 20px;
+        min-width: 180px;
+        margin: 6px 2px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mark-video-btn {
+        font-size: 11px;
+        padding: 8px 16px;
+        min-width: 160px;
+        margin: 4px 1px;
+        border-radius: 20px;
+    }
+}
+
+/* Animação de pulso para chamar atenção (opcional) */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    }
+    50% {
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.6);
+    }
+    100% {
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    }
+}
+
+/* Aplicar animação de pulso apenas se o botão não foi clicado ainda */
+.mark-video-btn:not(:disabled) {
+    animation: pulse 2s infinite;
+}
+
+/* Parar a animação quando o usuário passa o mouse por cima */
+.mark-video-btn:hover {
+    animation: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Variáveis de Cores */
+:root {
+    --clr-roxo-claro: #B39DDB;
+    --clr-roxo-escuro: #673AB7;
+    --clr-azul-marinho: #2A3D66;
+    --clr-cinza-claro: #E0E0E0;
+    --clr-branco: #FFFFFF;
+}
+
+/* Reset básico e fontes */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--clr-branco); /* Texto principal em branco para fundo escuro */
+    background-color: var(--clr-azul-marinho); /* 70% Azul-marinho para fundo principal */
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Cabeçalho */
+.main-header {
+    background-color: var(--clr-roxo-escuro); /* Seção importante, 15% Roxo-escuro */
+    color: var(--clr-branco);
+    padding: 3rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-header h1 {
+    font-family: 'Bungee', cursive;
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.main-header p {
+    font-size: 1.8rem;
+    opacity: 0.9;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    flex-grow: 1;
+    
+}
+
+/* Seções de Playlist */
+.playlist-section {
+    background-color: rgba(42, 61, 102, 0.8); /* Azul-marinho com transparência para seções */
+    padding: 3rem;
+    margin-bottom: 4rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--clr-roxo-claro); /* Destaque sutil */
+}
+
+.playlist-title {
+    font-family: 'Arima Madurai', cursive;
+    font-size: 3.2rem;
+    color: var(--clr-roxo-claro); /* Títulos secundários, 10% Roxo-claro */
+    margin-bottom: 2.5rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.playlist-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--clr-roxo-escuro);
+    border-radius: 5px;
+}
+
+/* Grid de Vídeos */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.video-item {
+    background-color: var(--clr-cinza-claro); /* Fundo secundário para itens, 5% Cinza-claro */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: var(--clr-azul-marinho); /* Texto em fundos claros */
+}
+
+.video-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.video-item iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Mantém a proporção 16:9 para vídeos */
+    display: block;
+}
+
+.video-item h3 {
+    font-size: 2rem;
+    padding: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--clr-roxo-escuro); /* Título do vídeo, Roxo-escuro */
+}
+
+/* Rodapé */
+.main-footer {
+    background-color: var(--clr-azul-marinho); /* Fundo do rodapé */
+    color: var(--clr-branco);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: auto; /* Empurra o rodapé para o final da página */
+    border-top: 1px solid var(--clr-roxo-escuro);
+}
+
+.main-footer p {
+    font-size: 1.4rem;
+    opacity: 0.8;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 3.5rem;
+    }
+
+    .main-header p {
+        font-size: 1.6rem;
+    }
+
+    .container {
+        margin: 2rem auto;
+        padding: 0 1.5rem;
+    }
+
+    .playlist-section {
+        padding: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .playlist-title {
+        font-size: 2.8rem;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+        gap: 2rem;
+    }
+
+    .video-item h3 {
+        font-size: 1.8rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 55%; /* Ajuste para telas muito pequenas */
+    }
+
+    .main-header h1 {
+        font-size: 3rem;
+    }
+
+    .main-header p {
+        font-size: 1.4rem;
+    }
+
+    .playlist-section {
+        padding: 1.5rem;
+    }
+
+    .playlist-title {
+        font-size: 2.4rem;
+    }
+}
+@media (max-width: 360px) {
+    .main-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .main-header p {
+        font-size: 1.2rem;
+    }
+
+    .playlist-title {
+        font-size: 2rem;
+    }
+
+    .video-item h3 {
+        font-size: 1.6rem;
+    }
+}

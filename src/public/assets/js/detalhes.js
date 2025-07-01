@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Buscar dados do item pelo id no servidor JSON
-  fetch(`http://localhost:3000/carouselItems/${itemId}`)
+  fetch(`https://089e5876-c1ff-4d8a-9e39-0ae3f90d3ca3-00-3c7qqgjtneu9c.riker.replit.dev/carouselItems/${itemId}`)
     .then(response => {
       if (!response.ok) {
         throw new Error('Item não encontrado');

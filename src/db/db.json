@@ -1,83 +1,175 @@
 {
   "questoes": [
     {
-      "id": 1,
+      "id": "1",
       "question": "O tratamento para vícios é sempre o mesmo, independentemente do tipo de vício.",
       "answer": false
     },
     {
-      "id": 2,
+      "id": "2",
       "question": "O apoio de amigos e familiares pode ser crucial na recuperação de um vício.",
       "answer": true
     },
     {
-      "id": 3,
+      "id": "3",
       "question": "O vício é uma escolha e não uma doença.",
       "answer": false
     },
     {
-      "id": 4,
+      "id": "4",
       "question": "A prevenção do vício pode incluir educação e conscientização sobre os riscos.",
       "answer": true
     },
     {
-      "id": 5,
+      "id": "5",
       "question": "Uma pessoa viciada pode parar de usar a substância ou comportamento vicioso a qualquer momento sem ajuda.",
       "answer": false
     },
     {
-      "id": 6,
+      "id": "6",
       "question": "O vício pode levar a problemas legais e financeiros.",
       "answer": true
     },
     {
-      "id": 7,
+      "id": "7",
       "question": "O tratamento para vícios pode envolver terapia comportamental.",
       "answer": true
     },
     {
-      "id": 8,
+      "id": "8",
       "question": "O vício não afeta a saúde mental da pessoa.",
       "answer": false
     },
     {
-      "id": 9,
+      "id": "9",
       "question": "Medicamentos podem ser usados para ajudar no tratamento de alguns vícios.",
       "answer": true
     },
     {
-      "id": 10,
+      "id": "10",
       "question": "O vício é sempre causado por fraqueza de caráter.",
       "answer": false
     }
   ],
   "usuarios": [
     {
-      "login": "aaaa",
+      "id": "74c4",
+      "nome": "aaa",
+      "login": "aaaa@gmail.com",
+      "email": "aaaa@gmail.com",
       "senha": "123",
-      "nome": "aaaa",
-      "email": "aaaaa@.com",
-      "id": 3
+      "progresso": {
+        "alcool": {
+          "quizzesConcluidos": 0,
+          "totalQuizzes": 1,
+          "tarefasConcluidas": 0,
+          "totalTarefas": 0,
+          "videoaulasAssistidas": 1,
+          "totalVideoaulas": 4,
+          "videosConcluidosIds": []
+        },
+        "tabaco": {
+          "quizzesConcluidos": 0,
+          "totalQuizzes": 1,
+          "tarefasConcluidas": 0,
+          "totalTarefas": 0,
+          "videoaulasAssistidas": 1,
+          "totalVideoaulas": 5,
+          "videosConcluidosIds": []
+        }
+      }
     },
     {
-      "login": "aaaa",
+      "id": "ce85",
+      "nome": "Vinicius",
+      "login": "gomes@gmail.com",
+      "email": "gomes@gmail.com",
       "senha": "123",
-      "nome": "aaaa",
-      "email": "aaaaa@.com",
-      "id": 4
+      "progresso": {
+        "alcool": {
+          "quizzesConcluidos": 0,
+          "totalQuizzes": 1,
+          "tarefasConcluidas": 1,
+          "totalTarefas": 2,
+          "videoaulasAssistidas": 1,
+          "totalVideoaulas": 4,
+          "videosConcluidosIds": []
+        },
+        "tabaco": {
+          "quizzesConcluidos": 0,
+          "totalQuizzes": 1,
+          "tarefasConcluidas": 1,
+          "totalTarefas": 2,
+          "videoaulasAssistidas": 1,
+          "totalVideoaulas": 5,
+          "videosConcluidosIds": []
+        }
+      }
     },
     {
-      "login": "Vinicius ",
+      "id": "65a9",
+      "nome": "admiro",
+      "login": "adm@gmail.com",
+      "email": "adm@gmail.com",
       "senha": "123",
-      "nome": "Gomes",
-      "email": "perei@gmail.com",
-      "id": 5
+      "progresso": {
+        "alcool": {
+          "quizzesConcluidos": 0,
+          "totalQuizzes": 1,
+          "tarefasConcluidas": 0,
+          "totalTarefas": 0,
+          "videoaulasAssistidas": 1,
+          "totalVideoaulas": 4,
+          "videosConcluidosIds": []
+        },
+        "tabaco": {
+          "quizzesConcluidos": 0,
+          "totalQuizzes": 1,
+          "tarefasConcluidas": 0,
+          "totalTarefas": 0,
+          "videoaulasAssistidas": 1,
+          "totalVideoaulas": 5,
+          "videosConcluidosIds": []
+        }
+      }
+    },
+    {
+      "id": "e752",
+      "nome": "Pablo Henrique Fernandes",
+      "login": "pablohenriquefernandes07@gmail.com",
+      "email": "pablohenriquefernandes07@gmail.com",
+      "senha": "123",
+      "progresso": {
+        "alcool": {
+          "quizzesConcluidos": 1,
+          "totalQuizzes": 1,
+          "tarefasConcluidas": 1,
+          "totalTarefas": 1,
+          "videoaulasAssistidas": 2,
+          "totalVideoaulas": 4,
+          "videosConcluidosIds": [
+            "SsnaBPopuss"
+          ]
+        },
+        "tabaco": {
+          "quizzesConcluidos": 1,
+          "totalQuizzes": 1,
+          "tarefasConcluidas": 0,
+          "totalTarefas": 1,
+          "videoaulasAssistidas": 3,
+          "totalVideoaulas": 5,
+          "videosConcluidosIds": [
+            "VJqQoHJA8sI",
+            "AVK5QRzatyw"
+          ]
+        },
+        "quizGeralConcluido": true
+      }
     }
-    
   ],
   "carouselItems": [
     {
-      "id": 1,
+      "id": "1",
       "imgSrc": "assets/images/dinamica_web.png",
       "searchTerm": "vício",
       "title": "Combate ao Vício",
@@ -85,7 +177,7 @@
       "link": "search.html?query=vício"
     },
     {
-      "id": 2,
+      "id": "2",
       "imgSrc": "assets/images/banner_ti.png",
       "searchTerm": "tecnologia",
       "title": "Tecnologia Avançada",
@@ -93,7 +185,7 @@
       "link": "search.html?query=tecnologia"
     },
     {
-      "id": 3,
+      "id": "3",
       "imgSrc": "assets/images/arquivo_json.png",
       "searchTerm": "programação",
       "title": "Programação Moderna",
@@ -101,7 +193,7 @@
       "link": "search.html?query=programação"
     },
     {
-      "id": 4,
+      "id": "4",
       "imgSrc": "assets/images/arquivo_json.png",
       "searchTerm": "json",
       "title": "JSON Simplificado",
@@ -109,7 +201,7 @@
       "link": "search.html?query=json"
     },
     {
-      "id": 5,
+      "id": "5",
       "imgSrc": "assets/images/arquivo_json.png",
       "searchTerm": "dados",
       "title": "Gerenciamento de Dados",
@@ -117,7 +209,7 @@
       "link": "search.html?query=dados"
     },
     {
-      "id": 6,
+      "id": "6",
       "imgSrc": "assets/images/arquivo_json.png",
       "searchTerm": "web",
       "title": "Desenvolvimento Web",
@@ -125,7 +217,7 @@
       "link": "search.html?query=web"
     },
     {
-      "id": 7,
+      "id": "7",
       "imgSrc": "assets/images/arquivo_json.png",
       "searchTerm": "front-end",
       "title": "Front-End Inovador",
@@ -133,7 +225,7 @@
       "link": "search.html?query=front-end"
     },
     {
-      "id": 8,
+      "id": "8",
       "imgSrc": "assets/images/arquivo_json.png",
       "searchTerm": "back-end",
       "title": "Back-End Robusto",
@@ -141,7 +233,7 @@
       "link": "search.html?query=back-end"
     },
     {
-      "id": 9,
+      "id": "9",
       "imgSrc": "assets/images/arquivo_json.png",
       "searchTerm": "full-stack",
       "title": "Full-Stack Completo",
@@ -149,7 +241,7 @@
       "link": "search.html?query=full-stack"
     },
     {
-      "id": 10,
+      "id": "10",
       "imgSrc": "assets/images/arquivo_json.png",
       "searchTerm": "api",
       "title": "APIs Poderosas",
@@ -157,7 +249,7 @@
       "link": "search.html?query=api"
     },
     {
-      "id": 11,
+      "id": "11",
       "imgSrc": "assets/images/arquivo_json.png",
       "searchTerm": "javascript",
       "title": "JavaScript Avançado",
@@ -165,12 +257,134 @@
       "link": "search.html?query=javascript"
     },
     {
-      "id": 12,
+      "id": "12",
       "imgSrc": "assets/images/arquivo_json.png",
       "searchTerm": "html",
       "title": "HTML e CSS",
       "description": "Fundamentos do desenvolvimento web.",
       "link": "search.html?query=html"
+    }
+  ],
+  "feedback": [
+    {
+      "id": "b6f2",
+      "nome": "Pablo Henrique Fernandes",
+      "email": "pablohenriquefernandes07@gmail.com",
+      "data": "26/06/2025",
+      "comentario": "texte"
+    }
+  ],
+  "cartaz": [
+    {
+      "id": "1",
+      "titulo": "Vício",
+      "imagem": "https://picsum.photos/300/300?1",
+      "descricao": "Descubra o significado de vício, como ele surge e os impactos na vida cotidiana.",
+      "detalhes": "Vício é um hábito prejudicial que se torna compulsivo e difícil de controlar, afetando negativamente a saúde física, mental e social da pessoa. Pode estar relacionado a substâncias como álcool e drogas, ou comportamentos como jogos, redes sociais e compras excessivas."
+    },
+    {
+      "id": "2",
+      "titulo": "Tarefas Diárias",
+      "imagem": "https://picsum.photos/300/300?2",
+      "descricao": "Lista prática de tarefas diárias para promover disciplina, foco e equilíbrio pessoal.",
+      "detalhes": "Criar uma rotina estruturada com tarefas diárias pode ajudar no controle de vícios, proporcionando senso de propósito, organização e substituindo comportamentos prejudiciais por hábitos saudáveis e produtivos."
+    },
+    {
+      "id": "3",
+      "titulo": "Tratamentos",
+      "imagem": "https://picsum.photos/300/300?3",
+      "descricao": "Conheça as abordagens mais eficazes para tratar diferentes tipos de vício.",
+      "detalhes": "Os tratamentos para vício incluem terapias comportamentais, uso de medicação apropriada, acompanhamento psicológico, participação em grupos de apoio (como os Alcoólicos Anônimos), e estratégias para prevenção de recaídas. O suporte familiar e social também é fundamental."
+    },
+    {
+      "id": "4",
+      "titulo": "Casos de Vício",
+      "imagem": "https://picsum.photos/300/300?4",
+      "descricao": "Acompanhe histórias reais de pessoas que enfrentaram o vício e os caminhos que seguiram.",
+      "detalhes": "Histórias reais mostram como o vício impacta vidas de forma profunda, levando à perda de emprego, relacionamentos e saúde. Porém, também revelam superações, mostrando que com ajuda e determinação, a recuperação é possível."
+    },
+    {
+      "id": "5",
+      "titulo": "Vício em Tecnologia",
+      "imagem": "https://picsum.photos/300/300?5",
+      "descricao": "Entenda os impactos do uso excessivo de tecnologia no comportamento humano.",
+      "detalhes": "O uso compulsivo de celulares, redes sociais e jogos online pode afetar o sono, a atenção, os relacionamentos e a produtividade. É importante estabelecer limites e pausas conscientes para promover o bem-estar digital."
+    },
+    {
+      "id": "6",
+      "titulo": "Vício em Drogas",
+      "imagem": "https://picsum.photos/300/300?6",
+      "descricao": "Impactos físicos, mentais e sociais causados pelo uso abusivo de substâncias químicas.",
+      "detalhes": "Drogas como cocaína, maconha, crack e outras substâncias causam dependência química, prejudicando a saúde, os relacionamentos e o desempenho profissional. O tratamento é desafiador, mas possível com apoio profissional e pessoal."
+    },
+    {
+      "id": "7",
+      "titulo": "Vício em Álcool",
+      "imagem": "https://picsum.photos/300/300?7",
+      "descricao": "Conheça os riscos e consequências do consumo abusivo de bebidas alcoólicas.",
+      "detalhes": "O alcoolismo é um vício socialmente aceito, mas extremamente prejudicial. Pode levar a doenças hepáticas, depressão, acidentes e problemas familiares. A recuperação envolve tratamento especializado e grupos de apoio."
+    },
+    {
+      "id": "8",
+      "titulo": "Recaídas",
+      "imagem": "https://picsum.photos/300/300?8",
+      "descricao": "Saiba lidar com recaídas durante o processo de recuperação.",
+      "detalhes": "Recaídas são comuns em tratamentos contra o vício. Compreendê-las como parte do processo e não como fracasso absoluto é essencial. Estratégias de prevenção, autoconhecimento e suporte emocional são fundamentais."
+    },
+    {
+      "id": "9",
+      "titulo": "Apoio Familiar",
+      "imagem": "https://picsum.photos/300/300?9",
+      "descricao": "A importância do envolvimento da família na recuperação de uma pessoa com vício.",
+      "detalhes": "A família pode ser um pilar essencial no tratamento do vício, oferecendo suporte emocional, vigilância amorosa e incentivo à continuidade do tratamento. Também é importante que familiares recebam orientação e apoio psicológico."
+    },
+    {
+      "id": "10",
+      "titulo": "Autoestima e Vício",
+      "imagem": "https://picsum.photos/300/300?10",
+      "descricao": "Como a baixa autoestima pode contribuir para o desenvolvimento de vícios.",
+      "detalhes": "Pessoas com baixa autoestima tendem a buscar compensações externas, como vícios, para aliviar sentimentos de inadequação. Trabalhar o autoconhecimento, autovalorização e desenvolver habilidades emocionais pode ajudar na prevenção."
+    },
+    {
+      "id": "11",
+      "titulo": "Mindfulness e Meditação",
+      "imagem": "https://picsum.photos/300/300?11",
+      "descricao": "Técnicas de atenção plena como apoio no controle de impulsos e vícios.",
+      "detalhes": "Mindfulness e meditação ajudam na autorregulação emocional e no fortalecimento da consciência sobre os próprios hábitos, sendo ferramentas eficazes para lidar com ansiedade, compulsões e recaídas."
+    },
+    {
+      "id": "12",
+      "titulo": "Histórias de Superação",
+      "imagem": "https://picsum.photos/300/300?12",
+      "descricao": "Exemplos inspiradores de pessoas que venceram o vício.",
+      "detalhes": "Relatos de superação demonstram que a recuperação é possível, reforçam a importância da esperança e mostram o papel de terapias, apoio familiar, espiritualidade e mudança de hábitos na conquista de uma vida livre do vício."
+    }
+  ],
+  "games": [
+    {
+      "name": "Quiz",
+      "img": "assets/images/QUIZ.png",
+      "id": "a0c3"
+    },
+    {
+      "name": "Genio quiz",
+      "img": "assets/images/GENIUS.jpg",
+      "id": "0d3d"
+    },
+    {
+      "name": "antistress",
+      "img": "assets/images/STRES.jpg",
+      "id": "e730"
+    },
+    {
+      "name": "Enigma",
+      "img": "assets/images/logoENIGMA.png",
+      "id": "0b80"
+    },
+    {
+      "name": "Piano tiles",
+      "img": "assets/images/piano.jpg",
+      "id": "6e64"
     }
   ]
 }

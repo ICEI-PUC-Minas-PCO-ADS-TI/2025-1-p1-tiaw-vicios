@@ -1,0 +1,492 @@
+.card {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  box-shadow: #1b0b24 10px 2px 20px;
+
+
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/*Cores */
+.cards-container h5 {
+  color: white;
+}
+
+.cards-container p {
+  color: white;
+}
+
+.cards-container h5,
+p {
+  border: 2px solid black;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #2d125b;
+}
+
+.container {
+  background-color: #290e59;
+  padding-top: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 80vh;
+  width: 50%;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+/*Cores de detalhes.html*/
+.container h1 {
+  color: white;
+}
+
+.container p {
+  color: white;
+}
+
+/*Cores de detalhes.html*/
+
+/*Cores */
+.card-body {
+  padding: 15px;
+  background-color: #673AB7;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#voltar {
+  width: 200px;
+}
+
+.card-pesquisa {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 calc(25% - 20px);
+  min-width: 250px;
+  box-sizing: border-box;
+}
+
+.card-pesquisa:hover {
+  transform: scale(1.05);
+}
+
+
+
+.search-container {
+  min-width: 100px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  padding-top: 120px;
+  border-radius: 10px;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #673AB7;
+  padding: 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+input[type="text"] {
+  width: 25%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.3s;
+
+}
+
+input[type="text"]:focus {
+  border-color: rgb(173, 15, 173);
+  outline: none;
+}
+
+.no-results {
+  color: #999;
+  margin-top: 20px;
+  display: none;
+}
+
+#voltar-index {
+  background-color: #3e0061;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+#voltar-index:hover {
+  background-color: #5E35B1;
+}
+
+#voltar {
+  background-color: #3e0061;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+}
+
+/* Responsividade */
+@media (max-width: 1100px) {
+  .card-pesquisa {
+    flex: 0 0 calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 800px) {
+  .card-pesquisa {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 500px) {
+  .card-pesquisa {
+    flex: 0 0 100%;
+  }
+}
+
+
+/* ===== NAVBAR PRINCIPAL ===== */
+.floating-navbar {
+  position: fixed !important;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 16px;
+  background-color: #673AB7;
+  padding: 10px 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+/* ===== OFFCANVAS ===== */
+.offcanvas {
+  background-color: #683ab7b7 !important;
+  color: #f2f2f2 !important;
+  border-bottom-right-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.offcanvas-header {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.418) !important;
+}
+
+.dropdown-menu {
+  background-color: #683ab7b7 !important;
+  color: #f2f2f2 !important;
+  border-radius: 20px !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+}
+
+.dropdown-item {
+  color: #f2f2f2 !important;
+  padding: 10px 20px !important;
+  border-radius: 10px !important;
+}
+
+/* ===== BOTÃO DO MENU ===== */
+.offcanvasty {
+  border: 2px solid rgba(255, 255, 255, 0) !important;
+  background-color: transparent !important;
+  padding: 0.375rem 0.75rem;
+}
+
+.offcanvasty .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2.5' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  width: 1.5em;
+  height: 1.5em;
+}
+
+/* ===== FORMULÁRIO DE BUSCA ===== */
+.search-form {
+  max-width: 600px;
+  width: 100%;
+}
+
+.search-input {
+  border-radius: 20px !important;
+  padding: 10px 15px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.273);
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #f2f2f2 !important;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+  flex: 1;
+  min-width: 0;
+  /* Permite encolhimento */
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.search-input:focus {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25) !important;
+  color: #f2f2f2 !important;
+}
+
+.search-btn {
+  border-radius: 20px !important;
+  padding: 10px 15px;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+  min-width: 50px;
+}
+
+.search-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* ===== ÍCONES DE NAVEGAÇÃO ===== */
+.nav-icon {
+  font-size: 1.8rem;
+  transition: transform 0.2s ease;
+}
+
+.nav-link:hover .nav-icon {
+  transform: scale(1.1);
+}
+
+.nav-link {
+  padding: 0.5rem !important;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+/* ===== BUSCA MOBILE ===== */
+.mobile-search {
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== MEDIA QUERIES RESPONSIVAS ===== */
+
+/* Telas grandes (desktops) */
+@media (min-width: 992px) {
+  .floating-navbar {
+    padding: 15px 30px;
+  }
+
+  .search-form {
+    max-width: 500px;
+  }
+}
+
+/* Telas médias (tablets) */
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .floating-navbar {
+    width: 95%;
+    padding: 12px 20px;
+  }
+
+  .nav-icon {
+    font-size: 1.6rem;
+  }
+
+  body {
+    padding-top: 90px;
+    min-height: 100vh;
+
+  }
+}
+
+/* Telas pequenas (celulares) */
+@media (max-width: 767.98px) {
+  .floating-navbar {
+    width: 95%;
+    padding: 10px 15px;
+    top: 10px;
+  }
+
+  .navbar-brand img {
+    width: 35px !important;
+    height: 35px !important;
+  }
+
+  .nav-icon {
+    font-size: 1.4rem;
+  }
+
+  body {
+    padding-top: 80px;
+    height: 165vh;
+
+    .carrossel-com-cards {
+      flex-direction: column;
+      align-items: center;
+      border-radius: 20px;
+    }
+
+    /* Move o card de álcool para depois do carrossel visualmente */
+    .cardDetalhes:first-of-type {
+      order: 2;
+    }
+
+    .bannerPrincipal {
+      order: 1;
+    }
+
+    .cardDetalhes:last-of-type {
+      order: 3;
+    }
+
+    .bannerPrincipal {
+      flex: 1 1 100%;
+
+    }
+
+  }
+
+
+
+  .search-input {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .search-btn {
+    padding: 8px 12px;
+  }
+}
+
+/* Telas extra pequenas */
+@media (max-width: 575.98px) {
+  .floating-navbar {
+    width: 98%;
+    padding: 8px 12px;
+    top: 5px;
+  }
+
+  .navbar-brand {
+    margin-right: 0.5rem !important;
+  }
+
+  .navbar-brand img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .nav-icon {
+    font-size: 1.2rem;
+  }
+
+  body {
+    padding-top: 7px;
+    min-height: 100vh;
+
+  }
+
+  .offcanvasty .navbar-toggler-icon {
+    width: 1.2em;
+    height: 1.2em;
+  }
+}
+
+/* ===== ESTADOS DE FOCO PARA ACESSIBILIDADE ===== */
+.nav-link:focus,
+.offcanvasty:focus,
+.search-btn:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
+}
+
+/* ===== TRANSIÇÕES SUAVES ===== */
+* {
+  transition: all 0.2s ease;
+}
+
+/* ===== CLASSES UTILITÁRIAS RESPONSIVAS ===== */
+.gap-responsive {
+  gap: 0.75rem;
+}
+
+@media (max-width: 767.98px) {
+  .gap-responsive {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .gap-responsive {
+    gap: 0.25rem;
+  }
+}
+
+/* ===== CORREÇÕES ESPECÍFICAS ===== */
+
+/* Remove a largura fixa problemática do input original */
+input[style*="width: 650px"] {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Garante que os elementos não quebrem o layout */
+.container-fluid {
+  overflow-x: hidden;
+}
+
+/* Melhora a aparência em telas muito pequenas */
+@media (max-width: 320px) {
+  .floating-navbar {
+    width: 99%;
+    padding: 6px 10px;
+  }
+
+  .navbar-brand img {
+    width: 25px !important;
+    height: 25px !important;
+  }
+
+  .nav-icon {
+    font-size: 1rem;
+  }
+
+
+}

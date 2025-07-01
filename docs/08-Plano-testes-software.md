@@ -1,42 +1,79 @@
-# Plano de testes de software
+# **Plano de Testes de Software**
 
-<span style="color:red">Pré-requisitos: <a href="03-Product-design.md"> Especificação do projeto</a></span>, <a href="05-Projeto-interface.md"> Projeto de interface</a>
+## 1. Objetivo dos Testes
 
-O plano de testes de software é gerado a partir da especificação do sistema e consiste em casos de teste que deverão ser executados quando a implementação estiver parcial ou totalmente pronta. Apresente os cenários de teste utilizados na realização dos testes da sua aplicação. Escolha cenários de teste que demonstrem os requisitos sendo satisfeitos.
-
-Enumere quais cenários de testes foram selecionados para teste. Neste tópico, o grupo deve detalhar quais funcionalidades foram avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
-
-Não deixe de enumerar os casos de teste de forma sequencial e garantir que o(s) requisito(s) associado(s) a cada um deles esteja(m) correto(s) — de acordo com o que foi definido na <a href="03-Product-design.md">Especificação do projeto</a>.
-
-Por exemplo:
-
-| **Caso de teste**  | **CT-001 – Cadastrar perfil**  |
-|:---: |:---: |
-| Requisito associado | RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que estes consigam criar e gerenciar seu perfil. |
-| Objetivo do teste | Verificar se o usuário consegue se cadastrar na aplicação. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
-| Critério de êxito | - O cadastro foi realizado com sucesso. |
-| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
-
-<br>
-
-| **Caso de teste**  | **CT-002 – Efetuar login**  |
-|:---: |:---: |
-| Requisito associado | RF-00Y - A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
-| Objetivo do teste | Verificar se o usuário consegue realizar login. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo de senha <br> - Clicar em "Login" |
-| Critério de êxito | - O login foi realizado com sucesso. |
-| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+Verificar se as funcionalidades do sistema, voltadas ao apoio de pessoas com vícios, funcionam corretamente. O foco é garantir **usabilidade**, **confiabilidade** e **segurança**, mesmo utilizando dados armazenados em arquivos JSON.
 
 
-## Ferramentas de testes (opcional)
+## 2. Escopo dos Testes
 
-Comente sobre as ferramentas de testes utilizadas.
- 
-> **Links úteis**:
-> - [IBM - criação e geração de planos de teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e técnicas de testes ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> - [Teste de software: conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e geração de planos de teste de software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de teste para JavaScript](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+Funcionalidades que serão testadas:
+
+* Cadastro e login de usuários (com persistência em JSON)
+* Acesso a conteúdos de apoio (textos, vídeos, links)
+* Área administrativa para gerenciamento de conteúdo
+
+
+## 3. Tipos de Testes
+
+* **Testes Funcionais**: Garantir que cada funcionalidade descrita nos requisitos opere como esperado.
+* **Testes de Interface**: Avaliar a experiência do usuário, navegação e acessibilidade.
+* **Testes de Integração**: Verificar a comunicação entre a interface e os dados armazenados no arquivo JSON.
+* **Testes de Segurança**: Proteger dados sensíveis (ex: senhas), mesmo que armazenados localmente.
+
+
+## 4. Ambiente de Testes
+
+* **Navegadores**: Google Chrome, Mozilla Firefox
+* **Dispositivos**: Desktop e smartphones
+* **Ferramentas Utilizadas**:
+
+  * **Postman** – Para testar requisições simuladas ao JSON
+  * **Selenium** – Para automação de testes de interface
+  * **OWASP ZAP** – Para verificar falhas de segurança
+  * **VS Code + Live Server** – Execução e simulação local do sistema
+
+
+
+## 5. Casos de Teste (Exemplos)
+
+| Caso de Teste               | Entrada                           | Saída Esperada                         | Resultado |
+| --------------------------- | --------------------------------- | -------------------------------------- | --------- |
+| Cadastro de usuário         | Nome, email e senha válidos       | Conta criada e salva no JSON           | Aprovado  |
+| Cadastro com email repetido | Email já existente no JSON        | Mensagem de erro "Email já cadastrado" | Aprovado  |
+| Login com dados corretos    | Email e senha existentes no JSON  | Usuário autenticado e redirecionado    | Aprovado  |
+| Login com dados incorretos  | Email inexistente ou senha errada | Mensagem de erro                       | Aprovado  |
+| Acesso a material de apoio  | Clique em link de conteúdo        | Conteúdo carregado corretamente        | Aprovado  |
+| Adição de conteúdo (admin)  | Formulário de novo conteúdo       | JSON atualizado com novo item          | Aprovado  |
+
+
+
+## 6. Critérios de Aceitação
+
+* Todos os testes devem ser concluídos com sucesso
+* Nenhuma falha crítica de execução ou segurança
+* Interface deve ser responsiva, intuitiva e acessível (atender, por exemplo, contraste e tamanho de fonte adequados)
+
+
+
+## 7. Cronograma
+
+| Atividade               | Início | Término |
+| ----------------------- | ------ | ------- |
+| Planejamento dos Testes | 11/06  | 15/06   |
+| Execução dos Testes     | 11/06  | 15/06   |
+| Correção de Problemas   | 11/06  | 15/06   |
+
+
+
+## 8. Riscos
+
+* Armazenamento em JSON pode limitar a escalabilidade e segurança dos dados
+* Cobertura de testes limitada pode deixar falhas escondidas
+* Ausência de testes de acessibilidade pode impactar negativamente usuários com deficiência visual ou motora
+
+
+## 9. Responsáveis
+
+* **Vinicius Tales Silva** – Testes e Documentação
+* **Equipe de Desenvolvimento** – Lotus (Ajuda no Controle no Combate ao Vício)
