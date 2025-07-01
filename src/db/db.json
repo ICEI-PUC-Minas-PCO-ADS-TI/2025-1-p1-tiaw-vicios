@@ -143,8 +143,8 @@
         "alcool": {
           "quizzesConcluidos": 1,
           "totalQuizzes": 1,
-          "tarefasConcluidas": 0,
-          "totalTarefas": 0,
+          "tarefasConcluidas": 1,
+          "totalTarefas": 1,
           "videoaulasAssistidas": 2,
           "totalVideoaulas": 4,
           "videosConcluidosIds": [
@@ -155,7 +155,7 @@
           "quizzesConcluidos": 1,
           "totalQuizzes": 1,
           "tarefasConcluidas": 0,
-          "totalTarefas": 0,
+          "totalTarefas": 1,
           "videoaulasAssistidas": 3,
           "totalVideoaulas": 5,
           "videosConcluidosIds": [
